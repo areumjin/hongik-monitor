@@ -11,6 +11,12 @@
       "name": "행사/공모전",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do",
       "enabled": true
+    },
+    {
+      "id": "src_1780312858705",
+      "name": "세종 RISE 센터 공지사항",
+      "url": "https://www.sjrise.or.kr/bbs/bbsList?bbsId=1&mid=804003000000",
+      "enabled": true
     }
   ],
   "keywords": [
