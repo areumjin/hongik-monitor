@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>홍익대 공지 모니터</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1c1c26;
+    --border: #2a2a38;
+    --accent: #6c63ff;
+    --accent2: #ff6584;
+    --text: #e8e8f0;
+    --text-muted: #6b6b80;
+    --keyword: #ffd166;
+    --radius: 12px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* 헤더 */
+  header {
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .logo-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 12px var(--accent);
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 12px var(--accent); }
+    50% { opacity: 0.6; box-shadow: 0 0 24px var(--accent); }
+  }
+
+  h1 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--text);
+  }
+
+  .updated {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  /* 탭 */
+  .tabs {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+  }
+
+  .tab-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 0.45rem 1rem;
+    border-radius: 99px;
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .tab-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .tab-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  /* 키워드 필터 */
+  .filters {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filter-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-right: 0.25rem;
+  }
+
+  .filter-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 0.3rem 0.75rem;
+    border-radius: 99px;
+    font-family: inherit;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-btn.active {
+    background: var(--keyword);
+    border-color: var(--keyword);
+    color: #0a0a0f;
+    font-weight: 600;
+  }
+
+  /* 카드 목록 */
+  .posts {
+    padding: 1rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    max-width: 900px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    transition: all 0.2s;
+  }
+
+  .card:hover {
+    border-color: var(--accent);
+    background: var(--surface2);
+    transform: translateX(4px);
+  }
+
+  .card.highlight {
+    border-left: 3px solid var(--keyword);
+    background: color-mix(in srgb, var(--keyword) 5%, var(--surface));
+  }
+
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .source-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    padding: 0.15rem 0.55rem;
+    border-radius: 99px;
+    letter-spacing: 0.01em;
+  }
+
+  .date {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  .card-title {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+
+  .card-title:hover {
+    color: var(--accent);
+  }
+
+  .badges {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #0a0a0f;
+    background: var(--keyword);
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  /* 빈 상태 */
+  .empty {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  /* 통계 바 */
+  .stats {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .stat-num {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--text);
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    header, .tabs, .filters, .posts { padding-left: 1rem; padding-right: 1rem; }
+    h1 { font-size: 1.1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-dot"></div>
+    <h1>홍익대 공지 모니터</h1>
+  </div>
+  <span class="updated">마지막 업데이트: 2026.06.01 19:33</span>
+</header>
+
+<div class="stats">
+  <div class="stat">
+    <span class="stat-num" id="total-count">20</span>
+    <span class="stat-label">전체 게시물</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num" id="keyword-count" style="color: var(--keyword)">0</span>
+    <span class="stat-label">키워드 매칭</span>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-source="all">전체</button>
+  <button class="tab-btn" data-source="notice">공지사항</button>
+<button class="tab-btn" data-source="event">행사/공모전</button>
+
+</div>
+
+<div class="filters">
+  <span class="filter-label">키워드</span>
+  <button class="filter-btn active" data-keyword="all">전체</button>
+  <button class="filter-btn" data-keyword="창업">창업</button><button class="filter-btn" data-keyword="지원금">지원금</button><button class="filter-btn" data-keyword="장학금">장학금</button>
+</div>
+
+<div class="posts" id="posts-container">
+  
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date"></span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152428&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [산학협력팀(세종) 융합인재센터] Opencv Zoo 기반의 머신러닝/딥러닝 영상분석 실무 프로젝트 교육과정 교육생 모집 공고
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date"></span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152427&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [산학협력팀(세종) 융합인재센터] 3D 프린팅 이노베이션 Lab 교육과정 교육생 모집 공고
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152424&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [총무관리팀(세종)] 2026학년도 하계방학 교내봉사장학생 모집 공고
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date"></span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152422&article.offset=0&articleLimit=10&noCat=29" target="_blank" rel="noopener">
+                [경영대학] 2026-1학기 경영대학 기말고사 시험 감독 보조요원 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date"></span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152416&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [모집] 2026 바이오테크 캠프 프로그램 참가자 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date"></span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152410&article.offset=0&articleLimit=10&noCat=29" target="_blank" rel="noopener">
+                학생처(장학팀, 학생지원팀, 포스터 승인) 사무실 임시 이전 안내
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152407&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [대학혁신지원사업/교수학습지원센터(세종)] 2026학년도 하계 방학 드로잉100 보조 인력 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152406&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
+                [대학혁신지원사업/교수학습지원센터(세종)] 2026학년도 하계 방학 드로잉100 참가자 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=152392&noCat=23" target="_blank" rel="noopener">
+                [국제언어교육원] 2026학년도 여름 학기 정규 어학(대체강좌,맞춤형,영어집중과정,토익관련) 강좌 안내
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="notice">
+            <div class="card-meta">
+                <span class="source-tag">공지사항</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=152390&noCat=23" target="_blank" rel="noopener">
+                [세종캠퍼스] 2026학년도 2학기 재입학 추가 접수 안내(학부)
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152426&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [홍보] 자립준비청년대상 금융교육 캠프 [시작의 항해]
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152425&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [모집] 6월 서울영테크 재무상담 참여자 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152421&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [공모] 「2026 경북 국제 AI·메타버스 영상 공모전」 홍보
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152420&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [모집] 금융감독원 제14기 「FSS 대학생 금융교육 봉사단」 모집
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152418&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [공모] 『2026년 창원시 AI·데이터 활용 공모전』참여 홍보
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152417&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [홍보] <2026 블록체인 밋업데이> 9차시 교육생 모집 안내 홍보
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152403&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [모집][메이캔] SK인텔릭스 NAMUHX Hackathon
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152402&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [홍보][SBA 청년취업사관학교] 영등포캠퍼스 DX 2기 핀테크 및 SW 8기 2차 AR&VR 홍보
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152401&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [홍보][UST 입학실] 2026학년도 UST 후기 2차 신입생 모집 입학설명회
+            </a>
+            
+        </article>
+        
+        <article class="card " data-source="event">
+            <div class="card-meta">
+                <span class="source-tag">행사/공모전</span>
+                <span class="date">첨부파일</span>
+            </div>
+            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152400&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
+                [홍보][노브레이크] 청년취업사관학교 새싹(SeSAC) 생성형 AI를 활용한 핀테크 서비스 기획자 양성과정
+            </a>
+            
+        </article>
+        
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  let activeSource = 'all';
+  let activeKeyword = 'all';
+
+  function filterCards() {
+    let visible = 0;
+    cards.forEach(card => {
+      const matchSource = activeSource === 'all' || card.dataset.source === activeSource;
+      const matchKeyword = activeKeyword === 'all' || card.innerHTML.includes(activeKeyword);
+      const show = matchSource && matchKeyword;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    document.getElementById('total-count').textContent = visible;
+  }
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeSource = btn.dataset.source;
+      filterCards();
+    });
+  });
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeKeyword = btn.dataset.keyword;
+      filterCards();
+    });
+  });
+</script>
+
+</body>
+</html>
