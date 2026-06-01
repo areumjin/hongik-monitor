@@ -3,7 +3,7 @@
     {
       "id": "notice",
       "name": "공지사항",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=list&&articleLimit=10&article.offset=0",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do",
       "enabled": true
     },
     {
@@ -13,7 +13,9 @@
       "enabled": true
     }
   ],
-  "keywords": ["창업", "지원금", "장학금"],
-  "schedule": "0 9 * * *",
-  "kakao_message_limit": 5
+  "keywords": [
+    "창업",
+    "지원금",
+    "장학금"
+  ]
 }
