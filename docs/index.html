@@ -10,7 +10,7 @@
 
   body {
     font-family: 'Inter', -apple-system, sans-serif;
-    background: #ffffff;
+    background: #fff;
     color: #111;
     font-size: 14px;
     line-height: 1.5;
@@ -20,7 +20,7 @@
   nav {
     position: sticky; top: 0; z-index: 100;
     background: #fff;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #e8e8e8;
     height: 50px;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 24px;
@@ -31,31 +31,30 @@
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
 
   .nav-r { display: flex; align-items: center; gap: 10px; }
-  .nav-time { font-size: 12px; color: #aaa; }
+  .nav-time { font-size: 12px; color: #bbb; }
 
-  .btn {
+  .btn-nav {
     font-family: inherit; font-size: 13px; font-weight: 500;
     background: #fff; color: #333;
-    border: 1px solid #ddd; border-radius: 6px;
+    border: 1px solid #e0e0e0; border-radius: 6px;
     padding: 5px 13px; cursor: pointer;
   }
-  .btn:hover { background: #f5f5f5; }
-  .btn.active { background: #f5f5f5; }
+  .btn-nav:hover { background: #f7f7f7; }
+  .btn-nav.active { background: #f7f7f7; }
 
-  .layout { display: flex; }
+  /* 전체 레이아웃 */
+  .layout { display: flex; height: calc(100vh - 50px); overflow: hidden; }
 
   /* 설정 패널 */
-  .panel {
-    width: 290px; min-width: 290px;
+  .settings {
+    width: 280px; min-width: 280px;
     background: #fff;
-    border-right: 1px solid #ebebeb;
+    border-right: 1px solid #e8e8e8;
     padding: 20px 16px;
     display: none; flex-direction: column; gap: 24px;
     overflow-y: auto;
-    height: calc(100vh - 50px);
-    position: sticky; top: 50px;
   }
-  .panel.open { display: flex; }
+  .settings.open { display: flex; }
 
   .s-title { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; margin-bottom: 8px; }
 
@@ -67,12 +66,11 @@
   .notice a { color: #1d4ed8; font-weight: 600; text-decoration: none; }
 
   input[type=text], input[type=password] {
-    width: 100%; border: 1px solid #ddd; border-radius: 4px;
-    padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111;
-    outline: none;
+    width: 100%; border: 1px solid #e0e0e0; border-radius: 4px;
+    padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111; outline: none;
   }
   input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.1); }
-  input::placeholder { color: #bbb; }
+  input::placeholder { color: #ccc; }
 
   .input-row { display: flex; gap: 5px; }
   .input-row input { flex: 1; }
@@ -90,29 +88,27 @@
     display: inline-flex; align-items: center; gap: 3px;
     font-size: 12px; font-weight: 500;
     background: #eff6ff; border: 1px solid #bfdbfe;
-    color: #1d4ed8; border-radius: 999px;
-    padding: 3px 8px 3px 10px;
+    color: #1d4ed8; border-radius: 999px; padding: 3px 8px 3px 10px;
   }
   .tag-x { background: none; border: none; cursor: pointer; color: #93c5fd; font-size: 12px; padding: 0; }
   .tag-x:hover { color: #dc2626; }
 
   .url-item {
-    background: #fafafa; border: 1px solid #ebebeb; border-radius: 8px;
+    background: #fafafa; border: 1px solid #e8e8e8; border-radius: 8px;
     padding: 9px 11px; display: flex; gap: 8px; margin-bottom: 5px;
   }
   .url-info { flex: 1; min-width: 0; }
   .url-name { font-size: 12px; font-weight: 600; color: #111; margin-bottom: 2px; }
-  .url-addr { font-size: 11px; color: #aaa; word-break: break-all; line-height: 1.4; }
+  .url-addr { font-size: 11px; color: #bbb; word-break: break-all; line-height: 1.4; }
   .url-x { background: none; border: none; cursor: pointer; color: #ccc; font-size: 14px; flex-shrink: 0; }
   .url-x:hover { color: #dc2626; }
 
   .url-form { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
 
   .btn-save {
-    width: 100%; font-family: inherit; font-size: 14px; font-weight: 500;
+    width: 100%; font-family: inherit; font-size: 13px; font-weight: 500;
     background: #2563eb; color: #fff;
-    border: none; border-radius: 999px; padding: 9px;
-    cursor: pointer;
+    border: none; border-radius: 999px; padding: 9px; cursor: pointer;
   }
   .btn-save:hover { background: #1d4ed8; }
   .btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
@@ -121,75 +117,163 @@
   .save-msg.ok { display: block; background: #dcfce7; color: #15803d; }
   .save-msg.err { display: block; background: #fee2e2; color: #dc2626; }
 
-  /* 메인 */
-  .main { flex: 1; padding: 28px 32px; min-width: 0; max-width: 780px; }
-
-  /* 통계 — 작게 */
-  .stats {
-    display: flex; gap: 20px; align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #ebebeb;
+  /* 게시물 목록 */
+  .list-pane {
+    width: 340px;
+    min-width: 340px;
+    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
-  .stat { display: flex; align-items: baseline; gap: 6px; }
-  .stat-n { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
-  .stat-n.blue { color: #2563eb; }
-  .stat-l { font-size: 12px; color: #aaa; }
 
-  /* 필터 */
-  .filter-group { margin-bottom: 18px; }
-  .filter-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
-  .filter-label { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ccc; }
+  .list-header {
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid #e8e8e8;
+    flex-shrink: 0;
+  }
+
+  .stats {
+    display: flex; gap: 16px; align-items: center;
+    margin-bottom: 12px;
+  }
+  .stat { display: flex; align-items: baseline; gap: 5px; }
+  .stat-n { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+  .stat-n.blue { color: #2563eb; }
+  .stat-l { font-size: 11px; color: #bbb; }
+
+  .filter-group { display: flex; flex-direction: column; gap: 6px; }
+  .filter-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
+  .filter-label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ccc; width: 30px; flex-shrink: 0; }
 
   .fb {
-    font-family: inherit; font-size: 12px; font-weight: 500;
-    background: #fff; color: #888;
-    border: 1px solid #ebebeb; border-radius: 999px;
-    padding: 3px 12px; cursor: pointer; white-space: nowrap;
+    font-family: inherit; font-size: 11px; font-weight: 500;
+    background: #fff; color: #999;
+    border: 1px solid #e8e8e8; border-radius: 999px;
+    padding: 2px 10px; cursor: pointer; white-space: nowrap;
   }
-  .fb:hover { color: #111; border-color: #ccc; }
+  .fb:hover { color: #333; border-color: #ccc; }
   .fb.on-src { background: #111; border-color: #111; color: #fff; }
   .fb.on-kw { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
 
-  /* 카드 */
-  .posts { display: flex; flex-direction: column; gap: 1px; }
+  .posts {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 0;
+  }
 
   .card {
-    background: #fff;
-    border-bottom: 1px solid #f0f0f0;
-    padding: 14px 4px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f3f3f3;
+    cursor: pointer;
+    transition: background 0.1s;
+    border-left: 3px solid transparent;
   }
-  .card:last-child { border-bottom: none; }
+  .card:hover { background: #f9f9f9; }
+  .card.active { background: #f0f6ff; border-left-color: #2563eb; }
 
-  .card-top { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+  .card-top { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
 
   .src-pill {
-    font-size: 11px; font-weight: 600;
+    font-size: 10px; font-weight: 600;
     color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe;
-    border-radius: 999px; padding: 1px 8px;
+    border-radius: 999px; padding: 1px 7px;
   }
 
-  .card-date { font-size: 11px; color: #bbb; margin-left: auto; }
+  .card-date { font-size: 10px; color: #bbb; margin-left: auto; }
 
   .card-title {
-    display: block; font-size: 14px; font-weight: 400;
-    color: #222; text-decoration: none; line-height: 1.55;
+    font-size: 13px; font-weight: 400;
+    color: #222; line-height: 1.5;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   }
-  .card-title:hover { color: #2563eb; }
+  .card.active .card-title { color: #1d4ed8; }
 
-  .card-kw {
-    display: flex; gap: 4px; flex-wrap: wrap;
-    margin-top: 7px; padding-top: 7px;
-    border-top: 1px solid #f0f0f0;
-  }
-
+  .card-kw { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; }
   .kw-badge {
-    font-size: 11px; font-weight: 500;
+    font-size: 10px; font-weight: 500;
     color: #1d4ed8; background: #eff6ff; border: 1px solid #bfdbfe;
-    border-radius: 999px; padding: 1px 8px;
+    border-radius: 999px; padding: 1px 7px;
   }
 
-  .empty { text-align: center; color: #bbb; font-size: 13px; padding: 60px 0; line-height: 1.8; }
+  .empty { text-align: center; color: #ccc; font-size: 13px; padding: 48px 16px; line-height: 1.8; }
+
+  /* 미리보기 패널 */
+  .preview-pane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .preview-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    gap: 10px;
+  }
+
+  .preview-empty-icon { font-size: 32px; }
+  .preview-empty-text { font-size: 13px; }
+
+  .preview-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e8e8e8;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .preview-header.show { display: flex; }
+
+  .preview-title {
+    font-size: 13px; font-weight: 500; color: #111;
+    flex: 1; min-width: 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .btn-open {
+    font-family: inherit; font-size: 12px; font-weight: 500;
+    background: #2563eb; color: #fff;
+    border: none; border-radius: 6px;
+    padding: 5px 12px; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+  }
+  .btn-open:hover { background: #1d4ed8; }
+
+  .preview-frame {
+    flex: 1;
+    border: none;
+    display: none;
+    background: #f9f9f9;
+  }
+  .preview-frame.show { display: block; }
+
+  .preview-blocked {
+    flex: 1;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #888;
+    padding: 32px;
+    text-align: center;
+  }
+  .preview-blocked.show { display: flex; }
+  .preview-blocked-icon { font-size: 28px; }
+  .preview-blocked-title { font-size: 14px; font-weight: 600; color: #333; }
+  .preview-blocked-desc { font-size: 12px; line-height: 1.6; color: #999; }
+  .btn-goto {
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    background: #2563eb; color: #fff;
+    border: none; border-radius: 6px;
+    padding: 8px 18px; cursor: pointer; margin-top: 4px;
+  }
+  .btn-goto:hover { background: #1d4ed8; }
 </style>
 </head>
 <body>
@@ -198,20 +282,20 @@
   <div class="logo"><div class="dot"></div>홍익대 공지 모니터</div>
   <div class="nav-r">
     <span class="nav-time" id="nav-time">—</span>
-    <button class="btn" id="btn-s" onclick="togglePanel()">설정</button>
+    <button class="btn-nav" id="btn-s" onclick="toggleSettings()">설정</button>
   </div>
 </nav>
 
 <div class="layout">
-  <aside class="panel" id="panel">
 
+  <!-- 설정 패널 -->
+  <aside class="settings" id="settings">
     <div>
       <div class="s-title">GitHub 연동</div>
       <div class="notice">설정 저장을 위해 GitHub Personal Access Token이 필요해요. <a href="https://github.com/settings/tokens/new?scopes=repo&description=hongik-monitor" target="_blank">여기서 발급</a> (repo 권한)</div>
       <div style="margin-top:7px"><input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx"></div>
       <div style="font-size:11px;color:#bbb;margin-top:4px">브라우저에만 저장돼요</div>
     </div>
-
     <div>
       <div class="s-title">키워드 알림</div>
       <div class="input-row">
@@ -220,7 +304,6 @@
       </div>
       <div class="tags" id="kw-list"></div>
     </div>
-
     <div>
       <div class="s-title">모니터링 URL</div>
       <div id="url-list"></div>
@@ -230,49 +313,68 @@
         <button class="btn-add" style="padding:8px;border-radius:4px" onclick="addUrl()">+ URL 추가</button>
       </div>
     </div>
-
     <div>
       <button class="btn-save" id="btn-save" onclick="save()">GitHub에 저장하기</button>
       <div class="save-msg" id="save-msg"></div>
     </div>
-
   </aside>
 
-  <main class="main">
-
-    <div class="stats">
-      <div class="stat"><span class="stat-n" id="total-n">—</span><span class="stat-l">전체 게시물</span></div>
-      <div class="stat"><span class="stat-n blue" id="kw-n">—</span><span class="stat-l">키워드 매칭</span></div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-row" id="src-row">
-        <span class="filter-label">출처</span>
-        <button class="fb on-src" data-src="all" onclick="setSrc(this)">전체</button>
+  <!-- 게시물 목록 -->
+  <div class="list-pane">
+    <div class="list-header">
+      <div class="stats">
+        <div class="stat"><span class="stat-n" id="total-n">—</span><span class="stat-l">전체</span></div>
+        <div class="stat"><span class="stat-n blue" id="kw-n">—</span><span class="stat-l">키워드 매칭</span></div>
       </div>
-      <div class="filter-row" id="kw-row" style="display:none">
-        <span class="filter-label">키워드</span>
+      <div class="filter-group">
+        <div class="filter-row" id="src-row">
+          <span class="filter-label">출처</span>
+          <button class="fb on-src" data-src="all" onclick="setSrc(this)">전체</button>
+        </div>
+        <div class="filter-row" id="kw-row" style="display:none">
+          <span class="filter-label">키워드</span>
+        </div>
       </div>
     </div>
-
     <div class="posts" id="posts"></div>
+  </div>
 
-  </main>
+  <!-- 미리보기 패널 -->
+  <div class="preview-pane" id="preview-pane">
+    <div class="preview-header" id="preview-header">
+      <span class="preview-title" id="preview-title"></span>
+      <button class="btn-open" id="btn-open" onclick="openInNew()">새 탭으로 열기</button>
+    </div>
+    <div class="preview-empty" id="preview-empty">
+      <div class="preview-empty-icon">←</div>
+      <div class="preview-empty-text">게시물을 클릭하면 여기서 볼 수 있어요</div>
+    </div>
+    <iframe class="preview-frame" id="preview-frame" sandbox="allow-same-origin allow-scripts allow-forms"></iframe>
+    <div class="preview-blocked" id="preview-blocked">
+      <div class="preview-blocked-icon">🔒</div>
+      <div class="preview-blocked-title">미리보기를 차단한 페이지예요</div>
+      <div class="preview-blocked-desc">일부 사이트는 외부에서 불러오는 걸 막아요.<br>새 탭에서 직접 열어볼 수 있어요.</div>
+      <button class="btn-goto" onclick="openInNew()">새 탭으로 열기</button>
+    </div>
+  </div>
+
 </div>
 
 <script>
 const O='areumjin', R='hongik-monitor';
-let cfg={sources:[],keywords:[]}, cards=[], src='all', kw='all';
+let cfg={sources:[],keywords:[]}, cards=[], activeSrc='all', activeKw='all';
+let currentUrl='', currentTitle='';
 
 async function get(p){
   const r=await fetch(`https://raw.githubusercontent.com/${O}/${R}/main/${p}?_=${Date.now()}`);
-  if(!r.ok)throw r.status; return r.json();
+  if(!r.ok) throw r.status; return r.json();
 }
 
 async function init(){
   const t=localStorage.getItem('gh_token');
   if(t) document.getElementById('gh-token').value=t;
-  try{ cfg=await get('config.json'); }catch(e){
+  try{ cfg=await get('config.json'); }
+  catch(e){
     cfg={sources:[
       {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
       {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
@@ -315,50 +417,97 @@ function renderFilters(){
       b.className='fb'; b.dataset.kw=k; b.textContent=k;
       b.onclick=()=>setKw(b); kr.appendChild(b);
     });
-  } else { kr.style.display='none'; }
+  } else kr.style.display='none';
 }
 
 function renderPosts(){
   document.getElementById('total-n').textContent=cards.length;
   document.getElementById('kw-n').textContent=cards.filter(c=>cfg.keywords.some(k=>c.title.includes(k))).length;
-  const vis=cards.filter(c=>{
-    return (src==='all'||c.source_id===src)&&(kw==='all'||c.title.includes(kw));
-  });
+  const vis=cards.filter(c=>(activeSrc==='all'||c.source_id===activeSrc)&&(activeKw==='all'||c.title.includes(activeKw)));
   const el=document.getElementById('posts');
-  if(!vis.length){ el.innerHTML='<div class="empty">게시물이 없습니다<br>Actions에서 Run workflow를 실행해주세요</div>'; return; }
+  if(!vis.length){ el.innerHTML='<div class="empty">게시물이 없습니다<br>Actions에서 Run workflow를<br>실행해주세요</div>'; return; }
   el.innerHTML=vis.map(c=>{
     const m=cfg.keywords.filter(k=>c.title.includes(k));
     const badges=m.map(k=>`<span class="kw-badge">${k}</span>`).join('');
-    return `<div class="card">
+    return `<div class="card" onclick="openPreview('${encodeURIComponent(c.url)}','${encodeURIComponent(c.title||'')}',this)">
       <div class="card-top"><span class="src-pill">${c.source_name}</span>${c.date?`<span class="card-date">${c.date}</span>`:''}</div>
-      <a class="card-title" href="${c.url}" target="_blank" rel="noopener">${c.title||'(제목 없음)'}</a>
+      <div class="card-title">${c.title||'(제목 없음)'}</div>
       ${badges?`<div class="card-kw">${badges}</div>`:''}
     </div>`;
   }).join('');
 }
 
+function openPreview(encodedUrl, encodedTitle, cardEl){
+  const url=decodeURIComponent(encodedUrl);
+  const title=decodeURIComponent(encodedTitle);
+  currentUrl=url; currentTitle=title;
+
+  // 카드 활성화
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('active'));
+  cardEl.classList.add('active');
+
+  // 헤더
+  document.getElementById('preview-title').textContent=title;
+  document.getElementById('preview-header').classList.add('show');
+
+  // 상태 초기화
+  document.getElementById('preview-empty').style.display='none';
+  document.getElementById('preview-blocked').classList.remove('show');
+
+  const frame=document.getElementById('preview-frame');
+  frame.classList.remove('show');
+  frame.src='';
+
+  // iframe 로드 시도
+  frame.onload=function(){
+    try{
+      // X-Frame-Options 체크는 불가능하므로 일단 보여줌
+      frame.classList.add('show');
+    }catch(e){
+      showBlocked();
+    }
+  };
+  frame.onerror=function(){ showBlocked(); };
+
+  // 홍익대 사이트는 iframe 차단 → 바로 blocked 표시
+  if(url.includes('hongik.ac.kr')){
+    showBlocked();
+  } else {
+    frame.src=url;
+  }
+}
+
+function showBlocked(){
+  document.getElementById('preview-frame').classList.remove('show');
+  document.getElementById('preview-blocked').classList.add('show');
+}
+
+function openInNew(){
+  if(currentUrl) window.open(currentUrl,'_blank');
+}
+
 function setSrc(b){
   document.querySelectorAll('.fb[data-src]').forEach(x=>x.classList.remove('on-src'));
-  b.classList.add('on-src'); src=b.dataset.src; renderPosts();
+  b.classList.add('on-src'); activeSrc=b.dataset.src; renderPosts();
 }
 function setKw(b){
   const was=b.classList.contains('on-kw');
   document.querySelectorAll('.fb[data-kw]').forEach(x=>x.classList.remove('on-kw'));
-  kw=was?'all':(b.classList.add('on-kw'),b.dataset.kw); renderPosts();
+  activeKw=was?'all':(b.classList.add('on-kw'),b.dataset.kw); renderPosts();
 }
 function addKw(){
-  const el=document.getElementById('kw-in'), v=el.value.trim();
+  const el=document.getElementById('kw-in'),v=el.value.trim();
   if(!v||cfg.keywords.includes(v))return;
   cfg.keywords.push(v); el.value='';
   renderPanel(); renderFilters(); renderPosts();
 }
 function removeKw(k){
   cfg.keywords=cfg.keywords.filter(x=>x!==k);
-  if(kw===k)kw='all';
+  if(activeKw===k)activeKw='all';
   renderPanel(); renderFilters(); renderPosts();
 }
 function addUrl(){
-  const n=document.getElementById('url-name').value.trim(), u=document.getElementById('url-addr').value.trim();
+  const n=document.getElementById('url-name').value.trim(),u=document.getElementById('url-addr').value.trim();
   if(!n||!u){alert('이름과 URL을 모두 입력해주세요');return;}
   cfg.sources.push({id:'src_'+Date.now(),name:n,url:u,enabled:true});
   document.getElementById('url-name').value=''; document.getElementById('url-addr').value='';
@@ -384,7 +533,7 @@ async function save(){
   b.disabled=false; b.textContent='GitHub에 저장하기';
 }
 function showMsg(t,type){ const e=document.getElementById('save-msg'); e.textContent=t; e.className='save-msg '+type; setTimeout(()=>e.className='save-msg',4000); }
-function togglePanel(){ document.getElementById('panel').classList.toggle('open'); document.getElementById('btn-s').classList.toggle('active'); }
+function toggleSettings(){ document.getElementById('settings').classList.toggle('open'); document.getElementById('btn-s').classList.toggle('active'); }
 
 init();
 </script>
