@@ -8,35 +8,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --canvas-soft: #f6f5f4;
-    --canvas: #ffffff;
+    --canvas: #f6f5f4;
     --surface: #ffffff;
     --hairline: #e6e6e6;
     --ink: #000000;
-    --ink-secondary: #31302e;
+    --ink-2: #31302e;
     --ink-muted: #615d59;
     --ink-faint: #a39e98;
-    --primary: #0075de;
-    --primary-active: #005bab;
-    --primary-bg: #e8f2fd;
-    --keyword: #dd5b00;
-    --keyword-bg: #fff3e8;
-    --keyword-border: #f9c49a;
-    --shadow-1: 0 0.175px 1.041px rgba(0,0,0,0.01), 0 0.8px 2.925px rgba(0,0,0,0.02), 0 2.025px 7.847px rgba(0,0,0,0.027), 0 4px 18px rgba(0,0,0,0.04);
+    --blue: #0075de;
+    --blue-dark: #005bab;
+    --blue-bg: #eff6ff;
+    --blue-border: #bfdbfe;
     --r-xs: 4px;
-    --r-sm: 5px;
     --r-md: 8px;
     --r-lg: 12px;
-    --r-xl: 16px;
     --r-full: 9999px;
+    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Inter', -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-feature-settings: 'lnum','locl';
-    background: var(--canvas-soft);
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--canvas);
     color: var(--ink);
     min-height: 100vh;
     font-size: 15px;
@@ -46,358 +40,346 @@
 
   /* NAV */
   nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--canvas);
+    background: var(--surface);
     border-bottom: 1px solid var(--hairline);
     height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 24px;
+    padding: 0 28px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
   .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: -0.3px;
     color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .live-dot {
     width: 7px; height: 7px;
     border-radius: 50%;
-    background: #1aae39;
+    background: #22c55e;
     animation: blink 2s infinite;
   }
+  @keyframes blink { 0%,100%{opacity:1}50%{opacity:0.25} }
 
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .nav-right { display: flex; align-items: center; gap: 10px; }
 
-  .nav-right { display: flex; align-items: center; gap: 8px; }
-
-  .updated-label {
-    font-size: 14px;
-    font-weight: 400;
+  .nav-time {
+    font-size: 13px;
     color: var(--ink-faint);
   }
 
-  .btn-utility {
+  .btn-nav {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink-2);
     background: var(--surface);
-    color: var(--ink);
     border: 1px solid var(--hairline);
     border-radius: var(--r-md);
-    padding: 4px 14px;
-    font-family: inherit;
-    font-size: 15px;
-    font-weight: 500;
+    padding: 5px 14px;
     cursor: pointer;
     transition: background 0.1s;
-    line-height: 1.5;
   }
-  .btn-utility:hover { background: var(--canvas-soft); }
-  .btn-utility.active { background: var(--canvas-soft); }
+  .btn-nav:hover { background: var(--canvas); }
+  .btn-nav.active { background: var(--canvas); }
 
   /* LAYOUT */
-  .layout { display: flex; min-height: calc(100vh - 52px); }
+  .layout { display: flex; }
 
-  /* SETTINGS PANEL */
+  /* SETTINGS */
   .settings-panel {
     width: 300px;
     min-width: 300px;
-    background: var(--canvas);
+    background: var(--surface);
     border-right: 1px solid var(--hairline);
     padding: 24px 20px;
     display: none;
     flex-direction: column;
     gap: 28px;
     overflow-y: auto;
-    max-height: calc(100vh - 52px);
+    height: calc(100vh - 52px);
     position: sticky;
     top: 52px;
   }
-
   .settings-panel.open { display: flex; }
 
-  .section-label {
-    font-size: 12px;
+  .s-label {
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.125px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--ink-faint);
     margin-bottom: 10px;
   }
 
-  .token-notice {
-    background: var(--primary-bg);
+  .notice {
+    background: var(--blue-bg);
+    border: 1px solid var(--blue-border);
     border-radius: var(--r-lg);
-    padding: 12px 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--primary-active);
-    line-height: 1.5;
+    padding: 11px 13px;
+    font-size: 13px;
+    color: var(--blue-dark);
+    line-height: 1.55;
   }
-  .token-notice a { color: var(--primary); font-weight: 500; text-decoration: none; }
-  .token-notice a:hover { text-decoration: underline; }
+  .notice a { color: var(--blue); font-weight: 600; text-decoration: none; }
+  .notice a:hover { text-decoration: underline; }
 
   .field {
+    width: 100%;
     background: var(--surface);
     border: 1px solid #ddd;
     border-radius: var(--r-xs);
-    padding: 6px 10px;
+    padding: 7px 10px;
     font-family: inherit;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
     color: var(--ink);
     outline: none;
-    width: 100%;
-    transition: box-shadow 0.12s;
+    transition: border-color 0.1s, box-shadow 0.1s;
   }
-  .field:focus { box-shadow: var(--shadow-1); border-color: #bbb; }
+  .field:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,117,222,0.1); }
   .field::placeholder { color: var(--ink-faint); }
 
-  .input-row { display: flex; gap: 6px; }
-  .input-row .field { flex: 1; }
+  .row { display: flex; gap: 6px; }
+  .row .field { flex: 1; }
 
-  .btn-add {
-    background: var(--primary);
+  .btn-blue {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--blue);
     color: #fff;
     border: none;
     border-radius: var(--r-xs);
     padding: 0 13px;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
     cursor: pointer;
     white-space: nowrap;
     transition: background 0.1s;
   }
-  .btn-add:hover { background: var(--primary-active); }
+  .btn-blue:hover { background: var(--blue-dark); }
 
-  .tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 
   .tag {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 4px;
-    background: var(--canvas-soft);
-    border: 1px solid var(--hairline);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--blue-dark);
+    background: var(--blue-bg);
+    border: 1px solid var(--blue-border);
     border-radius: var(--r-full);
     padding: 3px 8px 3px 11px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.125px;
-    color: var(--ink-secondary);
   }
-  .tag.kw {
-    background: var(--keyword-bg);
-    border-color: var(--keyword-border);
-    color: var(--keyword);
-  }
-
-  .tag-del {
+  .tag-x {
     background: none; border: none; cursor: pointer;
     color: var(--ink-faint); font-size: 13px; line-height: 1;
-    padding: 0; display: flex; align-items: center;
-    transition: color 0.1s;
+    padding: 0; transition: color 0.1s;
   }
-  .tag-del:hover { color: #cc0000; }
+  .tag-x:hover { color: #dc2626; }
 
   .url-item {
-    background: var(--canvas-soft);
+    background: var(--canvas);
     border: 1px solid var(--hairline);
     border-radius: var(--r-lg);
     padding: 10px 12px;
     display: flex;
-    align-items: flex-start;
     gap: 8px;
-    margin-bottom: 6px;
+    align-items: flex-start;
+    margin-bottom: 5px;
   }
   .url-info { flex: 1; min-width: 0; }
-  .url-name { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; letter-spacing: -0.125px; }
-  .url-addr { font-size: 12px; color: var(--ink-faint); word-break: break-all; line-height: 1.4; }
-
-  .btn-del {
+  .url-name { font-size: 13px; font-weight: 600; color: var(--ink); letter-spacing: -0.1px; margin-bottom: 2px; }
+  .url-addr { font-size: 11px; color: var(--ink-faint); word-break: break-all; line-height: 1.4; }
+  .url-x {
     background: none; border: none; cursor: pointer;
-    color: var(--ink-faint); font-size: 15px; padding: 0;
-    flex-shrink: 0; transition: color 0.1s;
+    color: var(--ink-faint); font-size: 15px;
+    flex-shrink: 0; padding: 0; transition: color 0.1s;
   }
-  .btn-del:hover { color: #cc0000; }
+  .url-x:hover { color: #dc2626; }
 
-  .url-add-form { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+  .url-form { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
 
   .btn-save {
     width: 100%;
-    background: var(--primary);
-    color: #fff;
-    border: none;
-    border-radius: var(--r-full);
-    padding: 9px;
     font-family: inherit;
     font-size: 15px;
     font-weight: 500;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    border-radius: var(--r-full);
+    padding: 10px;
     cursor: pointer;
     transition: background 0.1s;
   }
-  .btn-save:hover { background: var(--primary-active); }
+  .btn-save:hover { background: var(--blue-dark); }
   .btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
 
   .save-msg {
     display: none;
+    font-size: 13px;
     text-align: center;
-    font-size: 14px;
-    font-weight: 400;
     padding: 8px;
     border-radius: var(--r-lg);
-    margin-top: 8px;
+    margin-top: 6px;
   }
-  .save-msg.ok { display: block; background: #e6f9ec; color: #15803d; }
-  .save-msg.err { display: block; background: #fde8e8; color: #cc0000; }
+  .save-msg.ok { display: block; background: #dcfce7; color: #15803d; }
+  .save-msg.err { display: block; background: #fee2e2; color: #dc2626; }
 
   /* MAIN */
-  .main { flex: 1; padding: 28px 32px; min-width: 0; max-width: 860px; }
+  .main {
+    flex: 1;
+    padding: 32px 36px;
+    min-width: 0;
+    max-width: 800px;
+  }
 
   /* STATS */
-  .stats { display: flex; gap: 10px; margin-bottom: 24px; }
+  .stats { display: flex; gap: 12px; margin-bottom: 28px; }
 
   .stat {
     background: var(--surface);
     border: 1px solid var(--hairline);
     border-radius: var(--r-lg);
-    padding: 14px 20px;
-    box-shadow: var(--shadow-1);
-    min-width: 100px;
+    padding: 16px 22px;
+    box-shadow: var(--shadow);
   }
-
-  .stat-num {
+  .stat-n {
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -1px;
-    color: var(--ink);
+    letter-spacing: -1.5px;
     line-height: 1;
+    color: var(--ink);
     margin-bottom: 4px;
   }
-  .stat-num.orange { color: var(--keyword); }
-
-  .stat-label {
-    font-size: 14px;
-    font-weight: 400;
+  .stat-n.blue { color: var(--blue); }
+  .stat-l {
+    font-size: 13px;
     color: var(--ink-muted);
   }
 
   /* FILTERS */
-  .filters {
+  .filter-row {
     display: flex;
     align-items: center;
     gap: 6px;
     flex-wrap: wrap;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 
-  .filter-label {
-    font-size: 12px;
+  .filter-section-label {
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.125px;
-    color: var(--ink-faint);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: var(--ink-faint);
     margin-right: 2px;
   }
 
-  .filter-btn {
+  .f-btn {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
     background: var(--surface);
-    border: 1px solid var(--hairline);
     color: var(--ink-muted);
+    border: 1px solid var(--hairline);
     border-radius: var(--r-full);
     padding: 4px 13px;
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.125px;
     cursor: pointer;
     transition: all 0.1s;
     white-space: nowrap;
   }
-  .filter-btn:hover { background: var(--canvas-soft); color: var(--ink); }
-  .filter-btn.active-src { background: var(--ink); border-color: var(--ink); color: #fff; }
-  .filter-btn.active-kw { background: var(--keyword-bg); border-color: var(--keyword-border); color: var(--keyword); }
+  .f-btn:hover { background: var(--canvas); color: var(--ink); }
+  .f-btn.on-src { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .f-btn.on-kw { background: var(--blue-bg); border-color: var(--blue-border); color: var(--blue-dark); font-weight: 600; }
 
-  .sep { width: 1px; height: 14px; background: var(--hairline); }
+  .filters-wrap { margin-bottom: 20px; }
 
-  /* CARDS */
-  .posts { display: flex; flex-direction: column; gap: 4px; }
+  /* POSTS */
+  .posts { display: flex; flex-direction: column; gap: 6px; }
 
   .card {
     background: var(--surface);
     border: 1px solid var(--hairline);
     border-radius: var(--r-lg);
-    padding: 14px 18px;
-    transition: box-shadow 0.1s;
+    padding: 16px 20px;
+    transition: box-shadow 0.1s, border-color 0.1s;
   }
-  .card:hover { box-shadow: var(--shadow-1); }
-  .card.highlight { border-left: 3px solid var(--keyword); }
+  .card:hover { box-shadow: var(--shadow); border-color: #d4d4d0; }
 
-  .card-meta {
+  .card-top {
     display: flex;
     align-items: center;
-    gap: 7px;
-    margin-bottom: 5px;
+    gap: 6px;
+    margin-bottom: 6px;
   }
 
-  .src-tag {
-    font-size: 12px;
+  .src-pill {
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.125px;
-    color: var(--primary);
-    background: var(--primary-bg);
+    letter-spacing: 0.04em;
+    color: var(--blue);
+    background: var(--blue-bg);
+    border: 1px solid var(--blue-border);
     border-radius: var(--r-full);
-    padding: 2px 8px;
+    padding: 2px 9px;
   }
 
   .card-date {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
     color: var(--ink-faint);
+    margin-left: auto;
   }
 
   .card-title {
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: var(--ink-secondary);
+    color: var(--ink-2);
     text-decoration: none;
-    line-height: 1.5;
-    transition: color 0.1s;
+    line-height: 1.55;
+    letter-spacing: -0.1px;
+    margin-bottom: 0;
   }
-  .card-title:hover { color: var(--primary); }
+  .card-title:hover { color: var(--blue); }
 
-  .badges { display: flex; gap: 5px; margin-top: 7px; flex-wrap: wrap; }
+  /* 키워드 배지 — 제목과 구분된 줄 */
+  .card-badges {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--hairline);
+  }
 
   .badge {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.125px;
-    color: var(--keyword);
-    background: var(--keyword-bg);
-    border: 1px solid var(--keyword-border);
+    letter-spacing: 0.04em;
+    color: var(--blue-dark);
+    background: var(--blue-bg);
+    border: 1px solid var(--blue-border);
     border-radius: var(--r-full);
-    padding: 2px 8px;
+    padding: 2px 9px;
   }
 
   .empty {
     text-align: center;
     color: var(--ink-faint);
-    font-size: 15px;
-    padding: 56px 0;
-    line-height: 1.7;
-  }
-
-  @media (max-width: 600px) {
-    .main { padding: 16px; }
-    nav { padding: 0 16px; }
-    .settings-panel { width: 100%; min-width: unset; position: fixed; top: 52px; left: 0; height: calc(100vh - 52px); z-index: 90; }
+    font-size: 14px;
+    padding: 60px 0;
+    line-height: 1.8;
   }
 </style>
 </head>
@@ -409,44 +391,44 @@
     홍익대 공지 모니터
   </div>
   <div class="nav-right">
-    <span class="updated-label" id="updated-label">—</span>
-    <button class="btn-utility" id="btn-settings" onclick="toggleSettings()">설정</button>
+    <span class="nav-time" id="nav-time">—</span>
+    <button class="btn-nav" id="btn-s" onclick="toggleSettings()">설정</button>
   </div>
 </nav>
 
 <div class="layout">
 
-  <aside class="settings-panel" id="settings-panel">
+  <aside class="settings-panel" id="panel">
 
     <div>
-      <div class="section-label">GitHub 연동</div>
-      <div class="token-notice">
+      <div class="s-label">GitHub 연동</div>
+      <div class="notice">
         설정 저장을 위해 GitHub Personal Access Token이 필요해요.
         <a href="https://github.com/settings/tokens/new?scopes=repo&description=hongik-monitor" target="_blank">여기서 발급</a>
         (repo 권한 선택 후 생성)
       </div>
       <div style="margin-top:8px">
-        <input class="field" type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" />
+        <input class="field" type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx">
       </div>
-      <div style="font-size:12px;color:var(--ink-faint);margin-top:5px">브라우저에만 저장돼요</div>
+      <div style="font-size:11px;color:var(--ink-faint);margin-top:4px">브라우저에만 저장돼요</div>
     </div>
 
     <div>
-      <div class="section-label">키워드 알림</div>
-      <div class="input-row">
-        <input class="field" type="text" id="kw-input" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKeyword()" />
-        <button class="btn-add" onclick="addKeyword()">추가</button>
+      <div class="s-label">키워드 알림</div>
+      <div class="row">
+        <input class="field" type="text" id="kw-input" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKw()">
+        <button class="btn-blue" onclick="addKw()">추가</button>
       </div>
-      <div class="tag-list" id="kw-list"></div>
+      <div class="tags" id="kw-list"></div>
     </div>
 
     <div>
-      <div class="section-label">모니터링 URL</div>
+      <div class="s-label">모니터링 URL</div>
       <div id="url-list"></div>
-      <div class="url-add-form">
-        <input class="field" type="text" id="url-name" placeholder="이름 (예: 장학 공지)" />
-        <input class="field" type="text" id="url-input" placeholder="https://..." />
-        <button class="btn-add" style="padding:8px;border-radius:var(--r-xs);width:100%" onclick="addUrl()">+ URL 추가</button>
+      <div class="url-form">
+        <input class="field" type="text" id="url-name" placeholder="이름 (예: 장학 공지)">
+        <input class="field" type="text" id="url-addr" placeholder="https://...">
+        <button class="btn-blue" style="padding:8px;border-radius:var(--r-xs)" onclick="addUrl()">+ URL 추가</button>
       </div>
     </div>
 
@@ -461,19 +443,23 @@
 
     <div class="stats">
       <div class="stat">
-        <div class="stat-num" id="total-count">—</div>
-        <div class="stat-label">전체 게시물</div>
+        <div class="stat-n" id="total-n">—</div>
+        <div class="stat-l">전체 게시물</div>
       </div>
       <div class="stat">
-        <div class="stat-num orange" id="kw-count">—</div>
-        <div class="stat-label">키워드 매칭</div>
+        <div class="stat-n blue" id="kw-n">—</div>
+        <div class="stat-l">키워드 매칭</div>
       </div>
     </div>
 
-    <div class="filters" id="filters">
-      <span class="filter-label">출처</span>
-      <button class="filter-btn active-src" data-source="all" onclick="filterSrc(this)">전체</button>
-      <div class="sep"></div>
+    <div class="filters-wrap">
+      <div class="filter-row" id="src-row">
+        <span class="filter-section-label">출처</span>
+        <button class="f-btn on-src" data-src="all" onclick="setSrc(this)">전체</button>
+      </div>
+      <div class="filter-row" id="kw-row" style="display:none">
+        <span class="filter-section-label">키워드</span>
+      </div>
     </div>
 
     <div class="posts" id="posts"></div>
@@ -482,109 +468,89 @@
 </div>
 
 <script>
-const OWNER = 'areumjin';
-const REPO  = 'hongik-monitor';
+const OWNER = 'areumjin', REPO = 'hongik-monitor';
+let cfg = { sources:[], keywords:[] };
+let cards = [];
+let activeSrc = 'all', activeKw = 'all';
 
-let config = { sources:[], keywords:[] };
-let allCards = [];
-let activeSrc = 'all';
-let activeKw  = 'all';
-
-async function fetchJSON(path) {
-  const res = await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${path}?_=${Date.now()}`);
-  if (!res.ok) throw new Error(res.status);
-  return res.json();
+async function get(path) {
+  const r = await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${path}?_=${Date.now()}`);
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
 }
 
 async function init() {
-  const token = localStorage.getItem('gh_token');
-  if (token) document.getElementById('gh-token').value = token;
+  const t = localStorage.getItem('gh_token');
+  if (t) document.getElementById('gh-token').value = t;
 
-  try {
-    config = await fetchJSON('config.json');
-  } catch(e) {
-    config = {
-      sources:[
-        {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
-        {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
-      ],
-      keywords:['창업','지원금','장학금']
-    };
+  try { cfg = await get('config.json'); } catch(e) {
+    cfg = { sources:[
+      {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
+      {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
+    ], keywords:['창업','지원금','장학금'] };
   }
 
   try {
-    const data = await fetchJSON('docs/posts.json');
-    allCards = data.posts || [];
-    document.getElementById('updated-label').textContent = '마지막 업데이트: ' + (data.updated || '—');
+    const data = await get('docs/posts.json');
+    cards = data.posts || [];
+    document.getElementById('nav-time').textContent = '마지막 업데이트: ' + (data.updated || '—');
   } catch(e) {
-    allCards = [];
-    document.getElementById('updated-label').textContent = 'Run workflow 실행 필요';
+    cards = [];
+    document.getElementById('nav-time').textContent = 'Run workflow 실행 필요';
   }
 
-  renderSettings();
-  renderFilters();
-  renderPosts();
+  renderPanel(); renderFilters(); renderPosts();
 }
 
-function renderSettings() {
-  document.getElementById('kw-list').innerHTML = config.keywords.map(kw =>
-    `<span class="tag kw">${kw}<button class="tag-del" onclick="removeKeyword('${kw}')">×</button></span>`
+function renderPanel() {
+  document.getElementById('kw-list').innerHTML = cfg.keywords.map(k =>
+    `<span class="tag">${k}<button class="tag-x" onclick="removeKw('${k}')">×</button></span>`
   ).join('');
-
-  document.getElementById('url-list').innerHTML = config.sources.map((s,i) =>
+  document.getElementById('url-list').innerHTML = cfg.sources.map((s,i) =>
     `<div class="url-item">
-      <div class="url-info">
-        <div class="url-name">${s.name}</div>
-        <div class="url-addr">${s.url}</div>
-      </div>
-      <button class="btn-del" onclick="removeUrl(${i})">×</button>
+      <div class="url-info"><div class="url-name">${s.name}</div><div class="url-addr">${s.url}</div></div>
+      <button class="url-x" onclick="removeUrl(${i})">×</button>
     </div>`
   ).join('');
 }
 
 function renderFilters() {
-  const f = document.getElementById('filters');
-  while (f.children.length > 3) f.removeChild(f.lastChild);
-
-  config.sources.forEach(s => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn';
-    btn.dataset.source = s.id;
-    btn.textContent = s.name;
-    btn.onclick = () => filterSrc(btn);
-    f.appendChild(btn);
+  // 출처 필터
+  const srcRow = document.getElementById('src-row');
+  while (srcRow.children.length > 2) srcRow.removeChild(srcRow.lastChild);
+  cfg.sources.forEach(s => {
+    const b = document.createElement('button');
+    b.className = 'f-btn'; b.dataset.src = s.id; b.textContent = s.name;
+    b.onclick = () => setSrc(b);
+    srcRow.appendChild(b);
   });
 
-  if (config.keywords.length) {
-    const sep = document.createElement('div');
-    sep.className = 'sep';
-    f.appendChild(sep);
-    const lbl = document.createElement('span');
-    lbl.className = 'filter-label';
-    lbl.textContent = '키워드';
-    f.appendChild(lbl);
-    config.keywords.forEach(kw => {
-      const btn = document.createElement('button');
-      btn.className = 'filter-btn';
-      btn.dataset.kw = kw;
-      btn.textContent = kw;
-      btn.onclick = () => filterKw(btn);
-      f.appendChild(btn);
+  // 키워드 필터 — 별도 줄
+  const kwRow = document.getElementById('kw-row');
+  while (kwRow.children.length > 1) kwRow.removeChild(kwRow.lastChild);
+  if (cfg.keywords.length) {
+    kwRow.style.display = 'flex';
+    cfg.keywords.forEach(k => {
+      const b = document.createElement('button');
+      b.className = 'f-btn'; b.dataset.kw = k; b.textContent = k;
+      b.onclick = () => setKw(b);
+      kwRow.appendChild(b);
     });
+  } else {
+    kwRow.style.display = 'none';
   }
 }
 
 function renderPosts() {
-  const visible = allCards.filter(c => {
+  // 통계: 항상 전체 기준
+  document.getElementById('total-n').textContent = cards.length;
+  document.getElementById('kw-n').textContent = cards.filter(c => cfg.keywords.some(k => c.title.includes(k))).length;
+
+  const visible = cards.filter(c => {
     const ms = activeSrc === 'all' || c.source_id === activeSrc;
     const mk = activeKw === 'all' || c.title.includes(activeKw);
     return ms && mk;
   });
-
-  // 전체 게시물 수는 항상 고정 (필터 무관)
-  document.getElementById('total-count').textContent = allCards.length;
-  // 키워드 매칭은 전체 중 키워드 포함된 것만
-  document.getElementById('kw-count').textContent = allCards.filter(c => config.keywords.some(k => c.title.includes(k))).length;
 
   const container = document.getElementById('posts');
   if (!visible.length) {
@@ -593,93 +559,91 @@ function renderPosts() {
   }
 
   container.innerHTML = visible.map(c => {
-    const matched = config.keywords.filter(k => c.title.includes(k));
+    const matched = cfg.keywords.filter(k => c.title.includes(k));
     const badges = matched.map(k => `<span class="badge">${k}</span>`).join('');
-    return `<div class="card ${matched.length?'highlight':''}">
-      <div class="card-meta">
-        <span class="src-tag">${c.source_name}</span>
+    return `<div class="card">
+      <div class="card-top">
+        <span class="src-pill">${c.source_name}</span>
         ${c.date ? `<span class="card-date">${c.date}</span>` : ''}
       </div>
       <a class="card-title" href="${c.url}" target="_blank" rel="noopener">${c.title||'(제목 없음)'}</a>
-      ${badges ? `<div class="badges">${badges}</div>` : ''}
+      ${badges ? `<div class="card-badges">${badges}</div>` : ''}
     </div>`;
   }).join('');
 }
 
-function filterSrc(btn) {
-  document.querySelectorAll('.filter-btn[data-source]').forEach(b => b.classList.remove('active-src'));
-  btn.classList.add('active-src');
-  activeSrc = btn.dataset.source;
+function setSrc(btn) {
+  document.querySelectorAll('.f-btn[data-src]').forEach(b => b.classList.remove('on-src'));
+  btn.classList.add('on-src');
+  activeSrc = btn.dataset.src;
   renderPosts();
 }
 
-function filterKw(btn) {
-  const was = btn.classList.contains('active-kw');
-  document.querySelectorAll('.filter-btn[data-kw]').forEach(b => b.classList.remove('active-kw'));
-  if (!was) { btn.classList.add('active-kw'); activeKw = btn.dataset.kw; }
-  else activeKw = 'all';
+function setKw(btn) {
+  const was = btn.classList.contains('on-kw');
+  document.querySelectorAll('.f-btn[data-kw]').forEach(b => b.classList.remove('on-kw'));
+  activeKw = was ? 'all' : (btn.classList.add('on-kw'), btn.dataset.kw);
   renderPosts();
 }
 
-function addKeyword() {
-  const input = document.getElementById('kw-input');
-  const val = input.value.trim();
-  if (!val || config.keywords.includes(val)) return;
-  config.keywords.push(val);
-  input.value = '';
-  renderSettings(); renderFilters(); renderPosts();
+function addKw() {
+  const el = document.getElementById('kw-input');
+  const v = el.value.trim();
+  if (!v || cfg.keywords.includes(v)) return;
+  cfg.keywords.push(v); el.value = '';
+  renderPanel(); renderFilters(); renderPosts();
 }
 
-function removeKeyword(kw) {
-  config.keywords = config.keywords.filter(k => k !== kw);
-  if (activeKw === kw) activeKw = 'all';
-  renderSettings(); renderFilters(); renderPosts();
+function removeKw(k) {
+  cfg.keywords = cfg.keywords.filter(x => x !== k);
+  if (activeKw === k) activeKw = 'all';
+  renderPanel(); renderFilters(); renderPosts();
 }
 
 function addUrl() {
   const name = document.getElementById('url-name').value.trim();
-  const url  = document.getElementById('url-input').value.trim();
+  const url = document.getElementById('url-addr').value.trim();
   if (!name || !url) { alert('이름과 URL을 모두 입력해주세요'); return; }
-  config.sources.push({ id: 'src_' + Date.now(), name, url, enabled: true });
+  cfg.sources.push({ id:'src_'+Date.now(), name, url, enabled:true });
   document.getElementById('url-name').value = '';
-  document.getElementById('url-input').value = '';
-  renderSettings(); renderFilters();
+  document.getElementById('url-addr').value = '';
+  renderPanel(); renderFilters();
 }
 
 function removeUrl(i) {
-  config.sources.splice(i, 1);
-  renderSettings(); renderFilters(); renderPosts();
+  cfg.sources.splice(i,1);
+  renderPanel(); renderFilters(); renderPosts();
 }
 
 async function saveConfig() {
   const token = document.getElementById('gh-token').value.trim();
-  if (!token) { showMsg('GitHub 토큰을 입력해주세요', 'err'); return; }
+  if (!token) { showMsg('GitHub 토큰을 입력해주세요','err'); return; }
   localStorage.setItem('gh_token', token);
   const btn = document.getElementById('btn-save');
   btn.disabled = true; btn.textContent = '저장 중...';
   try {
-    const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
-    const fileData = await (await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`, { headers })).json();
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(config, null, 2))));
-    const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`, {
-      method: 'PUT', headers,
-      body: JSON.stringify({ message: 'config: 대시보드에서 업데이트', content, sha: fileData.sha })
+    const h = { Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' };
+    const fd = await (await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`,{headers:h})).json();
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2))));
+    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`,{
+      method:'PUT', headers:h,
+      body:JSON.stringify({message:'config: 대시보드에서 업데이트', content, sha:fd.sha})
     });
-    if (res.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다', 'ok');
-    else { const e = await res.json(); showMsg('실패: ' + (e.message||'토큰 확인'), 'err'); }
-  } catch(e) { showMsg('오류: ' + e.message, 'err'); }
-  btn.disabled = false; btn.textContent = 'GitHub에 저장하기';
+    if (r.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다','ok');
+    else { const e=await r.json(); showMsg('실패: '+(e.message||'토큰 확인'),'err'); }
+  } catch(e) { showMsg('오류: '+e.message,'err'); }
+  btn.disabled=false; btn.textContent='GitHub에 저장하기';
 }
 
-function showMsg(text, type) {
+function showMsg(txt, type) {
   const el = document.getElementById('save-msg');
-  el.textContent = text; el.className = 'save-msg ' + type;
-  setTimeout(() => el.className = 'save-msg', 4000);
+  el.textContent = txt; el.className = 'save-msg '+type;
+  setTimeout(()=>el.className='save-msg', 4000);
 }
 
 function toggleSettings() {
-  document.getElementById('settings-panel').classList.toggle('open');
-  document.getElementById('btn-settings').classList.toggle('active');
+  document.getElementById('panel').classList.toggle('open');
+  document.getElementById('btn-s').classList.toggle('active');
 }
 
 init();
