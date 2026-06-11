@@ -10,6 +10,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent
 CONFIG_PATH = BASE_DIR / "config.json"
 SEEN_PATH = BASE_DIR / "seen_posts.json"
+POSTS_PATH = BASE_DIR / "docs" / "posts.json"
 OUTPUT_PATH = BASE_DIR / "docs" / "index.html"
 
 KST = timezone(timedelta(hours=9))
@@ -553,6 +554,13 @@ def main():
 
     # 새 게시물 요약 출력
     print(f"\n신규: {len(new_posts)}개 / 키워드 매칭: {len(keyword_posts)}개")
+
+    # posts.json 저장 (대시보드용)
+    POSTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    now_str = datetime.now(KST).strftime("%Y.%m.%d %H:%M")
+    with open(POSTS_PATH, "w", encoding="utf-8") as f:
+        json.dump({"updated": now_str, "posts": all_posts}, f, ensure_ascii=False, indent=2)
+    print(f"[JSON] posts.json 저장 완료 ({len(all_posts)}개)")
 
     # HTML 생성
     generate_html(all_posts, config["keywords"], config["sources"])
