@@ -3,560 +3,671 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>홍익대 공지 모니터</title>
+<title>Areum announcement monitor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0a0f;
-    --surface: #13131a;
-    --surface2: #1c1c26;
-    --border: #2a2a38;
-    --accent: #6c63ff;
-    --accent2: #ff6584;
-    --text: #e8e8f0;
-    --text-muted: #6b6b80;
-    --keyword: #ffd166;
-    --radius: 12px;
+    --bg: #f5f5f3;
+    --surface: #ffffff;
+    --surface2: #f0f0ee;
+    --border: #e8e8e4;
+    --border2: #d4d4cf;
+    --text: #1a1a18;
+    --text-muted: #888882;
+    --accent: #1a1a18;
+    --accent-light: #f0f0ee;
+    --keyword: #b45309;
+    --keyword-bg: #fef3c7;
+    --keyword-border: #fde68a;
+    --blue: #2563eb;
+    --blue-bg: #eff6ff;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --radius-xl: 18px;
+    --radius-pill: 999px;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
-    font-family: 'Pretendard', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-feature-settings: 'cv01','cv05','cv09','cv11','ss03','ss07';
     background: var(--bg);
     color: var(--text);
     min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.14px;
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* 헤더 */
-  header {
-    padding: 2.5rem 2rem 1.5rem;
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--surface);
     border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .logo {
+    height: 52px;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: space-between;
+    padding: 0 20px;
   }
 
-  .logo-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 12px var(--accent);
-    animation: pulse 2s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; box-shadow: 0 0 12px var(--accent); }
-    50% { opacity: 0.6; box-shadow: 0 0 24px var(--accent); }
-  }
-
-  h1 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
     color: var(--text);
   }
 
-  .updated {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    letter-spacing: 0.02em;
+  .live-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #22c55e;
+    animation: blink 2s infinite;
   }
 
-  /* 탭 */
-  .tabs {
-    display: flex;
-    gap: 0.5rem;
-    padding: 1.25rem 2rem;
-    border-bottom: 1px solid var(--border);
-    overflow-x: auto;
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .nav-right { display: flex; align-items: center; gap: 8px; }
+
+  .updated-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    letter-spacing: -0.12px;
   }
 
-  .tab-btn {
-    background: none;
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-    padding: 0.45rem 1rem;
-    border-radius: 99px;
+  .btn-nav {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border2);
+    border-radius: var(--radius-pill);
+    padding: 6px 14px;
     font-family: inherit;
-    font-size: 0.82rem;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .btn-nav:hover { background: var(--surface2); }
+  .btn-nav.active { background: var(--accent); color: white; border-color: var(--accent); }
+
+  .layout { display: flex; min-height: calc(100vh - 52px); }
+
+  /* SETTINGS */
+  .settings-panel {
+    width: 300px;
+    min-width: 300px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: 20px 16px;
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    max-height: calc(100vh - 52px);
+    position: sticky;
+    top: 52px;
+  }
+
+  .settings-panel.open { display: flex; }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+  }
+
+  .token-notice {
+    background: var(--blue-bg);
+    border: 1px solid #bfdbfe;
+    border-radius: var(--radius-md);
+    padding: 10px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1d4ed8;
+    letter-spacing: -0.12px;
+    line-height: 1.55;
+  }
+  .token-notice a { color: #1d4ed8; font-weight: 600; }
+
+  .field {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: var(--radius-md);
+    padding: 8px 11px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.13px;
+    color: var(--text);
+    outline: none;
+    width: 100%;
+    transition: border-color 0.12s, box-shadow 0.12s;
+  }
+  .field:focus {
+    border-color: #93c5fd;
+    box-shadow: 0 0 0 2px #dbeafe;
+  }
+  .field::placeholder { color: var(--text-muted); }
+
+  .input-row { display: flex; gap: 6px; }
+  .input-row .field { flex: 1; }
+
+  .btn-add {
+    background: var(--text);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0 13px;
+    font-family: inherit;
+    font-size: 13px;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.2s;
     white-space: nowrap;
+    transition: opacity 0.12s;
   }
+  .btn-add:hover { opacity: 0.75; }
 
-  .tab-btn:hover {
-    border-color: var(--accent);
+  .tag-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+
+  .tag {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    padding: 3px 8px 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
     color: var(--text);
+    letter-spacing: -0.12px;
+  }
+  .tag.kw {
+    background: var(--keyword-bg);
+    border-color: var(--keyword-border);
+    color: var(--keyword);
   }
 
-  .tab-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
+  .tag-del {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-muted); font-size: 13px; line-height: 1;
+    padding: 0; display: flex; align-items: center;
+    transition: color 0.12s;
+  }
+  .tag-del:hover { color: #ef4444; }
+
+  .url-item {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 9px 11px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .url-info { flex: 1; min-width: 0; }
+  .url-name { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 2px; letter-spacing: -0.12px; }
+  .url-addr { font-size: 11px; color: var(--text-muted); word-break: break-all; line-height: 1.4; }
+
+  .btn-del {
+    background: none; border: none; cursor: pointer;
+    color: var(--text-muted); font-size: 15px; padding: 0;
+    flex-shrink: 0; transition: color 0.12s;
+  }
+  .btn-del:hover { color: #ef4444; }
+
+  .url-add-form { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
+
+  .btn-save {
+    width: 100%;
+    background: var(--text);
+    color: white;
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 9px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.13px;
+    cursor: pointer;
+    transition: opacity 0.12s;
+  }
+  .btn-save:hover { opacity: 0.75; }
+  .btn-save:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  .save-msg {
+    display: none;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px;
+    border-radius: var(--radius-md);
+    margin-top: 6px;
+    letter-spacing: -0.12px;
+  }
+  .save-msg.ok { display: block; background: #dcfce7; color: #15803d; }
+  .save-msg.err { display: block; background: #fee2e2; color: #dc2626; }
+
+  /* MAIN */
+  .main { flex: 1; padding: 20px; min-width: 0; }
+
+  .stats {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
-  /* 키워드 필터 */
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 12px 16px;
+    min-width: 88px;
+  }
+
+  .stat-num {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    color: var(--text);
+    line-height: 1;
+    margin-bottom: 3px;
+  }
+  .stat-num.amber { color: var(--keyword); }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    color: var(--text-muted);
+  }
+
   .filters {
     display: flex;
-    gap: 0.5rem;
-    padding: 1rem 2rem;
     align-items: center;
+    gap: 5px;
     flex-wrap: wrap;
-  }
-
-  .filter-label {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    margin-right: 0.25rem;
+    margin-bottom: 14px;
   }
 
   .filter-btn {
-    background: none;
+    background: var(--surface);
     border: 1px solid var(--border);
     color: var(--text-muted);
-    padding: 0.3rem 0.75rem;
-    border-radius: 99px;
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
     font-family: inherit;
-    font-size: 0.78rem;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.12px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.12s;
+    white-space: nowrap;
   }
+  .filter-btn:hover { border-color: var(--border2); color: var(--text); }
+  .filter-btn.active-src { background: var(--text); border-color: var(--text); color: white; }
+  .filter-btn.active-kw { background: var(--keyword-bg); border-color: var(--keyword-border); color: var(--keyword); }
 
-  .filter-btn.active {
-    background: var(--keyword);
-    border-color: var(--keyword);
-    color: #0a0a0f;
-    font-weight: 600;
-  }
+  .sep { width: 1px; height: 14px; background: var(--border2); }
 
-  /* 카드 목록 */
-  .posts {
-    padding: 1rem 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    max-width: 900px;
-  }
+  .posts { display: flex; flex-direction: column; gap: 3px; }
 
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1rem 1.25rem;
-    transition: all 0.2s;
+    border-radius: var(--radius-lg);
+    padding: 11px 14px;
+    transition: border-color 0.12s;
   }
-
-  .card:hover {
-    border-color: var(--accent);
-    background: var(--surface2);
-    transform: translateX(4px);
-  }
-
-  .card.highlight {
-    border-left: 3px solid var(--keyword);
-    background: color-mix(in srgb, var(--keyword) 5%, var(--surface));
-  }
+  .card:hover { border-color: var(--border2); }
+  .card.highlight { border-left: 2px solid var(--keyword); }
 
   .card-meta {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 0.45rem;
+    gap: 6px;
+    margin-bottom: 4px;
   }
 
-  .source-tag {
-    font-size: 0.7rem;
+  .src-tag {
+    font-size: 11px;
     font-weight: 600;
-    color: var(--accent);
-    background: color-mix(in srgb, var(--accent) 15%, transparent);
-    padding: 0.15rem 0.55rem;
-    border-radius: 99px;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.11px;
+    color: var(--blue);
+    background: var(--blue-bg);
+    border-radius: var(--radius-pill);
+    padding: 1px 7px;
   }
 
-  .date {
-    font-size: 0.72rem;
+  .card-date {
+    font-size: 11px;
+    font-weight: 500;
     color: var(--text-muted);
+    letter-spacing: -0.11px;
   }
 
   .card-title {
     display: block;
-    font-size: 0.9rem;
+    font-size: 13px;
     font-weight: 500;
+    letter-spacing: -0.13px;
     color: var(--text);
     text-decoration: none;
     line-height: 1.5;
-    letter-spacing: -0.01em;
+    transition: color 0.12s;
   }
+  .card-title:hover { color: var(--blue); }
 
-  .card-title:hover {
-    color: var(--accent);
-  }
-
-  .badges {
-    display: flex;
-    gap: 0.4rem;
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-  }
+  .badges { display: flex; gap: 4px; margin-top: 5px; flex-wrap: wrap; }
 
   .badge {
-    font-size: 0.68rem;
-    font-weight: 700;
-    color: #0a0a0f;
-    background: var(--keyword);
-    padding: 0.15rem 0.5rem;
-    border-radius: 4px;
-    letter-spacing: 0.02em;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--keyword);
+    background: var(--keyword-bg);
+    border: 1px solid var(--keyword-border);
+    border-radius: var(--radius-sm);
+    padding: 1px 6px;
+    letter-spacing: -0.11px;
   }
 
-  /* 빈 상태 */
   .empty {
-    padding: 4rem 2rem;
     text-align: center;
     color: var(--text-muted);
-    font-size: 0.9rem;
-  }
-
-  /* 통계 바 */
-  .stats {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .stat {
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
-
-  .stat-num {
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    color: var(--text);
-  }
-
-  .stat-label {
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: 600px) {
-    header, .tabs, .filters, .posts { padding-left: 1rem; padding-right: 1rem; }
-    h1 { font-size: 1.1rem; }
+    font-size: 13px;
+    font-weight: 500;
+    padding: 48px 0;
+    line-height: 1.7;
   }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <div class="logo-dot"></div>
-    <h1>홍익대 공지 모니터</h1>
+<nav>
+  <div class="nav-logo">
+    <div class="live-dot"></div>
+    홍익대 공지 모니터
   </div>
-  <span class="updated">마지막 업데이트: 2026.06.12 07:19</span>
-</header>
-
-<div class="stats">
-  <div class="stat">
-    <span class="stat-num" id="total-count">20</span>
-    <span class="stat-label">전체 게시물</span>
+  <div class="nav-right">
+    <span class="updated-label" id="updated-label">—</span>
+    <button class="btn-nav" id="btn-settings" onclick="toggleSettings()">설정</button>
   </div>
-  <div class="stat">
-    <span class="stat-num" id="keyword-count" style="color: var(--keyword)">6</span>
-    <span class="stat-label">키워드 매칭</span>
-  </div>
-</div>
+</nav>
 
-<div class="tabs">
-  <button class="tab-btn active" data-source="all">전체</button>
-  <button class="tab-btn" data-source="notice">공지사항</button>
-<button class="tab-btn" data-source="event">행사/공모전</button>
-<button class="tab-btn" data-source="src_1780312858705">세종 RISE 센터 공지사항</button>
+<div class="layout">
 
-</div>
+  <aside class="settings-panel" id="settings-panel">
 
-<div class="filters">
-  <span class="filter-label">키워드</span>
-  <button class="filter-btn active" data-keyword="all">전체</button>
-  <button class="filter-btn" data-keyword="창업">창업</button><button class="filter-btn" data-keyword="지원금">지원금</button><button class="filter-btn" data-keyword="장학금">장학금</button>
-</div>
+    <div>
+      <div class="section-label">GitHub 연동</div>
+      <div class="token-notice">
+        설정 저장을 위해 GitHub Personal Access Token이 필요해요.
+        <a href="https://github.com/settings/tokens/new?scopes=repo&description=hongik-monitor" target="_blank">여기서 발급</a>
+        (repo 권한 선택 후 생성)
+      </div>
+      <div style="margin-top:8px">
+        <input class="field" type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx" />
+      </div>
+      <div style="font-size:11px;color:var(--text-muted);margin-top:5px">브라우저에만 저장돼요</div>
+    </div>
 
-<div class="posts" id="posts-container">
-  
-        <article class="card highlight" data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152970&article.offset=0&articleLimit=10&noCat=396" target="_blank" rel="noopener">
-                [마포청년창업취업지원센터 나루] 창업 트렌드와 유망 창업 아이템 (~6/25)
-            </a>
-            <div class="badges"><span class="badge">창업</span></div>
-        </article>
-        
-        <article class="card highlight" data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152969&article.offset=0&articleLimit=10&noCat=396" target="_blank" rel="noopener">
-                [마포청년창업취업지원센터 나루] 내 아이디어로 창업 가능할까? (~6/17)
-            </a>
-            <div class="badges"><span class="badge">창업</span></div>
-        </article>
-        
-        <article class="card highlight" data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152968&article.offset=0&articleLimit=10&noCat=396" target="_blank" rel="noopener">
-                [마포청년창업취업지원센터 나루] 첫인상을 바꾸는 취업 전략, 퍼스널컬러 특강 (~6/19)
-            </a>
-            <div class="badges"><span class="badge">창업</span></div>
-        </article>
-        
-        <article class="card highlight" data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152967&article.offset=0&articleLimit=10&noCat=396" target="_blank" rel="noopener">
-                [마포청년창업취업지원센터 나루] 청년취업패스 : AI 면접 마스터 클래스 (~6/23)
-            </a>
-            <div class="badges"><span class="badge">창업</span></div>
-        </article>
-        
-        <article class="card " data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152966&article.offset=0&articleLimit=10&noCat=32" target="_blank" rel="noopener">
-                [세종/RISE사업단] 2026 장비 사용료 및 시험∙분석료 지원 프로그램 모집 공고
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152963&article.offset=0&articleLimit=10&noCat=396" target="_blank" rel="noopener">
-                [서울/취업진로지원센터] YBM 토익스피킹(TOEIC Speaking) 정기시험 응시료 할인 제공 혜택 안내
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=152962&noCat=742" target="_blank" rel="noopener">
-                2026学年秋季学期外国研究生结业生调查
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=152961&noCat=742" target="_blank" rel="noopener">
-                Fall 2026 Survey for International Graduate Students with Completion Status
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=152960&noCat=742" target="_blank" rel="noopener">
-                26-2 외국인 유학생(대학원생) 수료생 조사
-            </a>
-            
-        </article>
-        
-        <article class="card highlight" data-source="notice">
-            <div class="card-meta">
-                <span class="source-tag">공지사항</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=152958&article.offset=0&articleLimit=10&noCat=501" target="_blank" rel="noopener">
-                [산학협력재단] 2026 국내 외국인 근로자 자녀 장학금 신청 안내
-            </a>
-            <div class="badges"><span class="badge">장학금</span></div>
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152954&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] 제11회 전라남도 친환경·범용디자인 공모전
-            </a>
-            
-        </article>
-        
-        <article class="card highlight" data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152947&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] [마포청년창업취업지원센터 나루] 6월 취창업프로그램
-            </a>
-            <div class="badges"><span class="badge">창업</span></div>
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152946&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] [경남문화예술진흥원]2026 GNGC 글로벌 GAME JAM 서포터즈 홍보
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152945&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [모집] 「2026 안산 e스포츠산업 아카데미」교육생 모집
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152944&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] 「2026 인천공공디자인 공모전」참여 및 홍보
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152943&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [모집] 2026 서울시립일시청소년쉼터(이동형,동남) 하반기 자원활동가 모집
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152942&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [모집] 「나라키움 대학생주택」 ’26년 여름학기(7~8월) 정기모집
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152941&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [모집] 2026년 대학생 우정사회봉사단 7기 모집
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date"></span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152940&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] [경남문화예술진흥원]2026 GNGC GAME JAM 홍보
-            </a>
-            
-        </article>
-        
-        <article class="card " data-source="event">
-            <div class="card-meta">
-                <span class="source-tag">행사/공모전</span>
-                <span class="date">첨부파일</span>
-            </div>
-            <a class="card-title" href="https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=152939&article.offset=0&articleLimit=10" target="_blank" rel="noopener">
-                [홍보] 2026년 제18회 충청남도 공공디자인 공모전
-            </a>
-            
-        </article>
-        
+    <div>
+      <div class="section-label">키워드 알림</div>
+      <div class="input-row">
+        <input class="field" type="text" id="kw-input" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKeyword()" />
+        <button class="btn-add" onclick="addKeyword()">추가</button>
+      </div>
+      <div class="tag-list" id="kw-list"></div>
+    </div>
+
+    <div>
+      <div class="section-label">모니터링 URL</div>
+      <div id="url-list"></div>
+      <div class="url-add-form">
+        <input class="field" type="text" id="url-name" placeholder="이름 (예: 장학 공지)" />
+        <input class="field" type="text" id="url-input" placeholder="https://..." />
+        <button class="btn-add" style="padding:8px;border-radius:var(--radius-md);width:100%" onclick="addUrl()">+ URL 추가</button>
+      </div>
+    </div>
+
+    <div>
+      <button class="btn-save" id="btn-save" onclick="saveConfig()">GitHub에 저장하기</button>
+      <div class="save-msg" id="save-msg"></div>
+    </div>
+
+  </aside>
+
+  <main class="main">
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num" id="total-count">—</div>
+        <div class="stat-label">전체 게시물</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num amber" id="kw-count">—</div>
+        <div class="stat-label">키워드 매칭</div>
+      </div>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn active-src" data-source="all" onclick="filterSrc(this)">전체</button>
+      <div class="sep"></div>
+    </div>
+
+    <div class="posts" id="posts"></div>
+
+  </main>
 </div>
 
 <script>
-  const cards = document.querySelectorAll('.card');
-  let activeSource = 'all';
-  let activeKeyword = 'all';
+const OWNER = 'areumjin';
+const REPO  = 'hongik-monitor';
 
-  function filterCards() {
-    let visible = 0;
-    cards.forEach(card => {
-      const matchSource = activeSource === 'all' || card.dataset.source === activeSource;
-      const matchKeyword = activeKeyword === 'all' || card.innerHTML.includes(activeKeyword);
-      const show = matchSource && matchKeyword;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    document.getElementById('total-count').textContent = visible;
+let config = { sources:[], keywords:[] };
+let allCards = [];
+let activeSrc = 'all';
+let activeKw  = 'all';
+
+async function fetchJSON(path) {
+  const res = await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${path}?_=${Date.now()}`);
+  if (!res.ok) throw new Error(res.status);
+  return res.json();
+}
+
+async function init() {
+  const token = localStorage.getItem('gh_token');
+  if (token) document.getElementById('gh-token').value = token;
+
+  try {
+    config = await fetchJSON('config.json');
+  } catch(e) {
+    config = {
+      sources:[
+        {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
+        {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
+      ],
+      keywords:['창업','지원금','장학금']
+    };
   }
 
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeSource = btn.dataset.source;
-      filterCards();
+  try {
+    const data = await fetchJSON('docs/posts.json');
+    allCards = data.posts || [];
+    document.getElementById('updated-label').textContent = data.updated || '업데이트됨';
+  } catch(e) {
+    allCards = [];
+    document.getElementById('updated-label').textContent = 'Run workflow 실행 필요';
+  }
+
+  renderSettings();
+  renderFilters();
+  renderPosts();
+}
+
+function renderSettings() {
+  document.getElementById('kw-list').innerHTML = config.keywords.map(kw =>
+    `<span class="tag kw">${kw}<button class="tag-del" onclick="removeKeyword('${kw}')">×</button></span>`
+  ).join('');
+
+  document.getElementById('url-list').innerHTML = config.sources.map((s,i) =>
+    `<div class="url-item">
+      <div class="url-info">
+        <div class="url-name">${s.name}</div>
+        <div class="url-addr">${s.url}</div>
+      </div>
+      <button class="btn-del" onclick="removeUrl(${i})">×</button>
+    </div>`
+  ).join('');
+}
+
+function renderFilters() {
+  const f = document.getElementById('filters');
+  while (f.children.length > 2) f.removeChild(f.lastChild);
+  config.sources.forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.dataset.source = s.id;
+    btn.textContent = s.name;
+    btn.onclick = () => filterSrc(btn);
+    f.appendChild(btn);
+  });
+  if (config.keywords.length) {
+    const sep = document.createElement('div');
+    sep.className = 'sep';
+    f.appendChild(sep);
+    config.keywords.forEach(kw => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.kw = kw;
+      btn.textContent = kw;
+      btn.onclick = () => filterKw(btn);
+      f.appendChild(btn);
     });
+  }
+}
+
+function renderPosts() {
+  const visible = allCards.filter(c => {
+    const ms = activeSrc === 'all' || c.source_id === activeSrc;
+    const mk = activeKw === 'all' || c.title.includes(activeKw);
+    return ms && mk;
   });
 
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      activeKeyword = btn.dataset.keyword;
-      filterCards();
+  document.getElementById('total-count').textContent = visible.length;
+  document.getElementById('kw-count').textContent = visible.filter(c => config.keywords.some(k => c.title.includes(k))).length;
+
+  const container = document.getElementById('posts');
+  if (!visible.length) {
+    container.innerHTML = '<div class="empty">게시물이 없습니다<br>Actions에서 Run workflow를 실행해주세요</div>';
+    return;
+  }
+
+  container.innerHTML = visible.map(c => {
+    const matched = config.keywords.filter(k => c.title.includes(k));
+    const badges = matched.map(k => `<span class="badge">${k}</span>`).join('');
+    return `<div class="card ${matched.length?'highlight':''}">
+      <div class="card-meta">
+        <span class="src-tag">${c.source_name}</span>
+        ${c.date ? `<span class="card-date">${c.date}</span>` : ''}
+      </div>
+      <a class="card-title" href="${c.url}" target="_blank" rel="noopener">${c.title||'(제목 없음)'}</a>
+      ${badges ? `<div class="badges">${badges}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function filterSrc(btn) {
+  document.querySelectorAll('.filter-btn[data-source]').forEach(b => b.classList.remove('active-src'));
+  btn.classList.add('active-src');
+  activeSrc = btn.dataset.source;
+  renderPosts();
+}
+
+function filterKw(btn) {
+  const was = btn.classList.contains('active-kw');
+  document.querySelectorAll('.filter-btn[data-kw]').forEach(b => b.classList.remove('active-kw'));
+  if (!was) { btn.classList.add('active-kw'); activeKw = btn.dataset.kw; }
+  else activeKw = 'all';
+  renderPosts();
+}
+
+function addKeyword() {
+  const input = document.getElementById('kw-input');
+  const val = input.value.trim();
+  if (!val || config.keywords.includes(val)) return;
+  config.keywords.push(val);
+  input.value = '';
+  renderSettings(); renderFilters(); renderPosts();
+}
+
+function removeKeyword(kw) {
+  config.keywords = config.keywords.filter(k => k !== kw);
+  if (activeKw === kw) activeKw = 'all';
+  renderSettings(); renderFilters(); renderPosts();
+}
+
+function addUrl() {
+  const name = document.getElementById('url-name').value.trim();
+  const url  = document.getElementById('url-input').value.trim();
+  if (!name || !url) { alert('이름과 URL을 모두 입력해주세요'); return; }
+  config.sources.push({ id: 'src_' + Date.now(), name, url, enabled: true });
+  document.getElementById('url-name').value = '';
+  document.getElementById('url-input').value = '';
+  renderSettings(); renderFilters();
+}
+
+function removeUrl(i) {
+  config.sources.splice(i, 1);
+  renderSettings(); renderFilters(); renderPosts();
+}
+
+async function saveConfig() {
+  const token = document.getElementById('gh-token').value.trim();
+  if (!token) { showMsg('GitHub 토큰을 입력해주세요', 'err'); return; }
+  localStorage.setItem('gh_token', token);
+  const btn = document.getElementById('btn-save');
+  btn.disabled = true; btn.textContent = '저장 중...';
+  try {
+    const headers = { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' };
+    const fileData = await (await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`, { headers })).json();
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(config, null, 2))));
+    const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`, {
+      method: 'PUT', headers,
+      body: JSON.stringify({ message: 'config: 대시보드에서 업데이트', content, sha: fileData.sha })
     });
-  });
+    if (res.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다', 'ok');
+    else { const e = await res.json(); showMsg('실패: ' + (e.message||'토큰 확인'), 'err'); }
+  } catch(e) { showMsg('오류: ' + e.message, 'err'); }
+  btn.disabled = false; btn.textContent = 'GitHub에 저장하기';
+}
+
+function showMsg(text, type) {
+  const el = document.getElementById('save-msg');
+  el.textContent = text; el.className = 'save-msg ' + type;
+  setTimeout(() => el.className = 'save-msg', 4000);
+}
+
+function toggleSettings() {
+  document.getElementById('settings-panel').classList.toggle('open');
+  document.getElementById('btn-settings').classList.toggle('active');
+}
+
+init();
 </script>
-
 </body>
 </html>
