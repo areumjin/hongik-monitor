@@ -4,436 +4,235 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>홍익대 공지 모니터</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --canvas: #f6f5f4;
-    --surface: #ffffff;
-    --hairline: #e6e6e6;
-    --ink: #000000;
-    --ink-2: #31302e;
-    --ink-muted: #615d59;
-    --ink-faint: #a39e98;
-    --blue: #0075de;
-    --blue-dark: #005bab;
-    --blue-bg: #eff6ff;
-    --blue-border: #bfdbfe;
-    --r-xs: 4px;
-    --r-md: 8px;
-    --r-lg: 12px;
-    --r-full: 9999px;
-    --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
-  }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
     font-family: 'Inter', -apple-system, sans-serif;
-    background: var(--canvas);
-    color: var(--ink);
-    min-height: 100vh;
-    font-size: 15px;
+    background: #ffffff;
+    color: #111;
+    font-size: 14px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* NAV */
   nav {
-    background: var(--surface);
-    border-bottom: 1px solid var(--hairline);
-    height: 52px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 28px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky; top: 0; z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #ebebeb;
+    height: 50px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 24px;
   }
 
-  .nav-logo {
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: -0.3px;
-    color: var(--ink);
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  .logo { font-size: 14px; font-weight: 600; color: #111; display: flex; align-items: center; gap: 7px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: blink 2s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+
+  .nav-r { display: flex; align-items: center; gap: 10px; }
+  .nav-time { font-size: 12px; color: #aaa; }
+
+  .btn {
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    background: #fff; color: #333;
+    border: 1px solid #ddd; border-radius: 6px;
+    padding: 5px 13px; cursor: pointer;
   }
+  .btn:hover { background: #f5f5f5; }
+  .btn.active { background: #f5f5f5; }
 
-  .live-dot {
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: #22c55e;
-    animation: blink 2s infinite;
-  }
-  @keyframes blink { 0%,100%{opacity:1}50%{opacity:0.25} }
-
-  .nav-right { display: flex; align-items: center; gap: 10px; }
-
-  .nav-time {
-    font-size: 13px;
-    color: var(--ink-faint);
-  }
-
-  .btn-nav {
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--ink-2);
-    background: var(--surface);
-    border: 1px solid var(--hairline);
-    border-radius: var(--r-md);
-    padding: 5px 14px;
-    cursor: pointer;
-    transition: background 0.1s;
-  }
-  .btn-nav:hover { background: var(--canvas); }
-  .btn-nav.active { background: var(--canvas); }
-
-  /* LAYOUT */
   .layout { display: flex; }
 
-  /* SETTINGS */
-  .settings-panel {
-    width: 300px;
-    min-width: 300px;
-    background: var(--surface);
-    border-right: 1px solid var(--hairline);
-    padding: 24px 20px;
-    display: none;
-    flex-direction: column;
-    gap: 28px;
+  /* 설정 패널 */
+  .panel {
+    width: 290px; min-width: 290px;
+    background: #fff;
+    border-right: 1px solid #ebebeb;
+    padding: 20px 16px;
+    display: none; flex-direction: column; gap: 24px;
     overflow-y: auto;
-    height: calc(100vh - 52px);
-    position: sticky;
-    top: 52px;
+    height: calc(100vh - 50px);
+    position: sticky; top: 50px;
   }
-  .settings-panel.open { display: flex; }
+  .panel.open { display: flex; }
 
-  .s-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 10px;
-  }
+  .s-title { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; margin-bottom: 8px; }
 
   .notice {
-    background: var(--blue-bg);
-    border: 1px solid var(--blue-border);
-    border-radius: var(--r-lg);
-    padding: 11px 13px;
-    font-size: 13px;
-    color: var(--blue-dark);
-    line-height: 1.55;
+    background: #eff6ff; border: 1px solid #bfdbfe;
+    border-radius: 8px; padding: 10px 12px;
+    font-size: 12px; color: #1d4ed8; line-height: 1.55;
   }
-  .notice a { color: var(--blue); font-weight: 600; text-decoration: none; }
-  .notice a:hover { text-decoration: underline; }
+  .notice a { color: #1d4ed8; font-weight: 600; text-decoration: none; }
 
-  .field {
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid #ddd;
-    border-radius: var(--r-xs);
-    padding: 7px 10px;
-    font-family: inherit;
-    font-size: 14px;
-    color: var(--ink);
+  input[type=text], input[type=password] {
+    width: 100%; border: 1px solid #ddd; border-radius: 4px;
+    padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111;
     outline: none;
-    transition: border-color 0.1s, box-shadow 0.1s;
   }
-  .field:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(0,117,222,0.1); }
-  .field::placeholder { color: var(--ink-faint); }
+  input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.1); }
+  input::placeholder { color: #bbb; }
 
-  .row { display: flex; gap: 6px; }
-  .row .field { flex: 1; }
+  .input-row { display: flex; gap: 5px; }
+  .input-row input { flex: 1; }
 
-  .btn-blue {
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    background: var(--blue);
-    color: #fff;
-    border: none;
-    border-radius: var(--r-xs);
-    padding: 0 13px;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: background 0.1s;
+  .btn-add {
+    font-family: inherit; font-size: 13px; font-weight: 500;
+    background: #2563eb; color: #fff;
+    border: none; border-radius: 4px;
+    padding: 0 12px; cursor: pointer; white-space: nowrap;
   }
-  .btn-blue:hover { background: var(--blue-dark); }
+  .btn-add:hover { background: #1d4ed8; }
 
   .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
-
   .tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--blue-dark);
-    background: var(--blue-bg);
-    border: 1px solid var(--blue-border);
-    border-radius: var(--r-full);
-    padding: 3px 8px 3px 11px;
+    display: inline-flex; align-items: center; gap: 3px;
+    font-size: 12px; font-weight: 500;
+    background: #eff6ff; border: 1px solid #bfdbfe;
+    color: #1d4ed8; border-radius: 999px;
+    padding: 3px 8px 3px 10px;
   }
-  .tag-x {
-    background: none; border: none; cursor: pointer;
-    color: var(--ink-faint); font-size: 13px; line-height: 1;
-    padding: 0; transition: color 0.1s;
-  }
+  .tag-x { background: none; border: none; cursor: pointer; color: #93c5fd; font-size: 12px; padding: 0; }
   .tag-x:hover { color: #dc2626; }
 
   .url-item {
-    background: var(--canvas);
-    border: 1px solid var(--hairline);
-    border-radius: var(--r-lg);
-    padding: 10px 12px;
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
-    margin-bottom: 5px;
+    background: #fafafa; border: 1px solid #ebebeb; border-radius: 8px;
+    padding: 9px 11px; display: flex; gap: 8px; margin-bottom: 5px;
   }
   .url-info { flex: 1; min-width: 0; }
-  .url-name { font-size: 13px; font-weight: 600; color: var(--ink); letter-spacing: -0.1px; margin-bottom: 2px; }
-  .url-addr { font-size: 11px; color: var(--ink-faint); word-break: break-all; line-height: 1.4; }
-  .url-x {
-    background: none; border: none; cursor: pointer;
-    color: var(--ink-faint); font-size: 15px;
-    flex-shrink: 0; padding: 0; transition: color 0.1s;
-  }
+  .url-name { font-size: 12px; font-weight: 600; color: #111; margin-bottom: 2px; }
+  .url-addr { font-size: 11px; color: #aaa; word-break: break-all; line-height: 1.4; }
+  .url-x { background: none; border: none; cursor: pointer; color: #ccc; font-size: 14px; flex-shrink: 0; }
   .url-x:hover { color: #dc2626; }
 
-  .url-form { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .url-form { display: flex; flex-direction: column; gap: 5px; margin-top: 8px; }
 
   .btn-save {
-    width: 100%;
-    font-family: inherit;
-    font-size: 15px;
-    font-weight: 500;
-    background: var(--blue);
-    color: #fff;
-    border: none;
-    border-radius: var(--r-full);
-    padding: 10px;
+    width: 100%; font-family: inherit; font-size: 14px; font-weight: 500;
+    background: #2563eb; color: #fff;
+    border: none; border-radius: 999px; padding: 9px;
     cursor: pointer;
-    transition: background 0.1s;
   }
-  .btn-save:hover { background: var(--blue-dark); }
+  .btn-save:hover { background: #1d4ed8; }
   .btn-save:disabled { opacity: 0.4; cursor: not-allowed; }
 
-  .save-msg {
-    display: none;
-    font-size: 13px;
-    text-align: center;
-    padding: 8px;
-    border-radius: var(--r-lg);
-    margin-top: 6px;
-  }
+  .save-msg { display: none; font-size: 12px; text-align: center; padding: 7px; border-radius: 6px; margin-top: 6px; }
   .save-msg.ok { display: block; background: #dcfce7; color: #15803d; }
   .save-msg.err { display: block; background: #fee2e2; color: #dc2626; }
 
-  /* MAIN */
-  .main {
-    flex: 1;
-    padding: 32px 36px;
-    min-width: 0;
-    max-width: 800px;
-  }
+  /* 메인 */
+  .main { flex: 1; padding: 28px 32px; min-width: 0; max-width: 780px; }
 
-  /* STATS */
-  .stats { display: flex; gap: 12px; margin-bottom: 28px; }
-
-  .stat {
-    background: var(--surface);
-    border: 1px solid var(--hairline);
-    border-radius: var(--r-lg);
-    padding: 16px 22px;
-    box-shadow: var(--shadow);
+  /* 통계 — 작게 */
+  .stats {
+    display: flex; gap: 20px; align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ebebeb;
   }
-  .stat-n {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -1.5px;
-    line-height: 1;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-  .stat-n.blue { color: var(--blue); }
-  .stat-l {
-    font-size: 13px;
-    color: var(--ink-muted);
-  }
+  .stat { display: flex; align-items: baseline; gap: 6px; }
+  .stat-n { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
+  .stat-n.blue { color: #2563eb; }
+  .stat-l { font-size: 12px; color: #aaa; }
 
-  /* FILTERS */
-  .filter-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 8px;
+  /* 필터 */
+  .filter-group { margin-bottom: 18px; }
+  .filter-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+  .filter-label { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ccc; }
+
+  .fb {
+    font-family: inherit; font-size: 12px; font-weight: 500;
+    background: #fff; color: #888;
+    border: 1px solid #ebebeb; border-radius: 999px;
+    padding: 3px 12px; cursor: pointer; white-space: nowrap;
   }
+  .fb:hover { color: #111; border-color: #ccc; }
+  .fb.on-src { background: #111; border-color: #111; color: #fff; }
+  .fb.on-kw { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
 
-  .filter-section-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-right: 2px;
-  }
-
-  .f-btn {
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 500;
-    background: var(--surface);
-    color: var(--ink-muted);
-    border: 1px solid var(--hairline);
-    border-radius: var(--r-full);
-    padding: 4px 13px;
-    cursor: pointer;
-    transition: all 0.1s;
-    white-space: nowrap;
-  }
-  .f-btn:hover { background: var(--canvas); color: var(--ink); }
-  .f-btn.on-src { background: var(--ink); border-color: var(--ink); color: #fff; }
-  .f-btn.on-kw { background: var(--blue-bg); border-color: var(--blue-border); color: var(--blue-dark); font-weight: 600; }
-
-  .filters-wrap { margin-bottom: 20px; }
-
-  /* POSTS */
-  .posts { display: flex; flex-direction: column; gap: 6px; }
+  /* 카드 */
+  .posts { display: flex; flex-direction: column; gap: 1px; }
 
   .card {
-    background: var(--surface);
-    border: 1px solid var(--hairline);
-    border-radius: var(--r-lg);
-    padding: 16px 20px;
-    transition: box-shadow 0.1s, border-color 0.1s;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 14px 4px;
   }
-  .card:hover { box-shadow: var(--shadow); border-color: #d4d4d0; }
+  .card:last-child { border-bottom: none; }
 
-  .card-top {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 6px;
-  }
+  .card-top { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
 
   .src-pill {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    color: var(--blue);
-    background: var(--blue-bg);
-    border: 1px solid var(--blue-border);
-    border-radius: var(--r-full);
-    padding: 2px 9px;
+    font-size: 11px; font-weight: 600;
+    color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe;
+    border-radius: 999px; padding: 1px 8px;
   }
 
-  .card-date {
-    font-size: 12px;
-    color: var(--ink-faint);
-    margin-left: auto;
-  }
+  .card-date { font-size: 11px; color: #bbb; margin-left: auto; }
 
   .card-title {
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--ink-2);
-    text-decoration: none;
-    line-height: 1.55;
-    letter-spacing: -0.1px;
-    margin-bottom: 0;
+    display: block; font-size: 14px; font-weight: 400;
+    color: #222; text-decoration: none; line-height: 1.55;
   }
-  .card-title:hover { color: var(--blue); }
+  .card-title:hover { color: #2563eb; }
 
-  /* 키워드 배지 — 제목과 구분된 줄 */
-  .card-badges {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px solid var(--hairline);
+  .card-kw {
+    display: flex; gap: 4px; flex-wrap: wrap;
+    margin-top: 7px; padding-top: 7px;
+    border-top: 1px solid #f0f0f0;
   }
 
-  .badge {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    color: var(--blue-dark);
-    background: var(--blue-bg);
-    border: 1px solid var(--blue-border);
-    border-radius: var(--r-full);
-    padding: 2px 9px;
+  .kw-badge {
+    font-size: 11px; font-weight: 500;
+    color: #1d4ed8; background: #eff6ff; border: 1px solid #bfdbfe;
+    border-radius: 999px; padding: 1px 8px;
   }
 
-  .empty {
-    text-align: center;
-    color: var(--ink-faint);
-    font-size: 14px;
-    padding: 60px 0;
-    line-height: 1.8;
-  }
+  .empty { text-align: center; color: #bbb; font-size: 13px; padding: 60px 0; line-height: 1.8; }
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">
-    <div class="live-dot"></div>
-    홍익대 공지 모니터
-  </div>
-  <div class="nav-right">
+  <div class="logo"><div class="dot"></div>홍익대 공지 모니터</div>
+  <div class="nav-r">
     <span class="nav-time" id="nav-time">—</span>
-    <button class="btn-nav" id="btn-s" onclick="toggleSettings()">설정</button>
+    <button class="btn" id="btn-s" onclick="togglePanel()">설정</button>
   </div>
 </nav>
 
 <div class="layout">
-
-  <aside class="settings-panel" id="panel">
+  <aside class="panel" id="panel">
 
     <div>
-      <div class="s-label">GitHub 연동</div>
-      <div class="notice">
-        설정 저장을 위해 GitHub Personal Access Token이 필요해요.
-        <a href="https://github.com/settings/tokens/new?scopes=repo&description=hongik-monitor" target="_blank">여기서 발급</a>
-        (repo 권한 선택 후 생성)
-      </div>
-      <div style="margin-top:8px">
-        <input class="field" type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx">
-      </div>
-      <div style="font-size:11px;color:var(--ink-faint);margin-top:4px">브라우저에만 저장돼요</div>
+      <div class="s-title">GitHub 연동</div>
+      <div class="notice">설정 저장을 위해 GitHub Personal Access Token이 필요해요. <a href="https://github.com/settings/tokens/new?scopes=repo&description=hongik-monitor" target="_blank">여기서 발급</a> (repo 권한)</div>
+      <div style="margin-top:7px"><input type="password" id="gh-token" placeholder="ghp_xxxxxxxxxxxx"></div>
+      <div style="font-size:11px;color:#bbb;margin-top:4px">브라우저에만 저장돼요</div>
     </div>
 
     <div>
-      <div class="s-label">키워드 알림</div>
-      <div class="row">
-        <input class="field" type="text" id="kw-input" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKw()">
-        <button class="btn-blue" onclick="addKw()">추가</button>
+      <div class="s-title">키워드 알림</div>
+      <div class="input-row">
+        <input type="text" id="kw-in" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKw()">
+        <button class="btn-add" onclick="addKw()">추가</button>
       </div>
       <div class="tags" id="kw-list"></div>
     </div>
 
     <div>
-      <div class="s-label">모니터링 URL</div>
+      <div class="s-title">모니터링 URL</div>
       <div id="url-list"></div>
       <div class="url-form">
-        <input class="field" type="text" id="url-name" placeholder="이름 (예: 장학 공지)">
-        <input class="field" type="text" id="url-addr" placeholder="https://...">
-        <button class="btn-blue" style="padding:8px;border-radius:var(--r-xs)" onclick="addUrl()">+ URL 추가</button>
+        <input type="text" id="url-name" placeholder="이름 (예: 장학 공지)">
+        <input type="text" id="url-addr" placeholder="https://...">
+        <button class="btn-add" style="padding:8px;border-radius:4px" onclick="addUrl()">+ URL 추가</button>
       </div>
     </div>
 
     <div>
-      <button class="btn-save" id="btn-save" onclick="saveConfig()">GitHub에 저장하기</button>
+      <button class="btn-save" id="btn-save" onclick="save()">GitHub에 저장하기</button>
       <div class="save-msg" id="save-msg"></div>
     </div>
 
@@ -442,23 +241,17 @@
   <main class="main">
 
     <div class="stats">
-      <div class="stat">
-        <div class="stat-n" id="total-n">—</div>
-        <div class="stat-l">전체 게시물</div>
-      </div>
-      <div class="stat">
-        <div class="stat-n blue" id="kw-n">—</div>
-        <div class="stat-l">키워드 매칭</div>
-      </div>
+      <div class="stat"><span class="stat-n" id="total-n">—</span><span class="stat-l">전체 게시물</span></div>
+      <div class="stat"><span class="stat-n blue" id="kw-n">—</span><span class="stat-l">키워드 매칭</span></div>
     </div>
 
-    <div class="filters-wrap">
+    <div class="filter-group">
       <div class="filter-row" id="src-row">
-        <span class="filter-section-label">출처</span>
-        <button class="f-btn on-src" data-src="all" onclick="setSrc(this)">전체</button>
+        <span class="filter-label">출처</span>
+        <button class="fb on-src" data-src="all" onclick="setSrc(this)">전체</button>
       </div>
       <div class="filter-row" id="kw-row" style="display:none">
-        <span class="filter-section-label">키워드</span>
+        <span class="filter-label">키워드</span>
       </div>
     </div>
 
@@ -468,183 +261,130 @@
 </div>
 
 <script>
-const OWNER = 'areumjin', REPO = 'hongik-monitor';
-let cfg = { sources:[], keywords:[] };
-let cards = [];
-let activeSrc = 'all', activeKw = 'all';
+const O='areumjin', R='hongik-monitor';
+let cfg={sources:[],keywords:[]}, cards=[], src='all', kw='all';
 
-async function get(path) {
-  const r = await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${path}?_=${Date.now()}`);
-  if (!r.ok) throw new Error(r.status);
-  return r.json();
+async function get(p){
+  const r=await fetch(`https://raw.githubusercontent.com/${O}/${R}/main/${p}?_=${Date.now()}`);
+  if(!r.ok)throw r.status; return r.json();
 }
 
-async function init() {
-  const t = localStorage.getItem('gh_token');
-  if (t) document.getElementById('gh-token').value = t;
-
-  try { cfg = await get('config.json'); } catch(e) {
-    cfg = { sources:[
+async function init(){
+  const t=localStorage.getItem('gh_token');
+  if(t) document.getElementById('gh-token').value=t;
+  try{ cfg=await get('config.json'); }catch(e){
+    cfg={sources:[
       {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
       {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
-    ], keywords:['창업','지원금','장학금'] };
+    ],keywords:['창업','지원금','장학금']};
   }
-
-  try {
-    const data = await get('docs/posts.json');
-    cards = data.posts || [];
-    document.getElementById('nav-time').textContent = '마지막 업데이트: ' + (data.updated || '—');
-  } catch(e) {
-    cards = [];
-    document.getElementById('nav-time').textContent = 'Run workflow 실행 필요';
+  try{
+    const d=await get('docs/posts.json');
+    cards=d.posts||[];
+    document.getElementById('nav-time').textContent='마지막 업데이트: '+(d.updated||'—');
+  }catch(e){
+    cards=[];
+    document.getElementById('nav-time').textContent='Run workflow 필요';
   }
-
   renderPanel(); renderFilters(); renderPosts();
 }
 
-function renderPanel() {
-  document.getElementById('kw-list').innerHTML = cfg.keywords.map(k =>
+function renderPanel(){
+  document.getElementById('kw-list').innerHTML=cfg.keywords.map(k=>
     `<span class="tag">${k}<button class="tag-x" onclick="removeKw('${k}')">×</button></span>`
   ).join('');
-  document.getElementById('url-list').innerHTML = cfg.sources.map((s,i) =>
-    `<div class="url-item">
-      <div class="url-info"><div class="url-name">${s.name}</div><div class="url-addr">${s.url}</div></div>
-      <button class="url-x" onclick="removeUrl(${i})">×</button>
-    </div>`
+  document.getElementById('url-list').innerHTML=cfg.sources.map((s,i)=>
+    `<div class="url-item"><div class="url-info"><div class="url-name">${s.name}</div><div class="url-addr">${s.url}</div></div><button class="url-x" onclick="removeUrl(${i})">×</button></div>`
   ).join('');
 }
 
-function renderFilters() {
-  // 출처 필터
-  const srcRow = document.getElementById('src-row');
-  while (srcRow.children.length > 2) srcRow.removeChild(srcRow.lastChild);
-  cfg.sources.forEach(s => {
-    const b = document.createElement('button');
-    b.className = 'f-btn'; b.dataset.src = s.id; b.textContent = s.name;
-    b.onclick = () => setSrc(b);
-    srcRow.appendChild(b);
+function renderFilters(){
+  const sr=document.getElementById('src-row');
+  while(sr.children.length>2) sr.removeChild(sr.lastChild);
+  cfg.sources.forEach(s=>{
+    const b=document.createElement('button');
+    b.className='fb'; b.dataset.src=s.id; b.textContent=s.name;
+    b.onclick=()=>setSrc(b); sr.appendChild(b);
   });
-
-  // 키워드 필터 — 별도 줄
-  const kwRow = document.getElementById('kw-row');
-  while (kwRow.children.length > 1) kwRow.removeChild(kwRow.lastChild);
-  if (cfg.keywords.length) {
-    kwRow.style.display = 'flex';
-    cfg.keywords.forEach(k => {
-      const b = document.createElement('button');
-      b.className = 'f-btn'; b.dataset.kw = k; b.textContent = k;
-      b.onclick = () => setKw(b);
-      kwRow.appendChild(b);
+  const kr=document.getElementById('kw-row');
+  while(kr.children.length>1) kr.removeChild(kr.lastChild);
+  if(cfg.keywords.length){
+    kr.style.display='flex';
+    cfg.keywords.forEach(k=>{
+      const b=document.createElement('button');
+      b.className='fb'; b.dataset.kw=k; b.textContent=k;
+      b.onclick=()=>setKw(b); kr.appendChild(b);
     });
-  } else {
-    kwRow.style.display = 'none';
-  }
+  } else { kr.style.display='none'; }
 }
 
-function renderPosts() {
-  // 통계: 항상 전체 기준
-  document.getElementById('total-n').textContent = cards.length;
-  document.getElementById('kw-n').textContent = cards.filter(c => cfg.keywords.some(k => c.title.includes(k))).length;
-
-  const visible = cards.filter(c => {
-    const ms = activeSrc === 'all' || c.source_id === activeSrc;
-    const mk = activeKw === 'all' || c.title.includes(activeKw);
-    return ms && mk;
+function renderPosts(){
+  document.getElementById('total-n').textContent=cards.length;
+  document.getElementById('kw-n').textContent=cards.filter(c=>cfg.keywords.some(k=>c.title.includes(k))).length;
+  const vis=cards.filter(c=>{
+    return (src==='all'||c.source_id===src)&&(kw==='all'||c.title.includes(kw));
   });
-
-  const container = document.getElementById('posts');
-  if (!visible.length) {
-    container.innerHTML = '<div class="empty">게시물이 없습니다<br>Actions에서 Run workflow를 실행해주세요</div>';
-    return;
-  }
-
-  container.innerHTML = visible.map(c => {
-    const matched = cfg.keywords.filter(k => c.title.includes(k));
-    const badges = matched.map(k => `<span class="badge">${k}</span>`).join('');
+  const el=document.getElementById('posts');
+  if(!vis.length){ el.innerHTML='<div class="empty">게시물이 없습니다<br>Actions에서 Run workflow를 실행해주세요</div>'; return; }
+  el.innerHTML=vis.map(c=>{
+    const m=cfg.keywords.filter(k=>c.title.includes(k));
+    const badges=m.map(k=>`<span class="kw-badge">${k}</span>`).join('');
     return `<div class="card">
-      <div class="card-top">
-        <span class="src-pill">${c.source_name}</span>
-        ${c.date ? `<span class="card-date">${c.date}</span>` : ''}
-      </div>
+      <div class="card-top"><span class="src-pill">${c.source_name}</span>${c.date?`<span class="card-date">${c.date}</span>`:''}</div>
       <a class="card-title" href="${c.url}" target="_blank" rel="noopener">${c.title||'(제목 없음)'}</a>
-      ${badges ? `<div class="card-badges">${badges}</div>` : ''}
+      ${badges?`<div class="card-kw">${badges}</div>`:''}
     </div>`;
   }).join('');
 }
 
-function setSrc(btn) {
-  document.querySelectorAll('.f-btn[data-src]').forEach(b => b.classList.remove('on-src'));
-  btn.classList.add('on-src');
-  activeSrc = btn.dataset.src;
-  renderPosts();
+function setSrc(b){
+  document.querySelectorAll('.fb[data-src]').forEach(x=>x.classList.remove('on-src'));
+  b.classList.add('on-src'); src=b.dataset.src; renderPosts();
 }
-
-function setKw(btn) {
-  const was = btn.classList.contains('on-kw');
-  document.querySelectorAll('.f-btn[data-kw]').forEach(b => b.classList.remove('on-kw'));
-  activeKw = was ? 'all' : (btn.classList.add('on-kw'), btn.dataset.kw);
-  renderPosts();
+function setKw(b){
+  const was=b.classList.contains('on-kw');
+  document.querySelectorAll('.fb[data-kw]').forEach(x=>x.classList.remove('on-kw'));
+  kw=was?'all':(b.classList.add('on-kw'),b.dataset.kw); renderPosts();
 }
-
-function addKw() {
-  const el = document.getElementById('kw-input');
-  const v = el.value.trim();
-  if (!v || cfg.keywords.includes(v)) return;
-  cfg.keywords.push(v); el.value = '';
+function addKw(){
+  const el=document.getElementById('kw-in'), v=el.value.trim();
+  if(!v||cfg.keywords.includes(v))return;
+  cfg.keywords.push(v); el.value='';
   renderPanel(); renderFilters(); renderPosts();
 }
-
-function removeKw(k) {
-  cfg.keywords = cfg.keywords.filter(x => x !== k);
-  if (activeKw === k) activeKw = 'all';
+function removeKw(k){
+  cfg.keywords=cfg.keywords.filter(x=>x!==k);
+  if(kw===k)kw='all';
   renderPanel(); renderFilters(); renderPosts();
 }
-
-function addUrl() {
-  const name = document.getElementById('url-name').value.trim();
-  const url = document.getElementById('url-addr').value.trim();
-  if (!name || !url) { alert('이름과 URL을 모두 입력해주세요'); return; }
-  cfg.sources.push({ id:'src_'+Date.now(), name, url, enabled:true });
-  document.getElementById('url-name').value = '';
-  document.getElementById('url-addr').value = '';
+function addUrl(){
+  const n=document.getElementById('url-name').value.trim(), u=document.getElementById('url-addr').value.trim();
+  if(!n||!u){alert('이름과 URL을 모두 입력해주세요');return;}
+  cfg.sources.push({id:'src_'+Date.now(),name:n,url:u,enabled:true});
+  document.getElementById('url-name').value=''; document.getElementById('url-addr').value='';
   renderPanel(); renderFilters();
 }
+function removeUrl(i){ cfg.sources.splice(i,1); renderPanel(); renderFilters(); renderPosts(); }
 
-function removeUrl(i) {
-  cfg.sources.splice(i,1);
-  renderPanel(); renderFilters(); renderPosts();
-}
-
-async function saveConfig() {
-  const token = document.getElementById('gh-token').value.trim();
-  if (!token) { showMsg('GitHub 토큰을 입력해주세요','err'); return; }
-  localStorage.setItem('gh_token', token);
-  const btn = document.getElementById('btn-save');
-  btn.disabled = true; btn.textContent = '저장 중...';
-  try {
-    const h = { Authorization:`token ${token}`, Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' };
-    const fd = await (await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`,{headers:h})).json();
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2))));
-    const r = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/config.json`,{
-      method:'PUT', headers:h,
-      body:JSON.stringify({message:'config: 대시보드에서 업데이트', content, sha:fd.sha})
+async function save(){
+  const token=document.getElementById('gh-token').value.trim();
+  if(!token){showMsg('GitHub 토큰을 입력해주세요','err');return;}
+  localStorage.setItem('gh_token',token);
+  const b=document.getElementById('btn-save'); b.disabled=true; b.textContent='저장 중...';
+  try{
+    const h={Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json','Content-Type':'application/json'};
+    const fd=await(await fetch(`https://api.github.com/repos/${O}/${R}/contents/config.json`,{headers:h})).json();
+    const content=btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2))));
+    const res=await fetch(`https://api.github.com/repos/${O}/${R}/contents/config.json`,{
+      method:'PUT',headers:h,body:JSON.stringify({message:'config: 대시보드에서 업데이트',content,sha:fd.sha})
     });
-    if (r.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다','ok');
-    else { const e=await r.json(); showMsg('실패: '+(e.message||'토큰 확인'),'err'); }
-  } catch(e) { showMsg('오류: '+e.message,'err'); }
-  btn.disabled=false; btn.textContent='GitHub에 저장하기';
+    if(res.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다','ok');
+    else{ const e=await res.json(); showMsg('실패: '+(e.message||'토큰 확인'),'err'); }
+  }catch(e){ showMsg('오류: '+e.message,'err'); }
+  b.disabled=false; b.textContent='GitHub에 저장하기';
 }
-
-function showMsg(txt, type) {
-  const el = document.getElementById('save-msg');
-  el.textContent = txt; el.className = 'save-msg '+type;
-  setTimeout(()=>el.className='save-msg', 4000);
-}
-
-function toggleSettings() {
-  document.getElementById('panel').classList.toggle('open');
-  document.getElementById('btn-s').classList.toggle('active');
-}
+function showMsg(t,type){ const e=document.getElementById('save-msg'); e.textContent=t; e.className='save-msg '+type; setTimeout(()=>e.className='save-msg',4000); }
+function togglePanel(){ document.getElementById('panel').classList.toggle('open'); document.getElementById('btn-s').classList.toggle('active'); }
 
 init();
 </script>
