@@ -199,9 +199,6 @@ def main():
     new_posts     = []
     keyword_posts = []
 
-    print(f"[DEBUG] seen 키: {list(seen.keys())}")
-    print(f"[DEBUG] seen 총 항목 수: {sum(len(v) for v in seen.values())}")
-
     for source in config["sources"]:
         if not source.get("enabled", True):
             continue
@@ -210,8 +207,6 @@ def main():
         print(f"[{source['name']}] {len(posts)}개 수집")
 
         seen_ids = seen.get(source["id"], [])
-        print(f"[DEBUG] {source['name']} seen_ids 수: {len(seen_ids)}")
-
         for post in posts:
             is_new = post["id"] not in seen_ids
             if is_new:
