@@ -3,55 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>홍익대 공지 모니터</title>
+<title>공지 모니터</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: #fff; color: #111;
-    font-size: 14px; line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { font-family: 'Inter', -apple-system, sans-serif; background: #fff; color: #111; font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
-  /* NAV */
   nav {
     position: sticky; top: 0; z-index: 100;
     background: #fff; border-bottom: 1px solid #e8e8e8;
-    height: 50px; display: flex; align-items: center; justify-content: space-between;
-    padding: 0 24px;
+    height: 50px; display: flex; align-items: center; justify-content: flex-end;
+    padding: 0 20px; gap: 10px;
   }
-  .logo { font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 7px; }
-  .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; animation: blink 2s infinite; }
-  @keyframes blink { 0%,100%{opacity:1}50%{opacity:0.2} }
-  .nav-r { display: flex; align-items: center; gap: 8px; }
   .nav-time { font-size: 12px; color: #bbb; }
-  .btn-nav {
-    font-family: inherit; font-size: 13px; font-weight: 500;
-    background: #fff; color: #333; border: 1px solid #e0e0e0;
-    border-radius: 6px; padding: 5px 13px; cursor: pointer;
-  }
+  .btn-nav { font-family: inherit; font-size: 13px; font-weight: 500; background: #fff; color: #333; border: 1px solid #e0e0e0; border-radius: 6px; padding: 5px 13px; cursor: pointer; }
   .btn-nav:hover { background: #f7f7f7; }
   .btn-nav.active { background: #f7f7f7; }
 
-  /* LAYOUT */
   .layout { display: flex; height: calc(100vh - 50px); overflow: hidden; }
 
   /* 설정 패널 */
-  .settings {
-    width: 280px; min-width: 280px;
-    background: #fff; border-right: 1px solid #e8e8e8;
-    padding: 20px 16px; display: none; flex-direction: column; gap: 24px;
-    overflow-y: auto;
-  }
+  .settings { width: 280px; min-width: 280px; background: #fff; border-right: 1px solid #e8e8e8; padding: 20px 16px; display: none; flex-direction: column; gap: 22px; overflow-y: auto; }
   .settings.open { display: flex; }
   .s-title { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #bbb; margin-bottom: 8px; }
   .notice { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 10px 12px; font-size: 12px; color: #1d4ed8; line-height: 1.55; }
   .notice a { color: #1d4ed8; font-weight: 600; text-decoration: none; }
-  input[type=text], input[type=password] {
-    width: 100%; border: 1px solid #e0e0e0; border-radius: 4px;
-    padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111; outline: none;
-  }
+  input[type=text], input[type=password] { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111; outline: none; }
   input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,0.1); }
   input::placeholder { color: #ccc; }
   .input-row { display: flex; gap: 5px; }
@@ -76,25 +53,15 @@
   .save-msg.ok { display: block; background: #dcfce7; color: #15803d; }
   .save-msg.err { display: block; background: #fee2e2; color: #dc2626; }
 
-  /* 목록 패널 */
-  .list-pane {
-    width: 400px; min-width: 400px;
-    border-right: 1px solid #e8e8e8;
-    display: flex; flex-direction: column; overflow: hidden;
-  }
+  /* 게시물 목록 — 넓게 */
+  .list-pane { flex: 3; border-right: 1px solid #e8e8e8; display: flex; flex-direction: column; overflow: hidden; min-width: 0; }
 
-  .list-header {
-    padding: 14px 16px 12px;
-    border-bottom: 1px solid #e8e8e8;
-    flex-shrink: 0;
-  }
-
+  .list-header { padding: 14px 16px 12px; border-bottom: 1px solid #e8e8e8; flex-shrink: 0; }
   .stats { display: flex; gap: 16px; align-items: center; margin-bottom: 12px; }
   .stat { display: flex; align-items: baseline; gap: 5px; }
   .stat-n { font-size: 18px; font-weight: 700; letter-spacing: -0.5px; color: #111; }
   .stat-n.blue { color: #2563eb; }
   .stat-l { font-size: 11px; color: #bbb; }
-
   .filter-group { display: flex; flex-direction: column; gap: 6px; }
   .filter-row { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; }
   .filter-label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #ccc; width: 32px; flex-shrink: 0; }
@@ -102,19 +69,11 @@
   .fb:hover { color: #333; border-color: #ccc; }
   .fb.on-src { background: #111; border-color: #111; color: #fff; }
   .fb.on-kw { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
-  .fb.on-scrap { background: #fef9c3; border-color: #fde047; color: #854d0e; }
 
   .posts { flex: 1; overflow-y: auto; }
 
-  /* 카드 */
-  .card {
-    padding: 13px 16px;
-    border-bottom: 1px solid #f0f0f0;
-    display: flex; gap: 10px; align-items: flex-start;
-    transition: background 0.1s;
-  }
+  .card { padding: 13px 16px; border-bottom: 1px solid #f0f0f0; display: flex; gap: 10px; align-items: flex-start; transition: background 0.1s; }
   .card:hover { background: #fafafa; }
-
   .card-body { flex: 1; min-width: 0; }
   .card-top { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; }
   .src-pill { font-size: 10px; font-weight: 600; color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 999px; padding: 1px 7px; }
@@ -123,83 +82,109 @@
   .card-title:hover { color: #2563eb; }
   .card-kw { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; }
   .kw-badge { font-size: 10px; font-weight: 500; color: #1d4ed8; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 999px; padding: 1px 7px; }
-
-  /* 스크랩 버튼 */
-  .scrap-btn {
-    background: none; border: none; cursor: pointer;
-    font-size: 16px; padding: 2px; flex-shrink: 0;
-    color: #ddd; transition: color 0.1s, transform 0.1s;
-    line-height: 1;
-  }
+  .scrap-btn { background: none; border: none; cursor: pointer; font-size: 16px; padding: 2px; flex-shrink: 0; color: #ddd; transition: color 0.1s, transform 0.1s; line-height: 1; }
   .scrap-btn:hover { transform: scale(1.2); }
   .scrap-btn.scrapped { color: #f59e0b; }
-
   .empty { text-align: center; color: #ccc; font-size: 13px; padding: 48px 16px; line-height: 1.8; }
 
-  /* 스크랩 패널 */
-  .scrap-pane {
-    flex: 1; display: flex; flex-direction: column; overflow: hidden;
-    background: #fff;
-  }
+  /* 오른쪽 패널 — 스크랩 + 달력 */
+  .right-pane { flex: 1; min-width: 280px; max-width: 320px; display: flex; flex-direction: column; overflow: hidden; background: #fff; }
 
-  .scrap-header {
-    padding: 14px 20px;
-    border-bottom: 1px solid #e8e8e8;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-shrink: 0;
-  }
+  /* 스크랩 영역 */
+  .scrap-section { display: flex; flex-direction: column; overflow: hidden; flex: 1; border-bottom: 1px solid #e8e8e8; }
+  .scrap-header { padding: 12px 14px; border-bottom: 1px solid #e8e8e8; display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; }
+  .scrap-title { font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 5px; }
+  .scrap-count { font-size: 11px; font-weight: 500; background: #fef9c3; border: 1px solid #fde047; color: #854d0e; border-radius: 999px; padding: 1px 7px; }
+  .btn-clear { font-family: inherit; font-size: 11px; background: none; color: #bbb; border: 1px solid #e8e8e8; border-radius: 5px; padding: 2px 8px; cursor: pointer; }
+  .btn-clear:hover { color: #dc2626; border-color: #fca5a5; }
 
-  .scrap-header-title {
-    font-size: 13px; font-weight: 600; color: #111;
-    display: flex; align-items: center; gap: 6px;
-  }
-
-  .scrap-count {
-    font-size: 11px; font-weight: 500;
-    background: #fef9c3; border: 1px solid #fde047;
-    color: #854d0e; border-radius: 999px; padding: 1px 8px;
-  }
-
-  .btn-clear-all {
-    font-family: inherit; font-size: 11px; font-weight: 500;
-    background: none; color: #bbb; border: 1px solid #e8e8e8;
-    border-radius: 6px; padding: 3px 10px; cursor: pointer;
-  }
-  .btn-clear-all:hover { color: #dc2626; border-color: #fca5a5; }
+  .scrap-tabs { display: flex; border-bottom: 1px solid #e8e8e8; flex-shrink: 0; }
+  .scrap-tab { flex: 1; font-family: inherit; font-size: 11px; font-weight: 500; background: none; border: none; padding: 7px; cursor: pointer; color: #bbb; border-bottom: 2px solid transparent; }
+  .scrap-tab.active { color: #2563eb; border-bottom-color: #2563eb; }
 
   .scrap-list { flex: 1; overflow-y: auto; }
+  .scrap-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 80px; color: #ccc; gap: 6px; padding: 20px; text-align: center; }
+  .scrap-empty-icon { font-size: 22px; }
+  .scrap-empty-text { font-size: 12px; line-height: 1.6; }
 
-  .scrap-empty {
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    height: 100%; color: #ccc; gap: 8px; padding: 32px;
-    text-align: center;
-  }
-  .scrap-empty-icon { font-size: 28px; }
-  .scrap-empty-text { font-size: 13px; line-height: 1.6; }
-
-  .scrap-item {
-    padding: 13px 20px;
-    border-bottom: 1px solid #f0f0f0;
-    display: flex; gap: 10px; align-items: flex-start;
-  }
+  .scrap-item { padding: 10px 14px; border-bottom: 1px solid #f0f0f0; display: flex; gap: 8px; align-items: flex-start; }
   .scrap-item:hover { background: #fafafa; }
+  .scrap-item.done { opacity: 0.45; }
   .scrap-item-body { flex: 1; min-width: 0; }
-  .scrap-item-src { font-size: 10px; font-weight: 600; color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 999px; padding: 1px 7px; display: inline-block; margin-bottom: 4px; }
-  .scrap-item-title { font-size: 13px; font-weight: 400; color: #222; text-decoration: none; display: block; line-height: 1.55; }
+  .scrap-item-src { font-size: 10px; font-weight: 600; color: #2563eb; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 999px; padding: 1px 6px; display: inline-block; margin-bottom: 3px; }
+  .scrap-item-title { font-size: 12px; font-weight: 400; color: #222; text-decoration: none; display: block; line-height: 1.5; }
   .scrap-item-title:hover { color: #2563eb; }
-  .scrap-item-date { font-size: 11px; color: #bbb; margin-top: 3px; }
-  .unscrap-btn { background: none; border: none; cursor: pointer; font-size: 16px; color: #f59e0b; flex-shrink: 0; padding: 2px; transition: transform 0.1s; }
-  .unscrap-btn:hover { transform: scale(1.2); color: #d97706; }
+  .scrap-item.done .scrap-item-title { text-decoration: line-through; color: #aaa; }
+  .scrap-item-actions { display: flex; gap: 4px; margin-top: 5px; }
+  .scrap-status-btn { font-family: inherit; font-size: 10px; font-weight: 500; border: 1px solid #e8e8e8; border-radius: 999px; padding: 1px 8px; cursor: pointer; background: #fff; color: #666; transition: all 0.1s; }
+  .scrap-status-btn.todo { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+  .scrap-status-btn.done-btn { background: #dcfce7; border-color: #86efac; color: #15803d; }
+  .unscrap-btn { background: none; border: none; cursor: pointer; font-size: 14px; color: #f59e0b; flex-shrink: 0; padding: 2px; }
+  .unscrap-btn:hover { color: #d97706; }
+
+  /* 달력 영역 */
+  .cal-section { flex-shrink: 0; border-top: 1px solid #e8e8e8; }
+  .cal-header { padding: 10px 14px; border-bottom: 1px solid #e8e8e8; display: flex; align-items: center; justify-content: space-between; }
+  .cal-title { font-size: 12px; font-weight: 600; color: #111; }
+  .cal-nav { display: flex; gap: 4px; align-items: center; }
+  .cal-nav-btn { background: none; border: 1px solid #e8e8e8; border-radius: 4px; width: 22px; height: 22px; cursor: pointer; font-size: 11px; display: flex; align-items: center; justify-content: center; color: #666; }
+  .cal-nav-btn:hover { background: #f0f0f0; }
+  .cal-view-toggle { display: flex; border: 1px solid #e8e8e8; border-radius: 5px; overflow: hidden; }
+  .cal-view-btn { font-family: inherit; font-size: 10px; font-weight: 500; background: #fff; border: none; padding: 3px 8px; cursor: pointer; color: #999; }
+  .cal-view-btn.active { background: #2563eb; color: #fff; }
+
+  .cal-grid { padding: 8px 10px 10px; }
+  .cal-days-header { display: grid; grid-template-columns: repeat(7,1fr); margin-bottom: 4px; }
+  .cal-day-name { text-align: center; font-size: 10px; font-weight: 600; color: #bbb; padding: 2px 0; }
+  .cal-day-name:first-child { color: #ef4444; }
+  .cal-day-name:last-child { color: #3b82f6; }
+  .cal-cells { display: grid; grid-template-columns: repeat(7,1fr); gap: 1px; }
+  .cal-cell { min-height: 28px; padding: 2px; position: relative; }
+  .cal-num { font-size: 10px; font-weight: 500; color: #333; text-align: center; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin: 0 auto; cursor: default; }
+  .cal-cell.today .cal-num { background: #2563eb; color: #fff; }
+  .cal-cell.other-month .cal-num { color: #ddd; }
+  .cal-cell.sun .cal-num { color: #ef4444; }
+  .cal-cell.sat .cal-num { color: #3b82f6; }
+  .cal-cell.today.sun .cal-num, .cal-cell.today.sat .cal-num { color: #fff; }
+  .cal-dots { display: flex; justify-content: center; gap: 2px; margin-top: 1px; flex-wrap: wrap; }
+  .cal-dot { width: 4px; height: 4px; border-radius: 50%; }
+  .cal-dot.active-dot { background: #2563eb; }
+  .cal-dot.deadline-dot { background: #ef4444; }
+  .cal-dot.done-dot { background: #bbb; }
+
+  /* 주간 뷰 */
+  .week-view { padding: 8px 10px; }
+  .week-day-row { display: flex; align-items: flex-start; gap: 8px; padding: 5px 0; border-bottom: 1px solid #f5f5f5; }
+  .week-day-row:last-child { border-bottom: none; }
+  .week-day-label { font-size: 10px; font-weight: 600; color: #aaa; width: 28px; flex-shrink: 0; padding-top: 1px; }
+  .week-day-label.today-label { color: #2563eb; }
+  .week-events { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+  .week-event { font-size: 10px; padding: 2px 7px; border-radius: 4px; cursor: pointer; transition: opacity 0.1s; }
+  .week-event:hover { opacity: 0.75; }
+  .week-event.active-ev { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+  .week-event.deadline-ev { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+  .week-event.done-ev { background: #f3f4f6; color: #aaa; border: 1px solid #e5e7eb; text-decoration: line-through; }
+
+  /* 스크랩 일정 추가 모달 */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.3); z-index: 200; align-items: center; justify-content: center; }
+  .modal-overlay.show { display: flex; }
+  .modal { background: #fff; border-radius: 12px; padding: 20px; width: 320px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+  .modal-title { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+  .modal-label { font-size: 12px; font-weight: 500; color: #555; margin-bottom: 4px; margin-top: 10px; }
+  .modal input[type=text], .modal input[type=date] { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; padding: 7px 10px; font-family: inherit; font-size: 13px; color: #111; outline: none; }
+  .modal input:focus { border-color: #2563eb; }
+  .modal-row { display: flex; gap: 8px; margin-top: 14px; }
+  .btn-modal-ok { flex: 1; font-family: inherit; font-size: 13px; font-weight: 500; background: #2563eb; color: #fff; border: none; border-radius: 6px; padding: 8px; cursor: pointer; }
+  .btn-modal-ok:hover { background: #1d4ed8; }
+  .btn-modal-cancel { flex: 1; font-family: inherit; font-size: 13px; font-weight: 500; background: #fff; color: #666; border: 1px solid #e0e0e0; border-radius: 6px; padding: 8px; cursor: pointer; }
+  .btn-modal-cancel:hover { background: #f5f5f5; }
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="logo"><div class="dot"></div>홍익대 공지 모니터</div>
-  <div class="nav-r">
-    <span class="nav-time" id="nav-time">—</span>
-    <button class="btn-nav" id="btn-s" onclick="toggleSettings()">설정</button>
-  </div>
+  <span class="nav-time" id="nav-time">—</span>
+  <button class="btn-nav" id="btn-s" onclick="toggleSettings()">설정</button>
 </nav>
 
 <div class="layout">
@@ -214,10 +199,7 @@
     </div>
     <div>
       <div class="s-title">키워드 알림</div>
-      <div class="input-row">
-        <input type="text" id="kw-in" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKw()">
-        <button class="btn-add" onclick="addKw()">추가</button>
-      </div>
+      <div class="input-row"><input type="text" id="kw-in" placeholder="키워드 추가" onkeydown="if(event.key==='Enter')addKw()"><button class="btn-add" onclick="addKw()">추가</button></div>
       <div class="tags" id="kw-list"></div>
     </div>
     <div>
@@ -235,7 +217,7 @@
     </div>
   </aside>
 
-  <!-- 목록 -->
+  <!-- 게시물 목록 -->
   <div class="list-pane">
     <div class="list-header">
       <div class="stats">
@@ -243,41 +225,76 @@
         <div class="stat"><span class="stat-n blue" id="kw-n">—</span><span class="stat-l">키워드 매칭</span></div>
       </div>
       <div class="filter-group">
-        <div class="filter-row" id="src-row">
-          <span class="filter-label">출처</span>
-          <button class="fb on-src" data-src="all" onclick="setSrc(this)">전체</button>
-        </div>
-        <div class="filter-row" id="kw-row" style="display:none">
-          <span class="filter-label">키워드</span>
-        </div>
+        <div class="filter-row" id="src-row"><span class="filter-label">출처</span><button class="fb on-src" data-src="all" onclick="setSrc(this)">전체</button></div>
+        <div class="filter-row" id="kw-row" style="display:none"><span class="filter-label">키워드</span></div>
       </div>
     </div>
     <div class="posts" id="posts"></div>
   </div>
 
-  <!-- 스크랩 패널 -->
-  <div class="scrap-pane">
-    <div class="scrap-header">
-      <div class="scrap-header-title">
-        ★ 스크랩
-        <span class="scrap-count" id="scrap-count">0</span>
+  <!-- 오른쪽: 스크랩 + 달력 -->
+  <div class="right-pane">
+
+    <!-- 스크랩 -->
+    <div class="scrap-section">
+      <div class="scrap-header">
+        <div class="scrap-title">★ 스크랩 <span class="scrap-count" id="scrap-count">0</span></div>
+        <button class="btn-clear" onclick="clearAllScraps()">전체 삭제</button>
       </div>
-      <button class="btn-clear-all" onclick="clearAllScraps()">전체 삭제</button>
+      <div class="scrap-tabs">
+        <button class="scrap-tab active" onclick="setScrapTab('all',this)">전체</button>
+        <button class="scrap-tab" onclick="setScrapTab('todo',this)">진행 전</button>
+        <button class="scrap-tab" onclick="setScrapTab('done',this)">완료</button>
+      </div>
+      <div class="scrap-list" id="scrap-list"></div>
     </div>
-    <div class="scrap-list" id="scrap-list">
-      <div class="scrap-empty">
-        <div class="scrap-empty-icon">☆</div>
-        <div class="scrap-empty-text">카드의 ☆ 버튼을 눌러<br>스크랩해보세요</div>
+
+    <!-- 달력 -->
+    <div class="cal-section">
+      <div class="cal-header">
+        <div class="cal-title" id="cal-title">2026년 6월</div>
+        <div style="display:flex;gap:6px;align-items:center">
+          <div class="cal-view-toggle">
+            <button class="cal-view-btn active" onclick="setCalView('month',this)">월</button>
+            <button class="cal-view-btn" onclick="setCalView('week',this)">주</button>
+          </div>
+          <div class="cal-nav">
+            <button class="cal-nav-btn" onclick="calMove(-1)">‹</button>
+            <button class="cal-nav-btn" onclick="calMove(1)">›</button>
+          </div>
+        </div>
       </div>
+      <div id="cal-body"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 일정 추가 모달 -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-title">일정 추가</div>
+    <div class="modal-label">제목</div>
+    <input type="text" id="modal-title-input" placeholder="공모전 신청 등">
+    <div class="modal-label">시작일</div>
+    <input type="date" id="modal-start">
+    <div class="modal-label">마감일</div>
+    <input type="date" id="modal-end">
+    <div class="modal-row">
+      <button class="btn-modal-cancel" onclick="closeModal()">취소</button>
+      <button class="btn-modal-ok" onclick="saveEvent()">저장</button>
     </div>
   </div>
-
 </div>
 
 <script>
 const O='areumjin', R='hongik-monitor';
 let cfg={sources:[],keywords:[]}, cards=[], activeSrc='all', activeKw='all';
 let scraps = JSON.parse(localStorage.getItem('scraps')||'[]');
+let events = JSON.parse(localStorage.getItem('calEvents')||'[]');
+let scrapTab='all', calView='month';
+let calYear=new Date().getFullYear(), calMonth=new Date().getMonth();
+let pendingScrap=null;
 
 async function get(p){
   const r=await fetch(`https://raw.githubusercontent.com/${O}/${R}/main/${p}?_=${Date.now()}`);
@@ -288,50 +305,27 @@ async function init(){
   const t=localStorage.getItem('gh_token');
   if(t) document.getElementById('gh-token').value=t;
   try{ cfg=await get('config.json'); }
-  catch(e){
-    cfg={sources:[
-      {id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},
-      {id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}
-    ],keywords:['창업','지원금','장학금']};
-  }
+  catch(e){ cfg={sources:[{id:'notice',name:'공지사항',url:'https://www.hongik.ac.kr/kr/newscenter/notice.do',enabled:true},{id:'event',name:'행사/공모전',url:'https://www.hongik.ac.kr/kr/newscenter/event-contest.do',enabled:true}],keywords:['창업','지원금','장학금']}; }
   try{
     const d=await get('docs/posts.json');
     cards=d.posts||[];
     document.getElementById('nav-time').textContent='마지막 업데이트: '+(d.updated||'—');
-  }catch(e){
-    cards=[];
-    document.getElementById('nav-time').textContent='Run workflow 필요';
-  }
-  renderPanel(); renderFilters(); renderPosts(); renderScraps();
+  }catch(e){ cards=[]; document.getElementById('nav-time').textContent='Run workflow 필요'; }
+  renderPanel(); renderFilters(); renderPosts(); renderScraps(); renderCal();
 }
 
 function renderPanel(){
-  document.getElementById('kw-list').innerHTML=cfg.keywords.map(k=>
-    `<span class="tag">${k}<button class="tag-x" onclick="removeKw('${k}')">×</button></span>`
-  ).join('');
-  document.getElementById('url-list').innerHTML=cfg.sources.map((s,i)=>
-    `<div class="url-item"><div class="url-info"><div class="url-name">${s.name}</div><div class="url-addr">${s.url}</div></div><button class="url-x" onclick="removeUrl(${i})">×</button></div>`
-  ).join('');
+  document.getElementById('kw-list').innerHTML=cfg.keywords.map(k=>`<span class="tag">${k}<button class="tag-x" onclick="removeKw('${k}')">×</button></span>`).join('');
+  document.getElementById('url-list').innerHTML=cfg.sources.map((s,i)=>`<div class="url-item"><div class="url-info"><div class="url-name">${s.name}</div><div class="url-addr">${s.url}</div></div><button class="url-x" onclick="removeUrl(${i})">×</button></div>`).join('');
 }
 
 function renderFilters(){
   const sr=document.getElementById('src-row');
   while(sr.children.length>2) sr.removeChild(sr.lastChild);
-  cfg.sources.forEach(s=>{
-    const b=document.createElement('button');
-    b.className='fb'; b.dataset.src=s.id; b.textContent=s.name;
-    b.onclick=()=>setSrc(b); sr.appendChild(b);
-  });
+  cfg.sources.forEach(s=>{ const b=document.createElement('button'); b.className='fb'; b.dataset.src=s.id; b.textContent=s.name; b.onclick=()=>setSrc(b); sr.appendChild(b); });
   const kr=document.getElementById('kw-row');
   while(kr.children.length>1) kr.removeChild(kr.lastChild);
-  if(cfg.keywords.length){
-    kr.style.display='flex';
-    cfg.keywords.forEach(k=>{
-      const b=document.createElement('button');
-      b.className='fb'; b.dataset.kw=k; b.textContent=k;
-      b.onclick=()=>setKw(b); kr.appendChild(b);
-    });
-  } else kr.style.display='none';
+  if(cfg.keywords.length){ kr.style.display='flex'; cfg.keywords.forEach(k=>{ const b=document.createElement('button'); b.className='fb'; b.dataset.kw=k; b.textContent=k; b.onclick=()=>setKw(b); kr.appendChild(b); }); } else kr.style.display='none';
 }
 
 function renderPosts(){
@@ -356,78 +350,186 @@ function renderPosts(){
 }
 
 function renderScraps(){
-  const el=document.getElementById('scrap-list');
   document.getElementById('scrap-count').textContent=scraps.length;
-  if(!scraps.length){
-    el.innerHTML='<div class="scrap-empty"><div class="scrap-empty-icon">☆</div><div class="scrap-empty-text">카드의 ☆ 버튼을 눌러<br>스크랩해보세요</div></div>';
-    return;
-  }
-  el.innerHTML=scraps.map((s,i)=>
-    `<div class="scrap-item">
+  const filtered = scrapTab==='all' ? scraps : scraps.filter(s=>(scrapTab==='done')===!!(s.done));
+  const el=document.getElementById('scrap-list');
+  if(!filtered.length){ el.innerHTML='<div class="scrap-empty"><div class="scrap-empty-icon">☆</div><div class="scrap-empty-text">'+(scrapTab==='all'?'카드의 ☆ 버튼을 눌러<br>스크랩해보세요':scrapTab==='todo'?'진행 전 항목이 없어요':'완료 항목이 없어요')+'</div></div>'; return; }
+  el.innerHTML=filtered.map(s=>`
+    <div class="scrap-item ${s.done?'done':''}">
       <div class="scrap-item-body">
         <span class="scrap-item-src">${s.source_name}</span>
         <a class="scrap-item-title" href="${s.url}" target="_blank" rel="noopener">${s.title||'(제목 없음)'}</a>
-        ${s.date?`<div class="scrap-item-date">${s.date}</div>`:''}
+        <div class="scrap-item-actions">
+          <button class="scrap-status-btn ${s.done?'done-btn':'todo'}" onclick="toggleDone('${s.id}')">${s.done?'✓ 완료':'진행 전'}</button>
+          <button class="scrap-status-btn" onclick="openModal('${s.id}')" style="color:#666">📅 일정</button>
+        </div>
       </div>
-      <button class="unscrap-btn" onclick="removeScrap('${s.id}')" title="스크랩 해제">★</button>
-    </div>`
-  ).join('');
+      <button class="unscrap-btn" onclick="removeScrap('${s.id}')">★</button>
+    </div>`).join('');
 }
 
-function toggleScrap(card, btn){
-  const idx=scraps.findIndex(s=>s.id===card.id);
-  if(idx>=0){
-    scraps.splice(idx,1);
-    btn.textContent='☆'; btn.classList.remove('scrapped');
-  } else {
-    scraps.unshift(card);
-    btn.textContent='★'; btn.classList.add('scrapped');
-  }
+function toggleDone(id){
+  const s=scraps.find(x=>x.id===id); if(!s)return;
+  s.done=!s.done;
   localStorage.setItem('scraps',JSON.stringify(scraps));
-  renderScraps();
+  renderScraps(); renderCal();
+}
+
+function toggleScrap(card,btn){
+  const idx=scraps.findIndex(s=>s.id===card.id);
+  if(idx>=0){ scraps.splice(idx,1); btn.textContent='☆'; btn.classList.remove('scrapped'); }
+  else { scraps.unshift({...card,done:false}); btn.textContent='★'; btn.classList.add('scrapped'); }
+  localStorage.setItem('scraps',JSON.stringify(scraps));
+  renderScraps(); renderCal();
 }
 
 function removeScrap(id){
   scraps=scraps.filter(s=>s.id!==id);
+  events=events.filter(e=>e.scrapId!==id);
   localStorage.setItem('scraps',JSON.stringify(scraps));
-  renderScraps(); renderPosts();
+  localStorage.setItem('calEvents',JSON.stringify(events));
+  renderScraps(); renderPosts(); renderCal();
 }
 
 function clearAllScraps(){
-  if(!scraps.length) return;
-  if(!confirm('스크랩을 모두 삭제할까요?')) return;
-  scraps=[];
+  if(!scraps.length)return;
+  if(!confirm('스크랩을 모두 삭제할까요?'))return;
+  scraps=[]; events=[];
   localStorage.setItem('scraps',JSON.stringify(scraps));
-  renderScraps(); renderPosts();
+  localStorage.setItem('calEvents',JSON.stringify(events));
+  renderScraps(); renderPosts(); renderCal();
 }
 
-function setSrc(b){
-  document.querySelectorAll('.fb[data-src]').forEach(x=>x.classList.remove('on-src'));
-  b.classList.add('on-src'); activeSrc=b.dataset.src; renderPosts();
+function setScrapTab(tab,btn){
+  scrapTab=tab;
+  document.querySelectorAll('.scrap-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderScraps();
 }
-function setKw(b){
-  const was=b.classList.contains('on-kw');
-  document.querySelectorAll('.fb[data-kw]').forEach(x=>x.classList.remove('on-kw'));
-  activeKw=was?'all':(b.classList.add('on-kw'),b.dataset.kw); renderPosts();
+
+// 달력
+function renderCal(){
+  const today=new Date();
+  if(calView==='month') renderMonthCal(today);
+  else renderWeekCal(today);
 }
-function addKw(){
-  const el=document.getElementById('kw-in'),v=el.value.trim();
-  if(!v||cfg.keywords.includes(v))return;
-  cfg.keywords.push(v); el.value='';
-  renderPanel(); renderFilters(); renderPosts();
+
+function renderMonthCal(today){
+  const y=calYear, m=calMonth;
+  document.getElementById('cal-title').textContent=`${y}년 ${m+1}월`;
+  const first=new Date(y,m,1), last=new Date(y,m+1,0);
+  const startDay=first.getDay();
+  let html=`<div class="cal-grid"><div class="cal-days-header">`;
+  ['일','월','화','수','목','금','토'].forEach(d=>html+=`<div class="cal-day-name">${d}</div>`);
+  html+=`</div><div class="cal-cells">`;
+  const prev=new Date(y,m,0);
+  for(let i=startDay-1;i>=0;i--){
+    const d=prev.getDate()-i;
+    html+=`<div class="cal-cell other-month"><div class="cal-num">${d}</div></div>`;
+  }
+  for(let d=1;d<=last.getDate();d++){
+    const date=new Date(y,m,d);
+    const dow=date.getDay();
+    const isToday=today.getFullYear()===y&&today.getMonth()===m&&today.getDate()===d;
+    const dots=getDotsForDate(y,m+1,d);
+    const classes=['cal-cell', isToday?'today':'', dow===0?'sun':dow===6?'sat':''].filter(Boolean).join(' ');
+    html+=`<div class="${classes}"><div class="cal-num">${d}</div>`;
+    if(dots.length) html+=`<div class="cal-dots">${dots.map(t=>`<div class="cal-dot ${t}-dot"></div>`).join('')}</div>`;
+    html+=`</div>`;
+  }
+  const remaining=(7-((startDay+last.getDate())%7))%7;
+  for(let d=1;d<=remaining;d++) html+=`<div class="cal-cell other-month"><div class="cal-num">${d}</div></div>`;
+  html+=`</div></div>`;
+  document.getElementById('cal-body').innerHTML=html;
 }
-function removeKw(k){
-  cfg.keywords=cfg.keywords.filter(x=>x!==k);
-  if(activeKw===k)activeKw='all';
-  renderPanel(); renderFilters(); renderPosts();
+
+function renderWeekCal(today){
+  const dow=today.getDay();
+  const weekStart=new Date(today); weekStart.setDate(today.getDate()-dow);
+  const days=['일','월','화','수','목','금','토'];
+  document.getElementById('cal-title').textContent=`${calYear}년 ${calMonth+1}월 ${Math.ceil((new Date(calYear,calMonth,1).getDay()+new Date(calYear,calMonth+1,0).getDate())/7)}주`;
+  let html='<div class="week-view">';
+  for(let i=0;i<7;i++){
+    const d=new Date(weekStart); d.setDate(weekStart.getDate()+i);
+    const isToday=d.toDateString()===today.toDateString();
+    const dayEvs=getEventsForDate(d.getFullYear(),d.getMonth()+1,d.getDate());
+    html+=`<div class="week-day-row">
+      <div class="week-day-label ${isToday?'today-label':''}">${days[i]} ${d.getDate()}</div>
+      <div class="week-events">${dayEvs.length?dayEvs.map(e=>`<div class="week-event ${e.type}-ev">${e.title}</div>`).join(''):'<div style="font-size:10px;color:#e0e0e0">—</div>'}</div>
+    </div>`;
+  }
+  html+='</div>';
+  document.getElementById('cal-body').innerHTML=html;
 }
-function addUrl(){
-  const n=document.getElementById('url-name').value.trim(),u=document.getElementById('url-addr').value.trim();
-  if(!n||!u){alert('이름과 URL을 모두 입력해주세요');return;}
-  cfg.sources.push({id:'src_'+Date.now(),name:n,url:u,enabled:true});
-  document.getElementById('url-name').value=''; document.getElementById('url-addr').value='';
-  renderPanel(); renderFilters();
+
+function getDotsForDate(y,m,d){
+  const ds=`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+  const dots=[];
+  events.forEach(e=>{
+    if(ds>=e.start&&ds<=e.end){
+      const s=scraps.find(x=>x.id===e.scrapId);
+      dots.push(s&&s.done?'done':ds===e.end?'deadline':'active');
+    }
+  });
+  return [...new Set(dots)];
 }
+
+function getEventsForDate(y,m,d){
+  const ds=`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+  return events.filter(e=>ds>=e.start&&ds<=e.end).map(e=>{
+    const s=scraps.find(x=>x.id===e.scrapId);
+    return {title:e.title, type:s&&s.done?'done':ds===e.end?'deadline':'active'};
+  });
+}
+
+function setCalView(v,btn){
+  calView=v;
+  document.querySelectorAll('.cal-view-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCal();
+}
+
+function calMove(dir){
+  if(calView==='month'){
+    calMonth+=dir;
+    if(calMonth>11){calMonth=0;calYear++;}
+    if(calMonth<0){calMonth=11;calYear--;}
+  } else {
+    // 주 이동: 7일
+    const today=new Date(calYear,calMonth,1);
+    today.setDate(today.getDate()+dir*7);
+    calYear=today.getFullYear(); calMonth=today.getMonth();
+  }
+  renderCal();
+}
+
+let currentModalScrapId=null;
+function openModal(scrapId){
+  currentModalScrapId=scrapId;
+  const s=scraps.find(x=>x.id===scrapId);
+  const ex=events.find(e=>e.scrapId===scrapId);
+  document.getElementById('modal-title-input').value=ex?ex.title:(s?s.title.slice(0,20):'');
+  document.getElementById('modal-start').value=ex?ex.start:'';
+  document.getElementById('modal-end').value=ex?ex.end:'';
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){ document.getElementById('modal').classList.remove('show'); currentModalScrapId=null; }
+function saveEvent(){
+  const title=document.getElementById('modal-title-input').value.trim();
+  const start=document.getElementById('modal-start').value;
+  const end=document.getElementById('modal-end').value;
+  if(!title||!start||!end){alert('모두 입력해주세요');return;}
+  events=events.filter(e=>e.scrapId!==currentModalScrapId);
+  events.push({scrapId:currentModalScrapId,title,start,end});
+  localStorage.setItem('calEvents',JSON.stringify(events));
+  closeModal(); renderCal();
+}
+
+function setSrc(b){ document.querySelectorAll('.fb[data-src]').forEach(x=>x.classList.remove('on-src')); b.classList.add('on-src'); activeSrc=b.dataset.src; renderPosts(); }
+function setKw(b){ const was=b.classList.contains('on-kw'); document.querySelectorAll('.fb[data-kw]').forEach(x=>x.classList.remove('on-kw')); activeKw=was?'all':(b.classList.add('on-kw'),b.dataset.kw); renderPosts(); }
+function addKw(){ const el=document.getElementById('kw-in'),v=el.value.trim(); if(!v||cfg.keywords.includes(v))return; cfg.keywords.push(v); el.value=''; renderPanel(); renderFilters(); renderPosts(); }
+function removeKw(k){ cfg.keywords=cfg.keywords.filter(x=>x!==k); if(activeKw===k)activeKw='all'; renderPanel(); renderFilters(); renderPosts(); }
+function addUrl(){ const n=document.getElementById('url-name').value.trim(),u=document.getElementById('url-addr').value.trim(); if(!n||!u){alert('이름과 URL을 모두 입력해주세요');return;} cfg.sources.push({id:'src_'+Date.now(),name:n,url:u,enabled:true}); document.getElementById('url-name').value=''; document.getElementById('url-addr').value=''; renderPanel(); renderFilters(); }
 function removeUrl(i){ cfg.sources.splice(i,1); renderPanel(); renderFilters(); renderPosts(); }
 
 async function saveConfig(){
@@ -440,7 +542,7 @@ async function saveConfig(){
     const fd=await(await fetch(`https://api.github.com/repos/${O}/${R}/contents/config.json`,{headers:h})).json();
     const content=btoa(unescape(encodeURIComponent(JSON.stringify(cfg,null,2))));
     const res=await fetch(`https://api.github.com/repos/${O}/${R}/contents/config.json`,{method:'PUT',headers:h,body:JSON.stringify({message:'config: 대시보드에서 업데이트',content,sha:fd.sha})});
-    if(res.ok) showMsg('저장 완료! 다음 실행 시 반영됩니다','ok');
+    if(res.ok) showMsg('저장 완료!','ok');
     else{ const e=await res.json(); showMsg('실패: '+(e.message||'토큰 확인'),'err'); }
   }catch(e){ showMsg('오류: '+e.message,'err'); }
   b.disabled=false; b.textContent='GitHub에 저장하기';
