@@ -1,6 +1,30 @@
 {
-  "updated": "2026.06.25 11:55",
+  "updated": "2026.06.26 12:25",
   "posts": [
+    {
+      "id": "0ea7f39adcdd",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "国际学生必读：谨防非法换汇和电信诈骗",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=153487&noCat=742",
+      "date": ""
+    },
+    {
+      "id": "59fcef4672ce",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "Protect Yourself from Illegal Currency Exchange and Financial Scams",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=153486&noCat=742",
+      "date": ""
+    },
+    {
+      "id": "000a97852c80",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종/취업진로지원센터] 2026년 7월 FACE 진로상담 일정 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153460&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "ca5c36991c08",
       "source_id": "notice",
@@ -58,107 +82,83 @@
       "date": "첨부파일"
     },
     {
-      "id": "2cbdc9a9c240",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학혁신지원사업/학생상담센터(세종)] 옴니핏 스트레스 검사 실시 안내 (1분 동안 생체신호 측정하여 스트레스 지수 확인)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153418&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
-    },
-    {
-      "id": "5c186c845fb1",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[벤처기업창업보육센터] SSC 팀 매칭(학생-스타트업) 프로그램 신청 안내(~6/30)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153415&article.offset=0&articleLimit=10&noCat=514",
+      "id": "968edbe66793",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「해양리더십융합연구(舊. 해군리더십연구)」 제19권 제1호 원고모집 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153488&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "b295e6b70144",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[모집]대학교육혁신사업 2026학년도 하계 AICE 교육과정(자격인증시험 연계) 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153412&article.offset=0&articleLimit=10&noCat=513",
-      "date": "첨부파일"
-    },
-    {
-      "id": "77dbd0820b93",
+      "id": "3778ff09a04c",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][메타빌드] AI 실무인재 양성과정 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153451&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「2026 블록체인 밋업데이(BCMD)」13회차 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153485&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "b92c592681d7",
+      "id": "e955692e3a4f",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[모집][SM엔터테인먼트] 2026 SMile Music Festival 대학생 영상 서포터즈 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153450&article.offset=0&articleLimit=10",
+      "title": "[홍보] 2026년 마포구 청소년 글로벌캠프 '대학생 기획단' 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153484&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "880cf7a58f36",
+      "id": "74c809980e4b",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "2026 서울퀀텀캠퍼스 양자기술 사업화 과정 교육생 모집 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153436&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "4c0f2f333c1a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "대학생 대상 장애인식개선 교육 콘텐츠 「달달한 우리사이」 안내 및 수강 인증 이벤트 실시 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153435&article.offset=0&articleLimit=10",
+      "title": "[홍보] 국가교육위원회 미래교육방향 대국민 온라인 집중의견수렴 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153483&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "bdf1676cb3b9",
+      "id": "4081f385cd58",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[서울대학교 평생교육원] 2026년 하반기 SNU 연구방법론 아카데미 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153434&article.offset=0&articleLimit=10",
+      "title": "[홍보] 제12회 세이브더칠드런 아동권리영화제 단편영화 작품공모 참여 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153482&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "3fc3f2df1c1c",
+      "id": "99de38f79aac",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "한국의료복지건축학회 2026 학술발표대회 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153424&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "6c7faeac168e",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "개헌 토론회「국민통합 컨센서스 대화 2026」 참가 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153423&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "0d1636a4bfa0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][오픈놀] 관악드림온아카데미xAI미니컴퍼니C 2기_콘텐츠 마케터편",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153411&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「제주와의 약속 실천 아이디어 공모전」 참여",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153481&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "fe726e92b4ab",
+      "id": "273b481070f3",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][KB국민은행] 청년의 내일과 금융 커리어를 잇다, KB-Bridge 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153409&article.offset=0&articleLimit=10",
-      "date": ""
+      "title": "[홍보] 동국·판타지오 숏폼 콘텐츠 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153480&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "4247d5e0c06b",
+      "id": "3f01219c8b07",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][삼성] 삼성 청년희망배움터 수강생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153408&article.offset=0&articleLimit=10",
+      "title": "국립아시아문화전당 외국인 초청 투어 참여 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153461&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "b3307b3277a0",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집][한국산업기술시험원] 2026년 시험인증/반도체/제약/산업안전보건 분야 등 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153459&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "bc00c20f7b0f",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집][한국폴리텍대학포항캠퍼스] 한국배터리아카데미 남부권캠퍼스 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153458&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
