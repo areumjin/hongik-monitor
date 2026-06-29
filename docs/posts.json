@@ -1,6 +1,22 @@
 {
-  "updated": "2026.06.28 12:32",
+  "updated": "2026.06.29 12:36",
   "posts": [
+    {
+      "id": "4b24af9ed932",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 후기 수시전형 대학원 신입생 모집 (군위탁전형 포함)",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=153524&noCat=381",
+      "date": ""
+    },
+    {
+      "id": "2cda6a250714",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[중요] 2026학년도 2학기 기숙사생 모집(별첨자료 확인 필수)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153512&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
     {
       "id": "0ea7f39adcdd",
       "source_id": "notice",
@@ -66,19 +82,35 @@
       "date": "첨부파일"
     },
     {
-      "id": "89d121b4ccb4",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[인문사회융합인재양성사업단(HUSS)] 2026학년도 부산대학교 이차전지 융합인재 캠프 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153443&article.offset=0&articleLimit=10&noCat=514",
+      "id": "45f9af693f0e",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집][삼성] 삼성 청년희망배움터 수강생 모집 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153520&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "83f41e25e9b1",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "병역판정검사 받은 해 입영희망자(2007년생)  현역병 입영 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153420&article.offset=0&articleLimit=10&noCat=29",
+      "id": "fe726e92b4ab",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][KB국민은행] 청년의 내일과 금융 커리어를 잇다, KB-Bridge 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153518&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "1cf21e9c5216",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집][신한은행/신한금융희망재단] 취업 지원 대외활동 '신한 커리어업' 12기 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153517&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "7fb701f57b07",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집][SKKU] 엔터프라이즈 생성형 AI 및 지능형 에이전트(AI Agent) 전문가 양성과정 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153515&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
@@ -127,38 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 제12회 세이브더칠드런 아동권리영화제 단편영화 작품공모 참여 안내",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153482&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "99de38f79aac",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「제주와의 약속 실천 아이디어 공모전」 참여",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153481&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "273b481070f3",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 동국·판타지오 숏폼 콘텐츠 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153480&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "3f01219c8b07",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "국립아시아문화전당 외국인 초청 투어 참여 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153461&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "b3307b3277a0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집][한국산업기술시험원] 2026년 시험인증/반도체/제약/산업안전보건 분야 등 교육생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153459&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     }
   ]
