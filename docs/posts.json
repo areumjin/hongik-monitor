@@ -1,6 +1,38 @@
 {
-  "updated": "2026.07.01 12:32",
+  "updated": "2026.07.02 11:57",
   "posts": [
+    {
+      "id": "8a7a834f7a73",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[서울창조경제혁신센터] 2026 KAMCO Startup TechBlaze (~7.9.목 15:00)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153714&article.offset=0&articleLimit=10&noCat=396",
+      "date": "첨부파일"
+    },
+    {
+      "id": "488d5cbc18b1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종캠퍼스] 2025학년도 후기(2026년 8월) 졸업예정자 전공명 선택 안내(2차)",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=153713&noCat=23",
+      "date": "첨부파일"
+    },
+    {
+      "id": "6bd7d982bf8e",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 2학기 공연예술 융합전공 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153704&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "6ef336c5ea05",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 2학기 복수전공, 부전공, 융합전공, 미세전공 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153681&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
     {
       "id": "8d7676a8e323",
       "source_id": "notice",
@@ -50,115 +82,83 @@
       "date": ""
     },
     {
-      "id": "c5b34ac9501e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2027학년도 1학기 해외대학 파견 Outbound 교류학생 지원자 모집 및 선발(~26년 7월 20일 월 16시)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153544&article.offset=0&articleLimit=10&noCat=514",
+      "id": "825325f9e36e",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [KISIA AD] S-개발자 4기 하반기 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153706&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "20c5426ffbd3",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "기간제 한국어교원 모집[홍익대학교 국제언어교육원]",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153541&article.offset=0&articleLimit=10&noCat=35",
+      "id": "ecaf8d11b037",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 세종시문화관광재단 창립 10주년 기념전시",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153705&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "854e05a54eea",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "국제언어교육원 행정실 조교(일본어권 담당) 채용 공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153539&article.offset=0&articleLimit=10&noCat=35",
-      "date": "첨부파일"
-    },
-    {
-      "id": "63cecd1ec09b",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "⭐D-1⭐ HI학습멘토랑 프로그램 멘토 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153538&article.offset=0&articleLimit=10&noCat=514",
+      "id": "54953d384d17",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][KAIT/과기정통부] ICT 이노베이션 스퀘어 디지털 신기술 교육과정 수강생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153696&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "1f0fbf807b08",
+      "id": "cecbdeac76ea",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 경기상상캠퍼스 개관 10주년 특별기획 '여름상상캠프' 대학생 대상 프로그램 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153649&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "a628e5d17319",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 <JB선도산업 육성방안 탐구지원사업> 참가팀 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153648&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "a1e5eb9402db",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 제2회 통계아카데미 개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153646&article.offset=0&articleLimit=10",
+      "title": "[홍보][LS] JUMP-UP 부트캠프 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153695&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "204daea3751b",
+      "id": "509915044ea8",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 2026 한국건축문화대상 학생설계 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153645&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "f99b47dd9d8f",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 신속통합기획 온라인 아카이브 이용 안내 및 시민참여 이벤트 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153641&article.offset=0&articleLimit=10",
+      "title": "[홍보][얼티밋커리어그룹]2026 대기업 현직자 취업, 직무특강 프로그램 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153686&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "37373a51d9b1",
+      "id": "02ce634edb57",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 전남광주통합특별시교육청 공식 CI 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153639&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "bf2cdaf89021",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026 에너지 통계 활용 사례 숏폼 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153637&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「2026 블록체인 밋업데이(BCMD)」14회차 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153670&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "405fef11c9d7",
+      "id": "b8d62e20e09e",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 「2026 인천 독서대전 홍보영상 공모전」 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153635&article.offset=0&articleLimit=10",
+      "title": "[홍보] 국립중앙과학관 별의별 과학특강 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153669&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "4b494b0e99bc",
+      "id": "6264262060e8",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 제1회 「AI 컷! 드라마 ? AI 숏폼 드라마 챌린지」 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153634&article.offset=0&articleLimit=10",
+      "title": "[홍보] 서울대학교병원 제7회 멀티시네마월 영상 작품 공모전 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153668&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "fb5f80a8491b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 겸재정선미술관 〈2026 겸재 내일의 작가 공모〉 개최 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153667&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "f1a0bc9b0e3c",
+      "id": "d9db97580cd8",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 창업특강 「고객 발굴 및 시장조사」 실전 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153633&article.offset=0&articleLimit=10",
+      "title": "[홍보] 제18회 대학(원)생 논문현상 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153666&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
