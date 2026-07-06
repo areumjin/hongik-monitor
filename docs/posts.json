@@ -1,6 +1,22 @@
 {
-  "updated": "2026.07.05 11:47",
+  "updated": "2026.07.06 11:54",
   "posts": [
+    {
+      "id": "114db4a6c031",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[홍대신문사] 제51회 홍대 학‧예술상 작품 현상 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153834&article.offset=0&articleLimit=10&noCat=514",
+      "date": "첨부파일"
+    },
+    {
+      "id": "5c7adca48a6d",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[취업진로지원센터] ADsP(데이터분석 준전문가) 자격대비 과정 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153831&article.offset=0&articleLimit=10&noCat=396",
+      "date": ""
+    },
     {
       "id": "827dd8099be9",
       "source_id": "notice",
@@ -66,100 +82,84 @@
       "date": "첨부파일"
     },
     {
-      "id": "9226ed694962",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 하계계절학기 사이버강좌 기말고사 시행 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153735&article.offset=0&articleLimit=10&noCat=500",
-      "date": "첨부파일"
-    },
-    {
-      "id": "a9086b5e703e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[교양교육원(서울)] 002060-1 현대음악의이해(사이버강좌) 운영 중단 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=153733&article.offset=0&articleLimit=10&noCat=500",
+      "id": "33b7e4b87362",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [LG전자] 2026 K-뉴딜 아카데미 Let's Grow with LG전자",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153839&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "154c0a9ee93c",
+      "id": "20028aeb4b45",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][네조트]7월 온라인 채용설명회",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153799&article.offset=0&articleLimit=10",
+      "title": "[홍보] 세종연구원 2026년도 세종이도인재장학금 디딤돌 장학사업 학자금 대출관련분야 신청 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153837&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "8fa2c59d1fa5",
+      "id": "45b8c9b688fb",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "2026년 동작구 아동참여위원회 청년멘토단 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153798&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "8ab882f3ceae",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [한화로보틱스] AI 로봇(Physical AI) 테크 스쿨",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153797&article.offset=0&articleLimit=10",
+      "title": "[홍보] 세종청년센터 고립 은둔 청년 지원사업 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153836&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "abf09cd21b81",
+      "id": "4f5ec3e1c221",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] [다쏘시스템코리아] 카티아(CATIA) 첨단모빌리티 스쿨 5기",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153796&article.offset=0&articleLimit=10",
+      "title": "[홍보] [LG] 4차 AI 트렌드 온라인 특강 및 LG CNS AM Inspire Camp 6기 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153830&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "0802b63b3cc7",
+      "id": "82929a47e33a",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] [앤시스코리아] Physical AI 활용 반도체 패키지 설계 및 CAE 해석 스쿨 5기",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153795&article.offset=0&articleLimit=10",
+      "title": "[모집] 2026년도 하반기 충남학사관(서울) 입사생 충원모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153828&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "46eeab498e19",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [스포인] '프로축구단 프런트' 현직자 강연 행사",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153827&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "c7e62342788c",
+      "id": "961cf1a6bcca",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] [마포청년창업취업지원센터 나루] 7월 취창업프로그램 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153793&article.offset=0&articleLimit=10",
+      "title": "[홍보] [SBA] AI 핀테크 PM 양성 과정",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153826&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "9a05f9b4b6a7",
+      "id": "45e684b229f4",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][삼우종합건축사사무소] 제 23회 삼우디자인워크샵(SDW)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153765&article.offset=0&articleLimit=10",
+      "title": "[홍보]AI를 배우는 것을 넘어, 미래를 만드는 창업가로 성장하자 – K-뉴딜 Oracle 과정",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153825&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "5fe217f4b4c7",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집] 「2026 순천로드 창작캠프」 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153824&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "9eed34b2abf1",
+      "id": "f3171247c5b4",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "제64회 개발협력포럼 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153754&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "52ef7e649791",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "「경찰법학」제6권 제1호(통권 제7호) 원고 모집(연장)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153753&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "4297c814aa72",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [한국로슈] 2026 체험형 인턴십 프로그램 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153751&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
+      "title": "[홍보] [SBA] 새싹(SeSAC) AI PM 패스트트랙 1기",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=153823&article.offset=0&articleLimit=10",
+      "date": ""
     }
   ]
 }
