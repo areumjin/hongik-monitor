@@ -1,6 +1,22 @@
 {
-  "updated": "2026.07.24 11:25",
+  "updated": "2026.07.25 11:23",
   "posts": [
+    {
+      "id": "f2e11b04d4d1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[바이오헬스 혁신융합대학사업단] 바이오메디컬아티스트 서머캠프 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154546&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "8a145bdbbe74",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 2학기 학점교류 신청 안내 (세종대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154544&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
     {
       "id": "114db4a6c031",
       "source_id": "notice",
@@ -66,19 +82,11 @@
       "date": "첨부파일"
     },
     {
-      "id": "79a66b3d0b73",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 2학기 논문제출시한 경과자 특례조치(제출시한 연장) 및 소급적용 신청 안내(8.4.(화)~20.(목))",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=154482&noCat=377",
-      "date": "첨부파일"
-    },
-    {
-      "id": "109cbd9ca7f9",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[화성시] 2026년 코나아이 소상공인 장학생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154473&article.offset=0&articleLimit=10&noCat=501",
+      "id": "c8dd7d47f20c",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [WISET] 2026년 여성과학기술인 커리어 리부트 프로그램「상표정보검색 실무 훈련」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154566&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -152,14 +160,6 @@
       "title": "[홍보] 「2026 국중박 분장놀이-전국편」 대학생 참여",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154510&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "bfe93c94dbcf",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026년 IP 아카데미 대학(원)생 대상 지식재산 무료 온라인 단체교육 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154504&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
