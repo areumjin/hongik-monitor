@@ -1,6 +1,30 @@
 {
-  "updated": "2026.08.07 11:30",
+  "updated": "2026.08.08 10:18",
   "posts": [
+    {
+      "id": "2984a85402c8",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[긴급 공지] 바이오헬스 혁신융합대학사업단 2026년 2학기 복학 예정자 교과목 추가 접수 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154946&article.offset=0&articleLimit=10&noCat=29",
+      "date": "첨부파일"
+    },
+    {
+      "id": "adf16fa0ffe4",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 2학기 학기초과자(수업연한초과자) 및 수료수강생 등록금 납부 안내",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=154945&noCat=380",
+      "date": ""
+    },
+    {
+      "id": "ce8189ec53bb",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[벤처기업창업보육센터] 2026년 여성 창업 교육 참가자 모집 (~8/13)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154944&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "08d638289156",
       "source_id": "notice",
@@ -58,27 +82,11 @@
       "date": ""
     },
     {
-      "id": "ce45ac27ff43",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[홍대신문사] 2026학년도 2학기 홍대신문사 61기 취재부 수습기자 모집 공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=154888&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
-    },
-    {
-      "id": "45d46476dd66",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 2학기 등록금 분할납부 신청 안내 (대학원)",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=154864&noCat=380",
-      "date": ""
-    },
-    {
-      "id": "92702c106f8f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 2학기 재학생 등록 및 등록금 납부 안내 (대학원)",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=154862&noCat=380",
+      "id": "cb0b39104f89",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][WISET] 2026년 여성과학기술인 커리어 리부트 프로그램「상표정보검색 실무 훈련」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154951&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -151,14 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] [메이캔] 스마트제조 전문인력 육성사업 참여자 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154916&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "a59760048e49",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][노동청] 청년 지원 대상 한시 확대에 따른「국민취업지원제도」 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=154915&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     }
   ]
