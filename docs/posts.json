@@ -1,6 +1,14 @@
 {
-  "updated": "2026.08.17 10:03",
+  "updated": "2026.08.18 10:01",
   "posts": [
+    {
+      "id": "d4104cfcfa7b",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[중요] 2026학년도 2학기 기숙사생 추가 모집(8.15.자 기준)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155250&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "71e039241752",
       "source_id": "notice",
@@ -74,12 +82,12 @@
       "date": "첨부파일"
     },
     {
-      "id": "1063087dced4",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[전학년 필독]2026-2학기 출석인정승인요청서(공결) 전산 신청 재개에 따른 이용 절차 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155140&article.offset=0&articleLimit=10&noCat=500",
-      "date": "첨부파일"
+      "id": "25d2de62088b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "글로벌 문제정의 해커톤 Problem Busters 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=155252&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
       "id": "fe5f02150730",
@@ -151,14 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 「2026 모두의 AI 실험실 AI 서비스 경진대회」 개최 안내 및 홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=155208&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "7223a29bc0c2",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [컴투스] OpenAI x Com2uS AI 게임 공모전 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=155179&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
