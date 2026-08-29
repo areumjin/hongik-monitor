@@ -1,6 +1,22 @@
 {
-  "updated": "2026.08.28 17:56",
+  "updated": "2026.08.29 14:31",
   "posts": [
+    {
+      "id": "cb6a5f5c6a7c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[익산시] 2026년도 익산사랑 장학생 선발",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155934&article.offset=0&articleLimit=10&noCat=501",
+      "date": "첨부파일"
+    },
+    {
+      "id": "93c24430c4b2",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[한국선원복지고용센터] 2026년 선원가족장학생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155932&article.offset=0&articleLimit=10&noCat=501",
+      "date": ""
+    },
     {
       "id": "572e320e2f07",
       "source_id": "notice",
@@ -63,22 +79,6 @@
       "source_name": "공지사항",
       "title": "[홍대신문사] 제51회 홍대 학‧예술상 작품 현상 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155881&article.offset=0&articleLimit=10&noCat=514",
-      "date": "첨부파일"
-    },
-    {
-      "id": "204ff8203479",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 영자신문사 Tidings 학생 기자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155880&article.offset=0&articleLimit=10&noCat=514",
-      "date": "첨부파일"
-    },
-    {
-      "id": "ceda234fcbb0",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[경영대학] 2026-2학기 대학원 TAS(강의보조) 2차 모집(대학원생 대상)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155876&article.offset=0&articleLimit=10&noCat=29",
       "date": "첨부파일"
     },
     {
