@@ -1,6 +1,14 @@
 {
-  "updated": "2026.08.29 14:31",
+  "updated": "2026.08.30 12:29",
   "posts": [
+    {
+      "id": "f8872b84a2d5",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[유한재단] 2026학년도 2학기 장학생 모집(생활비)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155938&article.offset=0&articleLimit=10&noCat=501",
+      "date": "첨부파일"
+    },
     {
       "id": "cb6a5f5c6a7c",
       "source_id": "notice",
@@ -72,14 +80,6 @@
       "title": "[홍대신문사] 2026학년도 2학기 홍대신문사 61기 취재부 수습기자 모집 공고",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155884&article.offset=0&articleLimit=10&noCat=514",
       "date": ""
-    },
-    {
-      "id": "114db4a6c031",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[홍대신문사] 제51회 홍대 학‧예술상 작품 현상 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=155881&article.offset=0&articleLimit=10&noCat=514",
-      "date": "첨부파일"
     },
     {
       "id": "b5732d59c423",
