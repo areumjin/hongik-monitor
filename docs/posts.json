@@ -1,6 +1,22 @@
 {
-  "updated": "2026.09.04 11:48",
+  "updated": "2026.09.05 11:50",
   "posts": [
+    {
+      "id": "f6f12ec27d6e",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종/앵커사업단] 2026년도 2학기 앵커 사업단 서포터즈(학부생) 모집 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156393&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "4eb8cf8b0a20",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] 2026년 「꿈의 기업 입사 프로젝트」 앵커루트+(Anchor-Recruit+) 프로그램 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156369&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "7da89d2cd971",
       "source_id": "notice",
@@ -26,10 +42,10 @@
       "date": "첨부파일"
     },
     {
-      "id": "4375b1f4bb06",
+      "id": "d0281796b2ee",
       "source_id": "notice",
       "source_name": "공지사항",
-      "title": "[교양교육원] 2026-2학기 홍익대학교 교양교육원 T/AS장학생 모집 공고",
+      "title": "[마감] [교양교육원] 2026-2학기 홍익대학교 교양교육원 T/AS장학생 모집 공고",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156287&article.offset=0&articleLimit=10&noCat=29",
       "date": ""
     },
@@ -66,20 +82,28 @@
       "date": ""
     },
     {
-      "id": "6f42b510946d",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[중앙도서관x강원대학교 외국학술지지원센터] '생명공학' 분야 외국학술지 무료 원문복사 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156241&article.offset=0&articleLimit=10&noCat=29",
-      "date": ""
+      "id": "d5a4ce1eb6fe",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "학술지 대한민국임시정부연구 원고 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156363&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "f1c789b73314",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[교수학습지원센터(서울)] 2026학년도 학습지원 프로그램 요구조사 (★ 150명 추첨 커피쿠폰 발송★)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156230&article.offset=0&articleLimit=10&noCat=511",
-      "date": ""
+      "id": "514ea3f691a2",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보요청]국민대학교 2026년 제조전문형 메이커스페이스 모집(2차)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156362&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "89bb7cd7033c",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년 신라 동해안 3비 유네스코 세계기록유산 등재 추진 국제학술대회 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156360&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
       "id": "eb7a3ace8910",
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "「양산 다방동 유적의 성격과 가치 규명 학술대회」개최 알림",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156343&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "2c56334323a7",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 제29회 2026 국립창원대학교 전국대학생 자율로봇 경진대회 개최 및 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156342&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "2148cbbe265a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "국립순천대학교 사범대학 부속 교육과학연구소 논문집 「현장수업연구 제8권 제1호」 게재 논문 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156341&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "b9260cb11860",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "이공계 박사후연구원 지원 표준지침 설명회(3회차) 개최 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156340&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     }
   ]
