@@ -1,6 +1,54 @@
 {
-  "updated": "2026.09.09 11:57",
+  "updated": "2026.09.10 11:58",
   "posts": [
+    {
+      "id": "d6ea517b4b2c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "대학원 교학팀 내국인 입시 단기 근로학생 모집(~9.20)",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=156852&noCat=381",
+      "date": "첨부파일"
+    },
+    {
+      "id": "076721ee732f",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종ANCHOR사업단] 세종청년포럼 「청년을 듣다」 참여 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156850&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "93c423c93368",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[전학년 필독] (세종캠퍼스)2026학년도 2학기 폐강 강좌 안내",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=156849&noCat=25",
+      "date": "첨부파일"
+    },
+    {
+      "id": "4e537abbe84a",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/교수학습지원센터(세종)] 2026-2학기 학습전략강화워크숍 '성공적인 팀플을 위한 토의 토론 스킬' 특강 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156840&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "f0cb2976a8b6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[재공지-교수학습지원센터] 자기주도학습동아리 및 온라인학습동아리 모집 안내(~9/14 월)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156837&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "aa59cb8c5ec8",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[교양과] 2026-2학기 홍익대학교 교양교육원 T/AS장학생 모집 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156735&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
     {
       "id": "b0f55ce47f69",
       "source_id": "notice",
@@ -10,10 +58,10 @@
       "date": ""
     },
     {
-      "id": "77eff6d7dfc1",
+      "id": "e223cd017447",
       "source_id": "notice",
       "source_name": "공지사항",
-      "title": "락스타일기(AI 활용 시 주의사항)",
+      "title": "락스타 일기 - AI 활용 시 주의사항",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156694&article.offset=0&articleLimit=10&noCat=34",
       "date": ""
     },
@@ -34,131 +82,83 @@
       "date": "첨부파일"
     },
     {
-      "id": "6dbc39b1d9c0",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학혁신지원사업] 2026-2 Global Graduate School Academic Support (1:1 Tutor/Tutee) - Application",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=156643&noCat=742",
+      "id": "cced5865a2f2",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] <2026년 장욱진 문화마을 활성화 사업> 연동, 모두의 장면들 영상콘덴츠 제작지원 공모",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156854&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "2b7ce1ce8b4e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "★기신청자 필독★ [국제언어교육원] 2026년 가을 학기 유학생활도우미 봉사장학생 모집 신청 오류 재안내(9/8)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156636&article.offset=0&articleLimit=10&noCat=501",
+      "id": "6b4bc1ed0b30",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「2026 서울컵」 대학생 부문 e스포츠 대회 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156846&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "e4be38a37aff",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[세종대학교] 제8회 ISF 외국인 유학생 커리어페어(취업·창업·대학진학)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156844&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "dc3c18c138f0",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 결재문서 : 정읍시립박물관 기획특별전 · 테마전Ⅱ",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156832&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "62aaa20f0142",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[창업교육센터] 2026 모두의창업 프로젝트 사업설명회 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156629&article.offset=0&articleLimit=10&noCat=396",
-      "date": "첨부파일"
-    },
-    {
-      "id": "16c56f4116a9",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 영자신문사 Tidings에서 신입기자를 모집합니다!",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156609&article.offset=0&articleLimit=10&noCat=514",
-      "date": "첨부파일"
-    },
-    {
-      "id": "61777d9eea07",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[건축도시대학] 홍익대학교 건축학전공 박정인 학생, 국제 아이디어 공모전 ‘UTOPIA : NOW !’ Award 수상",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156603&article.offset=0&articleLimit=10&noCat=29",
+      "id": "ebcff41c1f38",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 서울컵」 대학생 부문 e스포츠 대회 개최에 따른 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156793&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "a34665d2b585",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[국제언어교육원] 2026년 가을 학기 유학생활도우미 봉사장학생 모집(~9/9 연장)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156529&article.offset=0&articleLimit=10&noCat=501",
+      "id": "0ab0ee9dad79",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 「장애대학생·청년구직자를 위한 금융권 취업 콘서트」 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156790&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "d151b3d15ce2",
+      "id": "0405617c3f48",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "「기록을 바라보는 여섯 개의 시선」 (5회차) 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156703&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "fd9cfa964b05",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "등재학술지 『지식과 교양』 제22호 논문 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156702&article.offset=0&articleLimit=10",
+      "title": "[홍보] 한국과학기술정보연구원 장애인제한경쟁 채용 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156784&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "5471e4ab5074",
+      "id": "f4604303e0f3",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 대전충남지방병무청 26년 10월~11월 입영하는 현역병 추가모집 일정",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156645&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "215cc08df6b0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026년도 '모두의 BK' 콘텐츠 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156641&article.offset=0&articleLimit=10",
+      "title": "2026년 학술연구정보서비스(RISS) 활용실태 조사 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156780&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "abfd4da3dc46",
+      "id": "e157682ae9f2",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[모집]<책과 오디오로 만나는 문학도시 광주기행_소년의 길 탐방> 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156640&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "ab258e2fb26a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 제64회 전북도민체육대회 및 제21회 전북장애인체육대회 상징물 공모",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156639&article.offset=0&articleLimit=10",
+      "title": "[홍보] 2026년 「데이터+AI 혁신 챌린지」 통합경진대회 데이터 문제해결 부문 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156778&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "8128ef549cfd",
+      "id": "3907c320c833",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[모집] [국제 배터리 엑스포 2026 포항] 전시 참여기관 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156638&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "6282d73cdde0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "「2026 포항 국제수소연료전지 포럼」개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156632&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "5d0b6593301d",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "「2026년 전통시장 디지털 혁신 아이디어 공모전」",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156628&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "3f6167434205",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "광진복지재단 연례포럼「광진구 지하거주 노인가구의 안전환경 조성 및 복지지원 방안 모색」",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156627&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「2026 포항독서대전」 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156769&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     }
   ]
