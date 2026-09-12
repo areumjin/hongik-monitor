@@ -1,6 +1,22 @@
 {
-  "updated": "2026.09.11 11:53",
+  "updated": "2026.09.12 12:00",
   "posts": [
+    {
+      "id": "24ebf43a0aa5",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[제26-33호] 홍익대학교 다중 LLM 지원 생성형 AI 플랫폼 도입업체 선정",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156969&article.offset=0&articleLimit=10&noCat=36",
+      "date": ""
+    },
+    {
+      "id": "2cbdc9a9c240",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/학생상담센터(세종)] 옴니핏 스트레스 검사 실시 안내 (1분 동안 생체신호 측정하여 스트레스 지수 확인)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=156955&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "229b885efc09",
       "source_id": "notice",
@@ -50,14 +66,6 @@
       "date": ""
     },
     {
-      "id": "16c56f4116a9",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 영자신문사 Tidings에서 신입기자를 모집합니다!",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=156856&noCat=537",
-      "date": "첨부파일"
-    },
-    {
       "id": "d6ea517b4b2c",
       "source_id": "notice",
       "source_name": "공지사항",
@@ -74,11 +82,27 @@
       "date": ""
     },
     {
-      "id": "93c423c93368",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[전학년 필독] (세종캠퍼스)2026학년도 2학기 폐강 강좌 안내",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=156849&noCat=25",
+      "id": "f1bebaf04a2a",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년도 스마트폰 과의존 예방교육 우수사례 공모전 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156951&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "e3f48e8bc6fc",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "제2회 성남시 창의도시계획 공모전」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156950&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "2820b15a2b50",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "제14회 Creative Space G 「AI&IoT 메이커톤」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156949&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 제14회 Creative Space G 「AI&IoT 메이커톤」 홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156921&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "1862d5916fa2",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 정읍시립박물관 기획특별전 · 테마전Ⅱ",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156876&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a9a5b1ab4576",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] [시립청소년음악센터] 2026년 <AI 영화음악 워크숍: 신(Scene)나는 사운드> 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156875&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a33bc1e684a1",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 남원시 혼불문학관 「혼불, 기억의 연주」행사",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=156874&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
