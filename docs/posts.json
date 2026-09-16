@@ -1,6 +1,38 @@
 {
-  "updated": "2026.09.15 12:16",
+  "updated": "2026.09.16 12:13",
   "posts": [
+    {
+      "id": "157ca8e033ea",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026-2학기 외국어시험  일시 및 장소 안내",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=157161&noCat=377",
+      "date": ""
+    },
+    {
+      "id": "c8ed16c15201",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026년 하반기 익산시 대학생 학자금 대출이자 지원 신청",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=157133&noCat=24",
+      "date": "첨부파일"
+    },
+    {
+      "id": "e17b85404658",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026년 상반기분 통영시 대학생 학자금 이자 지원 공고",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=157131&noCat=24",
+      "date": "첨부파일"
+    },
+    {
+      "id": "d0f516ce4a4d",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[학생상담센터] ★2026년 생애진로설계를 위한 학년별 맞춤형 검사 실시 안내(2,3학년 대상) ★",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157127&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "9954dcac95a1",
       "source_id": "notice",
@@ -50,35 +82,11 @@
       "date": ""
     },
     {
-      "id": "078050fdb597",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[창업교육센터(서울)] ★ 에너지 창업 경연대회 ˹spark-up˼ ★",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157059&article.offset=0&articleLimit=10&noCat=396",
-      "date": ""
-    },
-    {
-      "id": "3cfaef3ceb0e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "전산 서비스 중단 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157058&article.offset=0&articleLimit=10&noCat=29",
-      "date": ""
-    },
-    {
-      "id": "524a3460d615",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026-2학기 글쓰기 워크숍 ★신청하기★",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157040&article.offset=0&articleLimit=10&noCat=511",
-      "date": ""
-    },
-    {
-      "id": "fef0b3ddce1b",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[서울/교수학습지원센터] 2026-2학기 홍익투게더 ★이끄미★ 모집안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157034&article.offset=0&articleLimit=10&noCat=511",
+      "id": "8b76391f33d8",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 박물관·미술관 박람회 「뮤지엄 커리어 컨설팅」 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157134&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -152,14 +160,6 @@
       "title": "[홍보] 「2026년 하반기 목포시 시정발전 정책제안 공모」참여 및 홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157112&article.offset=0&articleLimit=10",
       "date": "첨부파일"
-    },
-    {
-      "id": "b97921b60643",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 「2026년 하반기 동대문구 대학생 학습 멘토링」 멘토 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157111&article.offset=0&articleLimit=10",
-      "date": ""
     }
   ]
 }
