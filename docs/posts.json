@@ -1,6 +1,22 @@
 {
-  "updated": "2026.09.20 12:16",
+  "updated": "2026.09.21 12:12",
   "posts": [
+    {
+      "id": "b957bd80b803",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[바이오헬스 혁신융합대학] 2026학년도 2학기 다전공 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157368&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "c61559d374a2",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[컴퓨터공학과] 26-2 중간고사 시험 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157364&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
     {
       "id": "b03749917032",
       "source_id": "notice",
@@ -66,19 +82,27 @@
       "date": ""
     },
     {
-      "id": "f712b6d5f14a",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[조교채용] 교무처 학사지원팀 조교 모집 안내(~9/21)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157178&article.offset=0&articleLimit=10&noCat=35",
+      "id": "6b15caf63757",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[도서관 문화살롱 #1] 생각을 잇는 홍익대 교환 독서 노트",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157374&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "60f3a371b201",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2027 홍익대 도서관 달력 디자인 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157370&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "157ca8e033ea",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026-2학기 외국어시험  일시 및 장소 안내",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=157161&noCat=377",
+      "id": "0b5f0c4e7938",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2027 KF 글로벌 챌린저 공모",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157355&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -136,30 +160,6 @@
       "title": "[홍보] 「2026년 부천 웰니스 페어(BWF)」 개최 홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157276&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "1792dcb97a7c",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「2026여수세계섬박람회」개최 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157273&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a63c939ab08e",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 제32회 동래읍성역사축제 개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157222&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "d9507e676bfc",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] '2026 충청남도 드론 페스타' 행사운영 자원봉사자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157221&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
