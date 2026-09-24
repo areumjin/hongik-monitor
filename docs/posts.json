@@ -1,6 +1,30 @@
 {
-  "updated": "2026.09.23 12:11",
+  "updated": "2026.09.24 12:02",
   "posts": [
+    {
+      "id": "e3a11c5d2045",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[조교 채용] 대학원 교학팀 행정조교 모집(~9.29.(화))",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=157523&noCat=383",
+      "date": "첨부파일"
+    },
+    {
+      "id": "563c358ecb66",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[건강진료센터] 추석 연휴를 위한 상황별 감염병 예방수칙",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157517&article.offset=0&articleLimit=10&noCat=514",
+      "date": ""
+    },
+    {
+      "id": "5be60c4915fe",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[제26-34호] 세종캠퍼스 GHP 유지보수 자재 8종 구입",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157515&article.offset=0&articleLimit=10&noCat=36",
+      "date": ""
+    },
     {
       "id": "73bb00c87de7",
       "source_id": "notice",
@@ -58,28 +82,36 @@
       "date": ""
     },
     {
-      "id": "803378f9cfdc",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학혁신지원사업] 2026학년도 2학기 학습강화전략워크숍(서울) 참여 학생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157440&article.offset=0&articleLimit=10&noCat=511",
-      "date": ""
+      "id": "22081b3b3981",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[주시경교양교육연구소] 교양교육 전문 학술지 『대학교양교육연구』 제11권 제3호(통권 24호) 발간 사업 시행",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157522&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "57b0c51423dd",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[건강진료센터] 2026-2 금연클리닉 신청 안내(신청만 해도 커피 쿠폰 증정!) (~10.7까지 신청)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157433&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
+      "id": "b325483eb2f1",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「제16기 통일과 법률 아카데미」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157514&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "4083889f8f53",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[문정도서관] 추석 연휴 자료실 휴실 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=157429&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
+      "id": "96fae74774bb",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026 제주국제건축문화제 건축문화대상 건축사진 공모전 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157513&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "8012af33e756",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「제19회 마포나루 새우젓축제」외국인과 함께하는 새우젓 김장담그기 행사 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157512&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
       "id": "d6dc5e468399",
@@ -128,38 +160,6 @@
       "title": "[홍보][퓨쳐랩]AI 단편영화 창작 지원 프로그램",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157487&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "f95aedd59735",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집][열고닫기]2026년 고립·은둔 청년 리부트 프로그램 '함께-오피스' 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157471&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "75d92eb5f1aa",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026 IN:SENSE 국제감각디자인대회 학생·전문가 참여 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157469&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "5b2abb5eae38",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 국립중앙과학관 2026 제3회 테크콘E(TechConE) 행사 홍보 및 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157468&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "3cdedd1520f8",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 제2회 성남시 창의도시계획 공모전」개최 안내 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=157466&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
