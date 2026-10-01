@@ -1,6 +1,46 @@
 {
-  "updated": "2026.09.30 12:52",
+  "updated": "2026.10.01 13:00",
   "posts": [
+    {
+      "id": "f16c8f5c8d57",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[취업진로지원센터] [모집기간 연장] 삼성 청년희망배움터 후반기 모집(~10/11(일) 23:59까지)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158602&article.offset=0&articleLimit=10&noCat=396",
+      "date": ""
+    },
+    {
+      "id": "36a281ad2eb0",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[기초과학과] 2026-2학기 대학화학(2) 중간고사 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158584&article.offset=0&articleLimit=10&noCat=35",
+      "date": ""
+    },
+    {
+      "id": "78b34b3235e0",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[조교채용] 서울캠퍼스 디자인·예술경영학부 조교 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158582&article.offset=0&articleLimit=10&noCat=35",
+      "date": "첨부파일"
+    },
+    {
+      "id": "071ab816050f",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[제26-35호] 세종캠퍼스 GHP 유지보수 자재 8종 구입(재공고)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158578&article.offset=0&articleLimit=10&noCat=36",
+      "date": ""
+    },
+    {
+      "id": "1aeab20f9fea",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "서울캠퍼스 인권센터 계약직 직원(조교) 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158574&article.offset=0&articleLimit=10&noCat=35",
+      "date": "첨부파일"
+    },
     {
       "id": "be897d9b70e1",
       "source_id": "notice",
@@ -42,43 +82,27 @@
       "date": "첨부파일"
     },
     {
-      "id": "26595d1462aa",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종캠퍼스] 2026-2학기 세종캠퍼스 졸업사진 촬영 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158510&article.offset=0&articleLimit=10&noCat=32",
+      "id": "4ecf792df638",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026 한글사랑 여민락 아카데미 하반기 수강생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158605&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "fa626f0467ab",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종앵커사업단] 세종한두리캠퍼스 브랜드 디자인 공모전 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158507&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
+      "id": "d53766ab0aea",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][에이블런]모두의 AI 실험실 프로젝트",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158604&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "d5c094083294",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종앵커사업단] 세종한두리캠퍼스 글로벌 리빙랩 공모전 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158506&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
-    },
-    {
-      "id": "344f5ff4d0b8",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[기초과학과] 2026-2학기 선형대수학 중간고사 시험감독 보조요원 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158500&article.offset=0&articleLimit=10&noCat=35",
-      "date": ""
-    },
-    {
-      "id": "5e46440cccb2",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종캠퍼스 대학교육혁신사업단] \"내 전공과 진로, 어디로 가야할까?\" 진로지도 프로그램 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158490&article.offset=0&articleLimit=10&noCat=32",
+      "id": "9ecf8ade1340",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모] 2026년 보건복지분야 사회복무요원 SNS 영상 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158575&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보][롯데지주] 롯데 밸유 for ESG 5기 대학생 봉사단 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158502&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "b78dfa5d2832",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][과기부 교육비전액지원+중식제공] AI를 활용한 반도체 공정장비 데이터분석 전문가 과정",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158499&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a7a47f5e53d0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "동의대학교 지방자치연구소[공공정책연구] 제43권3호 원고 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158487&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "6df60ac6f51d",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 제25회 서울억새축제 외국어 자원봉사활동",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158463&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
