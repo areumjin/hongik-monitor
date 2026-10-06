@@ -1,6 +1,62 @@
 {
-  "updated": "2026.10.05 12:56",
+  "updated": "2026.10.06 13:44",
   "posts": [
+    {
+      "id": "7125f9c18cbe",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[기초과학과] 2026-2학기 대학물리(2) 중간고사 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158871&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "187ebbe29af8",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] AI·데이터 전문기업 '바이브컴퍼니 세종사옥' 기업탐방 참가 모집 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158825&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "7265a9f3d3d8",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "전자전기공학부에서 26-2 중간고사 시험감독 보조요원을 모집합니다",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158823&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "785a9c49128a",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[교양교육원 서울] 10.26 (월) 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158822&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "a900d837f66c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "제51회 홍대 학‧예술상 당선작 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158820&article.offset=0&articleLimit=10&noCat=514",
+      "date": ""
+    },
+    {
+      "id": "2d8945b4b2df",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[교양교육원 서울] 10.21 (수) 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158819&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "5054224a1f60",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업] 예술심리 자기성장 워크숍 \"마음 충전, 또 하나의 성장\" 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158817&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "09d86ea39abd",
       "source_id": "notice",
@@ -26,59 +82,43 @@
       "date": ""
     },
     {
-      "id": "e1c6742f7ea4",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종캠퍼스 대학교육혁신사업단] \"Ready? Come!!\" RC 프로그램 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158720&article.offset=0&articleLimit=10&noCat=32",
-      "date": "첨부파일"
-    },
-    {
-      "id": "5f4315f0fb39",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[제26-43호] 홍익대학교 다중 LLM 지원 생성형 AI 플랫폼 도입업체 선정(재공고)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158719&article.offset=0&articleLimit=10&noCat=36",
+      "id": "952ff3550876",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][SK쉴더스]  생성형 AI 활용 사이버보안 전문가 양성과정 36기 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158852&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "7125f9c18cbe",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[기초과학과] 2026-2학기 대학물리(2) 중간고사 시험감독 보조요원 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158715&article.offset=0&articleLimit=10&noCat=29",
+      "id": "b7d31ad60853",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][한국마케팅진흥원] 2026 미래내일일경험 사업(프로젝트형) 모집 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158851&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "f4079f2b5fd4",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 인권센터 학생인권위원(대학원생) 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158713&article.offset=0&articleLimit=10&noCat=32",
+      "id": "633c18b822f0",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][현대오토에버] 모빌리티 SW스쿨 5기 클래스메이트 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158850&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "1880e74170b2",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[제26-42호] 정보전산팀 Microsoft OVS-ES 임대 업체 선정",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158711&article.offset=0&articleLimit=10&noCat=36",
+      "id": "a7ffd10d5146",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][현대자동차그룹] 모빌리티 국비지원교육 HINT 2기 모집기간 연장 및 모집대상 확대 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158849&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "b89082f5b714",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[문정도서관] 10월 자료실 휴실 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158710&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
-    },
-    {
-      "id": "7265a9f3d3d8",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "전자전기공학부에서 26-2 중간고사 시험감독 보조요원을 모집합니다",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158706&article.offset=0&articleLimit=10&noCat=29",
+      "id": "b8647f4347fd",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][경남대] 2026년 동남권 4대 주력산업 온라인 취업특강·직무멘토링 참여자 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158848&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -120,46 +160,6 @@
       "title": "[홍보][서강대] SoC반도체설계전문가 육성과정 수강생 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158639&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "f1365cebd6ee",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]「안랩샘아카데미 23기」 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158636&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "4ecf792df638",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026 한글사랑 여민락 아카데미 하반기 수강생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158605&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "d53766ab0aea",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][에이블런]모두의 AI 실험실 프로젝트",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158604&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "9ecf8ade1340",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 2026년 보건복지분야 사회복무요원 SNS 영상 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158575&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "c27b03f6c502",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 한국식품산업클러스터진흥원 「식품 데이터 캡스톤디자인 경진대회」참여 협조",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=158549&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
