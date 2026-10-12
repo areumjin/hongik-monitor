@@ -1,6 +1,62 @@
 {
-  "updated": "2026.10.11 12:51",
+  "updated": "2026.10.12 13:12",
   "posts": [
+    {
+      "id": "b6e6ffa4173d",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[교수학습지원센터(서울)] 2026학년도 에세이 쓰기 대회 접수",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159124&article.offset=0&articleLimit=10&noCat=29",
+      "date": "첨부파일"
+    },
+    {
+      "id": "81d6453789d6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[교수학습지원센터] 서평 특강_작가가 알려주는 서평 쓰기 노하우(11/4)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159123&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "532e33d033c9",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[급구/기초과학과] 2026-2학기 대학물리(2) 중간고사 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159122&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "8d5aee9a8ef6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/취업진로지원센터] 2026학년도 NCS 집중교육(직업기초능력평가) 2기 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159120&article.offset=0&articleLimit=10&noCat=396",
+      "date": ""
+    },
+    {
+      "id": "8d5aee9a8ef6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/취업진로지원센터] 2026학년도 NCS 집중교육(직업기초능력평가) 2기 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159119&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "c754c86bbea1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[중앙도서관] 제16회 저자 초청 강연 - 11. 2.(월) 강보원 작가",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159109&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "6fb45f9b83aa",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (서울대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159108&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
     {
       "id": "be897d9b70e1",
       "source_id": "notice",
@@ -26,59 +82,75 @@
       "date": ""
     },
     {
-      "id": "37b8f38e5705",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[중앙도서관] 중간고사 기간 중 일반열람실 운영 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159072&article.offset=0&articleLimit=10&noCat=29",
+      "id": "42bb62ec0b33",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집] 2026 부평구청소년수련관 청소년특성화교실 <부평 잡(JOB)아라 시즌3> 모니터링단 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159128&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "65cb9c1de11f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[산업데이터공학과] 2026-2학기 중간고사 시험감독 보조요원 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159068&article.offset=0&articleLimit=10&noCat=35",
+      "id": "793b4b299ee5",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 국립중앙과학관 별의별 과학특강(4분기) 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159127&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "4ff9edaa84de",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026-2학기 영어 말하기/글쓰기 워크숍 ★신청하기★",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159048&article.offset=0&articleLimit=10&noCat=511",
+      "id": "1e6e1036df15",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집] 「2026 영암 월출산 달빛 뮤직 페스티벌」 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159126&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "275aa4f71def",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[HUSS 국제화프로그램(중국 상해, 항주)] '빅테크 현장에서 찾는 AI 미래' 프로그램 참가자 선발(~10.13)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159041&article.offset=0&articleLimit=10&noCat=514",
+      "id": "ab61a7b3d379",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 「2026 국회 입법박람회」 홍보 및 참석",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159125&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "273edd064c5d",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[문정도서관] 교내 정전에 따른 도서관 임시 휴관 및 무인반납기 운영 중지 안내 (10/23~10/26)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159015&article.offset=0&articleLimit=10&noCat=32",
+      "id": "d265e238a921",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 문화다양성 컨퍼런스 안내 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159116&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "03200dd8ac63",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[제26-44호] 홍익대학교 서울·세종캠퍼스 도서관 출입게이트 구입 및 설치",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158994&article.offset=0&articleLimit=10&noCat=36",
+      "id": "1ce38ef6d3ed",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 청소년 K-POP 콘테스트&콘서트 개최 안내 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159115&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "7265a9f3d3d8",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "전자전기공학부에서 26-2 중간고사 시험감독 보조요원을 모집합니다",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=158993&article.offset=0&articleLimit=10&noCat=29",
+      "id": "0e562b7db6a8",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 서울영테크 10월 명사 금융특강 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159114&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "a4a154370d66",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년 하반기 「동행안심벨 (구 안심헬프미) 지원사업」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159112&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "8d212e8c912c",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[중앙도서관] 제16회 저자 초청 강연 - 11. 2.(월) 강보원 작가",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159110&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -88,78 +160,6 @@
       "title": "[홍보][[한국전파진흥협회] 현대오토에버 모빌리티 SW스쿨 5기 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159071&article.offset=0&articleLimit=10",
       "date": "첨부파일"
-    },
-    {
-      "id": "b741d2f0a749",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]삼성 청년희망배움터 수강생 모집(10/11)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159070&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "49bcfd7182e1",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "시민 참여형 과학기술학(STS) 워크숍 프로그램 참가자 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159061&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "3721fe0ca4d3",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026년 용산구진로직업체험지원센터 대학생 실전 마케팅 프로젝트 <미래야 BRAND LAB> 참여자 모집 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159060&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "30516c1c52a4",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "서울영테크 10월 명사 금융특강 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159057&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "81f09bcb87d9",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 세종시 X 위기브 고향사랑기부 네이버페이 2만 원권 경품 이벤트 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159049&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "16a06377938a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026년 [모집] 용산구진로직업체험지원센터 대학생 실전 마케팅 프로젝트 <미래야 BRAND LAB> 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159045&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "55a351bda85f",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 정신건강의 날 기념 「마음이 웃는 순간」 캠페인",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159044&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "f6cfe9946434",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 시민 참여형 과학기술학(STS) 워크숍 프로그램 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159043&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "68928ae0287d",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026 대한민국 청년정책 컨퍼런스 ‘청년정책 발굴단’ 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159036&article.offset=0&articleLimit=10",
-      "date": ""
     }
   ]
 }
