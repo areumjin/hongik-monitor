@@ -1,12 +1,36 @@
 {
-  "updated": "2026.10.16 12:01",
+  "updated": "2026.10.17 11:54",
   "posts": [
     {
-      "id": "26102cb11fcc",
+      "id": "76def41e04b5",
       "source_id": "notice",
       "source_name": "공지사항",
-      "title": "2026학년도 대학혁신지원사업 ‘화성캠퍼스 첨단학과 개설을   위한 교육과정 및 혁신적 운영모델 정책연구’ 공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159291&article.offset=0&articleLimit=10&noCat=513",
+      "title": "2027년 2월말 퇴직교원 정부포상 추천대상자 공개검증 의견 수렴",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159311&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "5a4b59ce3462",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026년 동계 전공연계 <독일> 해외파견 프로그램 선발 안내 < 베를린 현지 대면수업 계절학기 >",
+      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=159310&noCat=536",
+      "date": "첨부파일"
+    },
+    {
+      "id": "471889e6c68d",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[거창군] 2026년 2학기 거창군 지역출신 대학생 등록금 지원사업 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159309&article.offset=0&articleLimit=10&noCat=501",
+      "date": ""
+    },
+    {
+      "id": "8edc551aaede",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[한국고등교육재단] 인재림 제7기 장학생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159308&article.offset=0&articleLimit=10&noCat=501",
       "date": "첨부파일"
     },
     {
@@ -58,28 +82,20 @@
       "date": ""
     },
     {
-      "id": "552da499a0d6",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[교수학습지원센터] 2026-2 <다정한 책읽기 서평대회> 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159229&article.offset=0&articleLimit=10&noCat=32",
+      "id": "a6e3aa2d14c4",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 창업보육센터 AI 역량검사 수요조사",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159307&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "980b509b7d66",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[아산나눔재단] 2026 정주영 창업경진대회",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159219&article.offset=0&articleLimit=10&noCat=396",
+      "id": "4d2ace217619",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모] 2026년 겨울편 서울꿈새김판 문안 공모",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159300&article.offset=0&articleLimit=10",
       "date": "첨부파일"
-    },
-    {
-      "id": "804bda5570ad",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학혁신지원사업/학생상담센터] 예술심리 자기성장 워크숍 \"마음 충전, 또 하나의 성장\" 참여자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159204&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
     },
     {
       "id": "d2409a2eda60",
@@ -144,22 +160,6 @@
       "title": "[홍보] 수원방문의해 관광 숏폼 영상 공모전 '수원, 다시보다. 시즌2' 홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159276&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "4dc8c24fa711",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 의성군 AI활용 의성군 서비스 개선 공모제안 경진대회 공모 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159275&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "328c489361bb",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] (한국국제협력단) 2026년 KOICA 해외봉사단 정기설명회 개최 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159274&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
