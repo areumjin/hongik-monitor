@@ -1,6 +1,62 @@
 {
-  "updated": "2026.10.22 12:11",
+  "updated": "2026.10.23 12:17",
   "posts": [
+    {
+      "id": "f8ca1eda587e",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (한국항공대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159503&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "7399d351ca57",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (서울시립대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159496&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "2f63172db579",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (서강대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159495&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "ccfacd221f0b",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026년 2학기 국가근로장학금 3차 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159493&article.offset=0&articleLimit=10&noCat=501",
+      "date": ""
+    },
+    {
+      "id": "07639e6ce58f",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "홍익대학교 융합사업 클러스터(HIVE) 입주기업 모집공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159492&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "1c50f2137a09",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026 직무박람회 개최 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159483&article.offset=0&articleLimit=10&noCat=396",
+      "date": ""
+    },
+    {
+      "id": "12b3ee6c4987",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종/취업진로지원센터] 2026년 11월 취업(진로) 온라인 1:1 집중컨설팅 일정 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159482&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "975e98ac7a6a",
       "source_id": "notice",
@@ -26,60 +82,28 @@
       "date": ""
     },
     {
-      "id": "1ce2fd686892",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (성신여자대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159467&article.offset=0&articleLimit=10&noCat=500",
+      "id": "6b67b4970c88",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년 우수독서프로그램 [책을 감싸는 시간, 나만의 북커버 만들기] 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159501&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "4fe5c8b8588f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[창업특강] \"스타트업의 MVP 검증 및 마케팅 전략\" 수강생 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159459&article.offset=0&articleLimit=10&noCat=396",
-      "date": ""
-    },
-    {
-      "id": "719bdb9a6ff9",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학교육혁신사업단] (필독)2026학년도 홍익 Research Frontier 프로그램 결과보고서 제출 및 운영 안내(1월 추가 모집 취소 및 결과물 제출 기간 변경 안내)",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=159456&noCat=536",
+      "id": "4466274d03c8",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년 Wiley Online Library Read & Publish 오픈액세스 APC(출판비용) 활용 기한 종료 및 잔여 APC 추가 지원 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159489&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "c4492a61c7ee",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026년 2학기 푸른등대 기부장학금(2차) 신규장학생 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=159455&noCat=24",
-      "date": ""
-    },
-    {
-      "id": "6b71f147f6a1",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[국세청] 2025년 소득에 대한 근로·자녀장려금 기한 후 신청 안내(~2026.12.1.)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159431&article.offset=0&articleLimit=10&noCat=501",
-      "date": ""
-    },
-    {
-      "id": "b635391ee4bb",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[안산시] 2026년 2학기 안산시 대학생 본인부담 등록금 반값지원",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159427&article.offset=0&articleLimit=10&noCat=501",
-      "date": ""
-    },
-    {
-      "id": "5d23dc5568b5",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "표준현장실습 참여학생 모집 안내 (2026학년도 동계 계절학기)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159426&article.offset=0&articleLimit=10&noCat=396",
-      "date": ""
+      "id": "093cedd2af51",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[한국방송통신대학교 대학원 평생교육학과] 2027학년도 봄학기 박사학위과정 신설 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159488&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
       "id": "b2eb4337a6c8",
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 「2026년(제6회) 부천디아스포라문학상 시상식」홍보",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159447&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "0030842e67b7",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「2026년도 국회고성연수원 의회정치 리더십 과정」",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159445&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "1e837dc7be59",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 서울시 가족돌봄청소년·청년 성과포럼 참여 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159444&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "7f4724968c61",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 지역밀착형 거점공간 사례읽기 교육 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159443&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
