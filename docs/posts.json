@@ -1,6 +1,62 @@
 {
-  "updated": "2026.10.25 12:05",
+  "updated": "2026.10.26 12:05",
   "posts": [
+    {
+      "id": "1cfb3f0a9fc3",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[서울지방병무청] 현역병 모집일정(2026년 11월) 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159568&article.offset=0&articleLimit=10&noCat=29",
+      "date": "첨부파일"
+    },
+    {
+      "id": "215014315953",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (한성대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159560&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "2a6dc2c5e19c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (상명대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159557&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "94f932c65630",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[산학협력팀(세종) 융합인재센터] Edge AI 기반 제조시스템 통합 설계 및 운영 전문가 양성과정 교육생 모집 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159553&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "6e6f6f00c79c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종/취업진로지원센터]2026학년도 2학기(2차) 어학인증시험 응시장학금 지원 신청 안내(10.26~2027.1.25)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159552&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "baa45a4d67b9",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/취업진로지원센터] 2026학년도 파이썬 실무자 통합 자격증 취득과정 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159550&article.offset=0&articleLimit=10&noCat=396",
+      "date": ""
+    },
+    {
+      "id": "baa45a4d67b9",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/취업진로지원센터] 2026학년도 파이썬 실무자 통합 자격증 취득과정 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159549&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "7265a9f3d3d8",
       "source_id": "notice",
@@ -26,60 +82,52 @@
       "date": ""
     },
     {
-      "id": "87a929cf299a",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[출석인정가능/셔틀버스 운행] 2026 직무박람회 개최 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159516&article.offset=0&articleLimit=10&noCat=32",
+      "id": "0b238bca6c52",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]「K-뉴딜 아카데미」[NC AI] 게임 개발 교육과정(대전 지역) 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159561&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "2ad281232e10",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[HUSS] 2026 스마트시티(지식서비스산업) 아이디어 경진대회 (~11.11)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159505&article.offset=0&articleLimit=10&noCat=514",
-      "date": "첨부파일"
-    },
-    {
-      "id": "f8ca1eda587e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (한국항공대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159503&article.offset=0&articleLimit=10&noCat=500",
-      "date": "첨부파일"
-    },
-    {
-      "id": "7399d351ca57",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (서울시립대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159496&article.offset=0&articleLimit=10&noCat=500",
-      "date": "첨부파일"
-    },
-    {
-      "id": "2f63172db579",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (서강대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159495&article.offset=0&articleLimit=10&noCat=500",
-      "date": "첨부파일"
-    },
-    {
-      "id": "ccfacd221f0b",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026년 2학기 국가근로장학금 3차 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159493&article.offset=0&articleLimit=10&noCat=501",
+      "id": "9ec4af9c6485",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][관악드림ON데이] 이승희 마케터•작가 초청 특강 참여자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159559&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "07639e6ce58f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 융합사업 클러스터(HIVE) 입주기업 모집공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159492&article.offset=0&articleLimit=10&noCat=32",
-      "date": "첨부파일"
+      "id": "a86c5f0a2e8a",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][고용노동부 KDT국비 취업교육] 의료데이터 기반 AI 헬스케어 연구·개발 과정 훈련생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159558&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "5630fde120d6",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]텔레칩스 TOPST 기반 자율주행 임베디드 교육과정 교육생모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159556&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "7cea0c854724",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모전][SW기술협] 「2026 대한민국 SW기술대상 및 IT아키텍처 대상」 공모신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159555&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "8b679bdfee5a",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][필전 2026 – 조선 백일장]",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159554&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
       "id": "6399c69061ca",
@@ -111,54 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 구리시상권활성화재단 「우리동네 PICK! 쇼츠 공모전(하반기)」",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159533&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "0a34f178212c",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]「2026 오이도 유적 체험의 날」 행사",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159532&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "4b562a9444cf",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 「고양이섬 조각공모전」참여작가 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159510&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "29c03253c5ce",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 합천 야로리 등골제철유적 발굴조사 현장공개설명회 개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159509&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "378d65eca2ae",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 경상남도 밀양시 공공데이터 설문조사 및 이벤트 실시 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159508&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "18f0fc8833cc",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「양주 회암사지 세계유산적 가치홍보 국제학술대회」개최 알림 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159507&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "91c4d1b361b9",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「2026 뷰티썸 수원」개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159506&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
