@@ -1,6 +1,38 @@
 {
-  "updated": "2026.10.29 13:16",
+  "updated": "2026.10.30 13:15",
   "posts": [
+    {
+      "id": "2ae5f59741a9",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[조교채용] 국제협력본부 국제교류실 조교 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159847&article.offset=0&articleLimit=10&noCat=35",
+      "date": "첨부파일"
+    },
+    {
+      "id": "b0a53b22a1b6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (한국외국어대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159823&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "70000570e584",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] 헬스케어 분야 (주)에이치엘사이언스 기업 탐방 참여 모집 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159815&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "a2626aea162f",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[조교채용] 서울캠퍼스 건축도시대학 행정실 조교 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159810&article.offset=0&articleLimit=10&noCat=29",
+      "date": "첨부파일"
+    },
     {
       "id": "144aa832f411",
       "source_id": "notice",
@@ -24,14 +56,6 @@
       "title": "[통영시] 2026년도 통영시 저소득 대학생 장학금 지원대상자 선발 공고",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159778&article.offset=0&articleLimit=10&noCat=501",
       "date": "첨부파일"
-    },
-    {
-      "id": "c6195289c90e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[국제학생지원실(세종)] 충주에서 만나는 K-헬스케어와 지역문화 with 공명",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159777&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
     },
     {
       "id": "1b734e947299",
@@ -58,108 +82,84 @@
       "date": "첨부파일"
     },
     {
-      "id": "261bd56fe4d1",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2027학년도 1학기 재입학 신청 안내(학부생)(11.9 10:00~11.27 23:00, 온라인 접수)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159725&article.offset=0&articleLimit=10&noCat=500",
+      "id": "c63ea33c73f6",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 무안 YD 페스티벌 전국대학가요제 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159846&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "620d280f0ab2",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[창업교육센터]「2026 홍익대학교 직무박람회」 개최 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159688&article.offset=0&articleLimit=10&noCat=396",
-      "date": ""
-    },
-    {
-      "id": "36a1f1e38c43",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[HUSS 공동융합캠프]  HUSS 지산학 아카데미 학점교류 수강신청(~11/11)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159665&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
-    },
-    {
-      "id": "6d4ee7a885b1",
+      "id": "e4d109ba46a2",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 「마포청년정책 토론회」대학생 참여 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159799&article.offset=0&articleLimit=10",
+      "title": "[홍보] [국립국악원] 2026 정악단 정기공연 <영산회상>",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159845&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "c4002fcdcb11",
+      "id": "8e7302a5662e",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][서울시] 청년취업사관학교(SeSAC) 교육과정 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159794&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「국제 배터리 엑스포 2026 포항」개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159844&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "1349f64dda2d",
+      "id": "a73df2dc7013",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보][관악드림온아카데미] '취업 글쓰기 완성 5기' 프로그램 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159793&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "86cc78e82b4a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026 울산 남구「책고래 북페어」행사",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159787&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "08ccdb8ab6dd",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 2026년 체육관련 규제개선 아이디어 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159786&article.offset=0&articleLimit=10",
+      "title": "[홍보] 「2026 전남광주 청년 지역혁신 학술제」 학생 참여 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159843&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "63c1348d5d36",
+      "id": "f85f7a7cbd25",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "[홍보] 천원의 아침밥 만족도 설문조사(대학) 시행",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159700&article.offset=0&articleLimit=10",
+      "title": "[공모] 「이런(e-Learn) 한 컷, 영상 공모전」 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159842&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "d7d65e9b9541",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [한국체육산업개발(주)]2026년 공공데이터 활용 경진대회 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159840&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "f24a147b618e",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][메이캔] 한국중앙자원봉사센터 AI 영상 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159824&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "884d10ae1b94",
+      "id": "35d014ad8995",
       "source_id": "event",
       "source_name": "행사/공모전",
-      "title": "한국건설기술연구원 연구시설·장비 공동활용 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159674&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "4579bd95dd84",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "외국인 친구와 함께하는 KAIAS 주관 대학생 스키캠프 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159673&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "cb30fcf0df7e",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[김수환추기경연구소] 2026년 제1회 김수환추기경연구소 숏폼 공모전 참여 모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159672&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "ede236e8f5cb",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "충북대학교 교육개발연구소 「한국교육논총」제47권 제3호의 원고모집 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159671&article.offset=0&articleLimit=10",
+      "title": "[홍보] [마포청년창업취업지원센터 나루] 서울마포 대학연계 AI 청년창업포럼 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159819&article.offset=0&articleLimit=10",
       "date": ""
+    },
+    {
+      "id": "2e30ff36d696",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [필독] 2026 천원의 아침밥 만족도 설문조사 홍보 및 참여 독려",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159818&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "d5b5ee6ef5bd",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모] 가까운 강원‘1시간대컷 캠페인’영상 공모전 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159817&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     }
   ]
 }
