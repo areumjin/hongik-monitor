@@ -1,6 +1,30 @@
 {
-  "updated": "2026.11.01 13:14",
+  "updated": "2026.11.02 13:16",
   "posts": [
+    {
+      "id": "4593f3f90f34",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업] 2026 상담 및 프로그램 참여수기 공모전(서울, 세종) 보조인력 모집 공고",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159906&article.offset=0&articleLimit=10&noCat=512",
+      "date": "첨부파일"
+    },
+    {
+      "id": "bcb932d54641",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[서울캠퍼스]2026년도 2학기 사회봉사활동 실적 등록 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159899&article.offset=0&articleLimit=10&noCat=501",
+      "date": "첨부파일"
+    },
+    {
+      "id": "1ae01f0cf551",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[조교 채용] 서울캠퍼스 중앙도서관 사서직 조교 채용(~11/9 17:00)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159887&article.offset=0&articleLimit=10&noCat=35",
+      "date": "첨부파일"
+    },
     {
       "id": "7c5feedf1f63",
       "source_id": "notice",
@@ -58,27 +82,27 @@
       "date": ""
     },
     {
-      "id": "a2626aea162f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[조교채용] 서울캠퍼스 건축도시대학 행정실 조교 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159810&article.offset=0&articleLimit=10&noCat=29",
-      "date": "첨부파일"
+      "id": "8a716d3bc881",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][메이캔] VIVID AI 영상 창작 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159895&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
-      "id": "144aa832f411",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026년 국가근로 동계방학 집중근로 희망근로지 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159791&article.offset=0&articleLimit=10&noCat=501",
-      "date": "첨부파일"
+      "id": "cb3e8fcf4d4c",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 하나증권 청년금융아이디어 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159894&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
-      "id": "f189984b5472",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[마포청년창업취업지원센터 나루] 「서울마포 대학연계 AI 청년창업포럼」",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159780&article.offset=0&articleLimit=10&noCat=396",
+      "id": "6f4670c65e4c",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 블록체인 밋업데이(BCMD) 32회차 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159892&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -136,30 +160,6 @@
       "title": "[홍보][메이캔] 한국중앙자원봉사센터 AI 영상 공모전",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159824&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "35d014ad8995",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [마포청년창업취업지원센터 나루] 서울마포 대학연계 AI 청년창업포럼 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159819&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "2e30ff36d696",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [필독] 2026 천원의 아침밥 만족도 설문조사 홍보 및 참여 독려",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159818&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "d5b5ee6ef5bd",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 가까운 강원‘1시간대컷 캠페인’영상 공모전 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159817&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
