@@ -1,6 +1,30 @@
 {
-  "updated": "2026.11.04 13:44",
+  "updated": "2026.11.05 13:59",
   "posts": [
+    {
+      "id": "6c4c8d16b536",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (가톨릭대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160053&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
+    {
+      "id": "fabaf4ef353a",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종캠퍼스] 2026년도 2학기 사회봉사활동 실적 등록 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160045&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "d4f061b6cc1e",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[건강진료센터] (11월) 안구건조증 증상 및 예방법",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160041&article.offset=0&articleLimit=10&noCat=514",
+      "date": ""
+    },
     {
       "id": "76dfde62dfd3",
       "source_id": "notice",
@@ -58,27 +82,43 @@
       "date": "첨부파일"
     },
     {
-      "id": "5a928cf3fbdc",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[한국장학재단] 학자금 중복지원 방지 사업 안내",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-undergrad.do?mode=view&articleNo=159934&noCat=24",
+      "id": "b4f311e6e572",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][취업·인턴 연계] SeSAC 생성형 AI 데이터분석·AI Agent 교육생 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160067&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "b9fe8a4632ce",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[장애학생지원센터] 26학년도 장애인식개선 특강 안내 (유튜버 '리즌정' 초청)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159931&article.offset=0&articleLimit=10&noCat=514",
+      "id": "75237b9f8ac5",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [김수환추기경연구소] 2026년 제1회 김수환추기경연구소 숏폼 공모전 참여기간 연장",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160057&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "f073a8a67d42",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모] 제1회 도봉 민간기록물 수집 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160056&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "74fa98c696b1",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[건강진료센터] 11월 사랑의 헌혈 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=159926&article.offset=0&articleLimit=10&noCat=514",
+      "id": "a912656d5033",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]「피지컬AI 제조업AX 캠퍼스 5기」모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160052&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "fcb84b03b293",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]「AI 미래배터리 캠퍼스 2기」모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160051&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -119,46 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 2026 한글사랑 여민락 아카데미 주제특강 <작가와의 대화>",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160028&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "b602dc34f256",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 청주 선교기지 세계유산 등재를 위한 학술회의 개최 알림 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159991&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a9ec30119256",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 제4회 동작 청소년 축제 개최 안내 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159989&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "4384446cfbd8",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] : 논산 황산성 정비사업부지 내 유적(7차) 발굴조사 현장공개 설명회 개최",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159972&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "16b85a35f57a",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026년 고흥분청문화박물관 구입 예정 소장자료 화상 공개",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159971&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "df5b854409e4",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]  ‘청년 사장님 소개 도민영상 공모전’ 시청자 참여 평가 참여 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=159970&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
