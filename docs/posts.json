@@ -1,6 +1,30 @@
 {
-  "updated": "2026.11.06 13:58",
+  "updated": "2026.11.07 13:31",
   "posts": [
+    {
+      "id": "5b8019d4c3c7",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[인문사회융합인재양성사업(HUSS)] 광운대학교 PATH-FINDER 코칭 & 멘토링 기반 진로설계 PBL 프로그램",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160130&article.offset=0&articleLimit=10&noCat=514",
+      "date": ""
+    },
+    {
+      "id": "88d7a9610003",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계 「대학생 재능봉사캠프」 및 「NH농협은행 초록사다리 동계캠프」 봉사자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160127&article.offset=0&articleLimit=10&noCat=514",
+      "date": "첨부파일"
+    },
+    {
+      "id": "128e1e9117c1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[산학협력팀(세종) 융합인재센터] 2026년 기회발전특구 수요맞춤형 지원사업 채용 연계 핏칭데이 참가자 모집(~11/11)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160110&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "1ec561f34127",
       "source_id": "notice",
@@ -10,10 +34,10 @@
       "date": "첨부파일"
     },
     {
-      "id": "98fdbcd4d1a8",
+      "id": "a3e4a3584f05",
       "source_id": "notice",
       "source_name": "공지사항",
-      "title": "[HUSS] (~11/13)HUSS 인턴십 프로그램 신청: 서류와 면접 특강부터⏩ 방학기간 5주 인턴십까지!",
+      "title": "[HUSS-ANCHOR] HUSS 인턴십 프로그램: 서류와 면접 특강부터⏩ 방학기간 5주 인턴십까지! (~11/20)",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160098&article.offset=0&articleLimit=10&noCat=514",
       "date": ""
     },
@@ -58,28 +82,12 @@
       "date": "첨부파일"
     },
     {
-      "id": "6c4c8d16b536",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (가톨릭대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160053&article.offset=0&articleLimit=10&noCat=500",
+      "id": "8e3643a107b7",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[글로컬미래교육연구소] 『글로컬미래교육연구』 제1권 제2호 논문 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160112&article.offset=0&articleLimit=10",
       "date": "첨부파일"
-    },
-    {
-      "id": "fabaf4ef353a",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종캠퍼스] 2026년도 2학기 사회봉사활동 실적 등록 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160045&article.offset=0&articleLimit=10&noCat=32",
-      "date": "첨부파일"
-    },
-    {
-      "id": "d4f061b6cc1e",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[건강진료센터] (11월) 안구건조증 증상 및 예방법",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160041&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
     },
     {
       "id": "d85173aebaee",
@@ -151,14 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[공모] 제1회 도봉 민간기록물 수집 공모전",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160056&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "a912656d5033",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]「피지컬AI 제조업AX 캠퍼스 5기」모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160052&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
