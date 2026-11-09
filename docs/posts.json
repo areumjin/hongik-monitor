@@ -1,6 +1,38 @@
 {
-  "updated": "2026.11.08 13:18",
+  "updated": "2026.11.09 13:32",
   "posts": [
+    {
+      "id": "21380a932054",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종캠퍼스] 홍보대사단 홍아람 14기 단원 선발",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160160&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "890cae095292",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] 3차원 이미징 기술 이론 및 실습 비교과 프로그램 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160159&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "526e6e3cb85d",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] 장염 자가진단 키트 제작 실습 비교과 프로그램 모집 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160156&article.offset=0&articleLimit=10&noCat=32",
+      "date": "첨부파일"
+    },
+    {
+      "id": "c5cc69a40775",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (숭실대학교)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160143&article.offset=0&articleLimit=10&noCat=500",
+      "date": "첨부파일"
+    },
     {
       "id": "5b8019d4c3c7",
       "source_id": "notice",
@@ -50,36 +82,44 @@
       "date": ""
     },
     {
-      "id": "8bea6bdfdd00",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "홍익대학교 국제연수원 AI융합사업 클러스터(HIVE) 입주기업 재 모집공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160086&article.offset=0&articleLimit=10&noCat=32",
+      "id": "f7e091f7ddb4",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집] [초록우산] 2026 우리함께런 with 빗썸나눔 대학생 자원봉사자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160152&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "302d5314fceb",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[모집] 2026년 잠실청소년센터 '잠실산타 이즈 커밍' 청소년산타(대학생) 모집 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160151&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "c5e271952e3f",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 제26회 윤동주 시문학상 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160150&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "9f2eb2f47638",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[공모] 「2026년 충청북도 탄소중립 창작 그림책 공모전」",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160149&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "7cbd9f04e6a3",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종/앵커사업단]2026년 국제 협력 사업화 연구과제 참여자 모집 공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160084&article.offset=0&articleLimit=10&noCat=32",
-      "date": "첨부파일"
-    },
-    {
-      "id": "06fa9decb548",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[교수학습지원센터] <다정한 책읽기 서평대회> 참가자 모집(~11/12)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160079&article.offset=0&articleLimit=10&noCat=32",
-      "date": "첨부파일"
-    },
-    {
-      "id": "84d20b2b3749",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[대학교육혁신사업단] 2026 대학혁신지원사업 참여학생 사례영상 경진대회 개최 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160076&article.offset=0&articleLimit=10&noCat=513",
-      "date": "첨부파일"
+      "id": "b4440e25e4a9",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026년 양성평등주제 인문학 대중강좌 0308아카데미 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160148&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
       "id": "8e3643a107b7",
@@ -119,46 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보]LG CNS 현직자와 함께하는 \"AI 트렌드 온라인 특강\"",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160093&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "05e60c1d4e92",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][메이캔] 프로그래머스 KDT 클라우드 기반 백엔드 15기 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160091&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "d87735a8e24c",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2026 제17회 국제 청소년 평화·휴머니즘 영상 공모제",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160087&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "b4f311e6e572",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][취업·인턴 연계] SeSAC 생성형 AI 데이터분석·AI Agent 교육생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160067&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "75237b9f8ac5",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [김수환추기경연구소] 2026년 제1회 김수환추기경연구소 숏폼 공모전 참여기간 연장",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160057&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "f073a8a67d42",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 제1회 도봉 민간기록물 수집 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160056&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
