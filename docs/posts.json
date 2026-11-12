@@ -1,6 +1,22 @@
 {
-  "updated": "2026.11.11 13:36",
+  "updated": "2026.11.12 14:39",
   "posts": [
+    {
+      "id": "a51b41fd0653",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[도서관] 도서관 문화살롱 #3 '나만의 에세이 써보기' ~11.30.",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160274&article.offset=0&articleLimit=10&noCat=29",
+      "date": "첨부파일"
+    },
+    {
+      "id": "702d4497d609",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "(세종) 2026년 2학기 사랑의 헌혈 실시 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160241&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
     {
       "id": "3e61a1a844b5",
       "source_id": "notice",
@@ -66,20 +82,52 @@
       "date": ""
     },
     {
-      "id": "149f2f2cecfa",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[제26-47호] (세종) 소프트웨어융합학과 PC 10대 구입",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160201&article.offset=0&articleLimit=10&noCat=36",
+      "id": "b18229820cd5",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[도서관] 도서관 문화살롱 #3 '나만의 에세이 써보기'",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160273&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "98a53284db1b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "2026년 한국특수교육교과교육학회 동계 학술대회 참가 협조",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160266&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "6253b1be7810",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "(재)의정부문화관광재단_2026 문화도시 R&D 지원사업 [경기북부 작은연구]",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160265&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "751dd0932166",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 「2026 문화콘텐츠 페어 in 순천」 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160245&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "d0e0670bca52",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "(서울) 건강진료센터 2026-2 심폐소생술 교육 안내(학생)(봉사시간 2시간)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160193&article.offset=0&articleLimit=10&noCat=514",
+      "id": "5e0965c42635",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 제45회 국제인도법 세미나(11월 20일) 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160244&article.offset=0&articleLimit=10",
       "date": ""
+    },
+    {
+      "id": "348ace143a19",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「ICT융합소방학과」석사 계약학과 모집 알림",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160243&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
       "id": "8215b2fae250",
@@ -111,54 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[서울교육대학교] 온라인 한국어강좌 수강생 모집 안내",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160228&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "208a52de133e",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "2026학년도 제4기 대학(원)생 멘토링 교육 봉사 학생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160226&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "1f41397af301",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "법무부 「통일과 법률」 제69호 원고 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160225&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "e35902fd87ea",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보]  2026 제천시장배 전국 e-스포츠 대회 참가자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160219&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "2affb3bbd8ac",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 26년 세계투자자주간 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160218&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "cc70267c72e0",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 2027년「행복한 교육」명예기자 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160216&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "919c2d1afe7d",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공연예술학부] 2026 실용음악과 졸업연주회 “Unison” 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160213&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     }
   ]
