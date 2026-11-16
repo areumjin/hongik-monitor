@@ -1,6 +1,38 @@
 {
-  "updated": "2026.11.15 13:42",
+  "updated": "2026.11.16 13:38",
   "posts": [
+    {
+      "id": "7eafa719d2c4",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종캠퍼스] Anchor 인턴십 프로그램: 서류와 면접 특강부터 방학기간 5주 인턴십까지! (~11/20)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160368&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "3ab75e56bac1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[세종앵커사업단] 전의면 지역상생 현장탐방과 디지털 헬스케어  체험 및 팝업 프로그램 참가자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160359&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "788385691bcb",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[한국건설교통신기술협회] 미래 건설교통신기술인 장학사업 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160354&article.offset=0&articleLimit=10&noCat=501",
+      "date": ""
+    },
+    {
+      "id": "7c0415b5b8cb",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[산업데이터공학과] 2026-2학기 기말고사 시험감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160344&article.offset=0&articleLimit=10&noCat=35",
+      "date": ""
+    },
     {
       "id": "153fb21027a6",
       "source_id": "notice",
@@ -50,35 +82,35 @@
       "date": "첨부파일"
     },
     {
-      "id": "ed3702f0c057",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[서울 학부생] 2026-2학기 학생 포상 추천 접수(~12.4(금)까지)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160309&article.offset=0&articleLimit=10&noCat=514",
+      "id": "35c57f5d36ed",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "「2027년 치안정책연구소 연구주제 공모」홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160366&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "62fb24e1bdc7",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[조교 채용] 홍익대학교(서울캠퍼스) 전자전기공학부 조교 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160308&article.offset=0&articleLimit=10&noCat=35",
+      "id": "80321aefc6fc",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[세종앵커사업단] AI 기반 지식서비스산업 창업아이템 공모전",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160360&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "dd3cf34bb88f",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[유하푸른재단] 2027년도 제 10기 유하푸른재단 장학생 선발",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160291&article.offset=0&articleLimit=10&noCat=501",
-      "date": "첨부파일"
+      "id": "3516c7c533dc",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] KT 산업체 전문가 온라인 특강",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160358&article.offset=0&articleLimit=10",
+      "date": ""
     },
     {
-      "id": "3b73594b50bc",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계방학 국가근로장학생 선발 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160288&article.offset=0&articleLimit=10&noCat=32",
+      "id": "6b49edf9e801",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2026 아티언스대전 페스티벌 관람 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160350&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
@@ -128,38 +160,6 @@
       "title": "[일반채용][청년취업사관학교 영등포캠퍼스] 'Enterprise AI Cloud MSP 엔지니어 양성 과정'",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160310&article.offset=0&articleLimit=10",
       "date": ""
-    },
-    {
-      "id": "e0460d647af2",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 성균관대학교 피지컬 AI 데이터 실무 부트캠프 교육생 모",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160306&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "15602c687f50",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][국립국악원] 민속악단 정기공연 <풍화風化>",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160305&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "19e900986dbf",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][IT직무프리뷰] 게임 개발자편",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160302&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "c9e828c0604b",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 「2026 블록체인 진흥주간」연계행사 무료 취업 컨설팅 참가자 모집 안내 (~11.20.)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160286&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
     }
   ]
 }
