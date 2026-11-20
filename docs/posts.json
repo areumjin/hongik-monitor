@@ -1,6 +1,30 @@
 {
-  "updated": "2026.11.19 14:49",
+  "updated": "2026.11.20 14:38",
   "posts": [
+    {
+      "id": "5974480b4979",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업/학생상담센터(세종)]⭐생체신호 측정하여 스트레스 지수 파악⭐ 옴니핏 스트레스 검사 실시 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160590&article.offset=0&articleLimit=10&noCat=32",
+      "date": ""
+    },
+    {
+      "id": "4717bbb239b5",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[컴퓨터공학과] 컴퓨터공학과 기말고사 시험감독 보조요원 구인",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160588&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "0c6bb32dd91c",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[경영대학] 2026-2학기 경영대학 기말고사 시험 감독 보조요원 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160579&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
     {
       "id": "90752189aac0",
       "source_id": "notice",
@@ -58,28 +82,28 @@
       "date": ""
     },
     {
-      "id": "e9ba2431132a",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[모집] 2026 AI 실무 트렌드 마스터 : 차세대 Web App 빌드업 챌린지 교육",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160519&article.offset=0&articleLimit=10&noCat=514",
+      "id": "4379affbf59b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 「2026 블록체인 진흥주간」 행사 안내 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160592&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "1cc84c1fa140",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[모집] 2026 파이썬을 활용한 인공지능 자율주행 모빌리티 제작 실습 교육",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160517&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
+      "id": "b5cf6d8fa70d",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 세종문화회관 꿈의숲아트센터 [홍보 및 공연장 운영 코디네이터] 모집 안내 및 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160577&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
-      "id": "388715b8a922",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[세종캠퍼스] 2026학년도 2학기 사이버강좌 기말고사 시험감독 보조요원 모집",
-      "url": "https://www.hongik.ac.kr/kr/education/notice-grad.do?mode=view&articleNo=160514&noCat=383",
-      "date": ""
+      "id": "640d9e2730bb",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 서울역사박물관 2026 제12회 유럽영화제 홍보",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160576&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
     },
     {
       "id": "bd6d2bd9af06",
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보] 「2026년 지능정보사회 법제도 포럼 하반기 공개세미나」 개최 안내",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160520&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "bd64136432a9",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[모집] 「마포청년정책 토론회」참가자 모집기간 연장 알림",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160497&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "a33531c0d721",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [2026년 장애학생 지원 권역별 선도대학 운영 사업]「취업 Jump UP!! 미래 취업 트렌드 특강」 대학생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160495&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "1c593e21d8d5",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[공모] 2026 힐링충남 관광 정책 아이디어 공모전",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160449&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
