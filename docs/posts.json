@@ -1,6 +1,38 @@
 {
-  "updated": "2026.11.20 14:38",
+  "updated": "2026.11.21 14:31",
   "posts": [
+    {
+      "id": "eee7d21ee828",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[제26-50호] 컴퓨터공학과 데스크탑 6대, 노트북 9대 구입",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160617&article.offset=0&articleLimit=10&noCat=36",
+      "date": ""
+    },
+    {
+      "id": "1bfee00a04b6",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[마포비즈니스센터] 창업지원단 AI 역량·인성검사 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160613&article.offset=0&articleLimit=10&noCat=396",
+      "date": "첨부파일"
+    },
+    {
+      "id": "71002899ccb1",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "전자전기공학부에서 26-2 기말고사 시험감독 보조요원을 모집합니다",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160610&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "ae29b5133449",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[서울캠퍼스] 2027년 1학기 국가근로장학금 1차 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160609&article.offset=0&articleLimit=10&noCat=501",
+      "date": "첨부파일"
+    },
     {
       "id": "5974480b4979",
       "source_id": "notice",
@@ -50,35 +82,27 @@
       "date": "첨부파일"
     },
     {
-      "id": "75dd679623d7",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2026학년도 동계계절학기 학점교류 신청 안내 (강서대학교)",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160547&article.offset=0&articleLimit=10&noCat=500",
+      "id": "1dcb88e8df8d",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 제20회 KEDI 데이터연구 학술대회",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160614&article.offset=0&articleLimit=10",
       "date": "첨부파일"
     },
     {
-      "id": "018f7397020b",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[한국사회적기업진흥원]「2026년 IMPACT SHOWCASE 사회적기업 업종특화(디지털·지식서비스) 창업지원사업」",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160537&article.offset=0&articleLimit=10&noCat=396",
+      "id": "b5a1fca18144",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][SK쉴더스] 클라우드 기반 스마트 융합보안 양성과정 37기",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160607&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
-      "id": "6f7ec1e4346a",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[제26-49호] 2026년도 연구(실험)실 안전점검 및 정밀안전진단 실시와 각시설물 위험성평가 실시 업체 선정",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160533&article.offset=0&articleLimit=10&noCat=36",
-      "date": ""
-    },
-    {
-      "id": "354aab1c2643",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[창업교육센터][창업특강] \"대학생 창업의 정석! - 축구선수에서 스타트업 CEO로\"",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160525&article.offset=0&articleLimit=10&noCat=396",
+      "id": "0bd205dff938",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][하나금융파인드] HANA 금융전문가 양성과정",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160606&article.offset=0&articleLimit=10",
       "date": ""
     },
     {
@@ -135,30 +159,6 @@
       "source_name": "행사/공모전",
       "title": "[홍보][하이서울기업협회] 새싹 강서캠퍼스 9기 (AI 활용 콘텐츠 퍼포먼스 마케팅 전문가 과정 6기) 교육생 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160531&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "204d090648d4",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][한국전파진흥협회] 클라우드 보안/아키텍처 전문가 양성과정 교육생모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160530&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "5a83c9a7939b",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 남동문화재단 11월 기획 공연·전시 프로그램 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160524&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "7a4ffdc064df",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「2026년 지능정보사회 법제도 포럼 하반기 공개세미나」 개최 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160520&article.offset=0&articleLimit=10",
       "date": ""
     }
   ]
