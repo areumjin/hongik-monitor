@@ -1,6 +1,14 @@
 {
-  "updated": "2026.11.22 13:57",
+  "updated": "2026.11.23 14:39",
   "posts": [
+    {
+      "id": "badf4ad5185f",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[대학혁신지원사업] 26-2 디자인예술경영학부 온라인 진로 특강 \"AI 시대, 전공과 경험을 기회로 만드는 취·창업 전략\"",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160644&article.offset=0&articleLimit=10&noCat=512",
+      "date": ""
+    },
     {
       "id": "eee7d21ee828",
       "source_id": "notice",
@@ -58,14 +66,6 @@
       "date": ""
     },
     {
-      "id": "90752189aac0",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[서울] 기획처 온라인커뮤니케이션실 - 대학원생 봉사장학생(SNS 관리) 모집 공고",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160573&article.offset=0&articleLimit=10&noCat=29",
-      "date": "첨부파일"
-    },
-    {
       "id": "086a41345478",
       "source_id": "notice",
       "source_name": "공지사항",
@@ -82,84 +82,84 @@
       "date": "첨부파일"
     },
     {
+      "id": "9a08931e61b4",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 구세군자선냄비 2026 연말캠페인 자원봉사자 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160661&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "8e7e58fbcbfc",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [사전등록안내] 2026 전자문서×전자서명 컨퍼런스 개최",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160660&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "115505f99f16",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]  [남해바래길 야간 달빛 산책] 행사 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160659&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "ec8ddea352ba",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 2027 UN 청소년 미래 정상 회의(MUNY9) 참가자 모집 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160658&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "4d5c17d80973",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 군포시청소년재단 군포시진로교육협력센터 [꿈이지 대학생 멘토단] 모집",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160657&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "47e89a111f8b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] [2026 서울 야간경제 활성화 해커톤(Dopamine 24)] 학생 참여",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160656&article.offset=0&articleLimit=10",
+      "date": "첨부파일"
+    },
+    {
+      "id": "02572b71b2eb",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보] 벤처파크 Vol. 10, Beyond AI 기술이 현실을 바꾸는 순간 – 스타트업을 위한 강연 및 네트워킹",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160642&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "677f1fc7bb61",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보][한국인터넷진흥원] 2026 블록체인 진흥주간",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160641&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
+      "id": "5b6d18f5e84b",
+      "source_id": "event",
+      "source_name": "행사/공모전",
+      "title": "[홍보]2027 지역 창업 솔버톤",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160640&article.offset=0&articleLimit=10",
+      "date": ""
+    },
+    {
       "id": "1dcb88e8df8d",
       "source_id": "event",
       "source_name": "행사/공모전",
       "title": "[홍보] 제20회 KEDI 데이터연구 학술대회",
       "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160614&article.offset=0&articleLimit=10",
       "date": "첨부파일"
-    },
-    {
-      "id": "b5a1fca18144",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][SK쉴더스] 클라우드 기반 스마트 융합보안 양성과정 37기",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160607&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "0bd205dff938",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][하나금융파인드] HANA 금융전문가 양성과정",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160606&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "4379affbf59b",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「2026 블록체인 진흥주간」 행사 안내 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160592&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "b5cf6d8fa70d",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 세종문화회관 꿈의숲아트센터 [홍보 및 공연장 운영 코디네이터] 모집 안내 및 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160577&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "640d9e2730bb",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 서울역사박물관 2026 제12회 유럽영화제 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160576&article.offset=0&articleLimit=10",
-      "date": "첨부파일"
-    },
-    {
-      "id": "bd6d2bd9af06",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] 「모두의 AI 실험실」 온라인 플랫폼",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160567&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "7625814bc663",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보] [마포청년창업취업지원센터 나루] 취·창업 프로그램 홍보",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160538&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "c08c2c2c2884",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][한국인터넷진흥원] 26년 AI위협탐지대응 취업연계 교육",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160532&article.offset=0&articleLimit=10",
-      "date": ""
-    },
-    {
-      "id": "9b76ff8eec59",
-      "source_id": "event",
-      "source_name": "행사/공모전",
-      "title": "[홍보][하이서울기업협회] 새싹 강서캠퍼스 9기 (AI 활용 콘텐츠 퍼포먼스 마케팅 전문가 과정 6기) 교육생 모집",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/event-contest.do?mode=view&articleNo=160531&article.offset=0&articleLimit=10",
-      "date": ""
     }
   ]
 }
