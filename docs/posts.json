@@ -1,6 +1,22 @@
 {
-  "updated": "2026.11.27 15:36",
+  "updated": "2026.11.28 15:11",
   "posts": [
+    {
+      "id": "d919a366ccef",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "[경영대학] 2026-2학기 경영대학 기말고사 시험 감독 보조요원 모집(추가모집)",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160893&article.offset=0&articleLimit=10&noCat=29",
+      "date": ""
+    },
+    {
+      "id": "a1caae2c8be5",
+      "source_id": "notice",
+      "source_name": "공지사항",
+      "title": "2027학년도 1학기 학생설계전공 개설 신청 안내",
+      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160891&article.offset=0&articleLimit=10&noCat=500",
+      "date": ""
+    },
     {
       "id": "07010ca501f6",
       "source_id": "notice",
@@ -26,10 +42,10 @@
       "date": ""
     },
     {
-      "id": "1024af6057e9",
+      "id": "fae86ee93b67",
       "source_id": "notice",
       "source_name": "공지사항",
-      "title": "[컴퓨터공학과] 26-2 중간고사 시험 보조요원 모집 [추가모집, 금요일 오후 8-10시 추가]",
+      "title": "[컴퓨터공학과] 26-2 중간고사 시험 보조요원 추가모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160856&article.offset=0&articleLimit=10&noCat=29",
       "date": ""
     },
@@ -63,22 +79,6 @@
       "source_name": "공지사항",
       "title": "NGS 기반 마이크로바이옴 데이터 분석 및 항체공학 기반 종양 표적 항체 프로브 개발 실습 프로그램 참여 학생 모집",
       "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160820&article.offset=0&articleLimit=10&noCat=514",
-      "date": ""
-    },
-    {
-      "id": "7bc6e8f6b874",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "2027년 1학기 청년창업장학금 신청 안내",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160818&article.offset=0&articleLimit=10&noCat=32",
-      "date": ""
-    },
-    {
-      "id": "d8a589731e74",
-      "source_id": "notice",
-      "source_name": "공지사항",
-      "title": "[교양교육원 서울] 기말고사 시험감독 보조요원 모집 12.10목 & 16수",
-      "url": "https://www.hongik.ac.kr/kr/newscenter/notice.do?mode=view&articleNo=160817&article.offset=0&articleLimit=10&noCat=29",
       "date": ""
     },
     {
